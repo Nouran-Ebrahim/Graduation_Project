@@ -2,5 +2,5 @@ vgcnfxfg
 kdoidjoishvjodfii
 changes
 ## Graduation Project
-### grads
+### gradings
 ## H1
