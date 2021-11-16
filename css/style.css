@@ -1,4 +1,4 @@
-/* main setting */
+/* login starting */
 * {
     box-sizing: border-box;
   }
@@ -71,3 +71,4 @@ input[name="log"]:hover{
     color: white;
     border: 3px solid white;
 }
+/* login ending */
