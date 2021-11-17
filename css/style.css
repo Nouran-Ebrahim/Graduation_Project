@@ -1,3 +1,66 @@
+/* start main items */
+/******start header ******/
+.header_container{
+    background-image: url("../images/header_background.png");
+    width: 100%;
+    height: 245px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#right_side{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#left_side{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+}
+.webname_header{
+    align-items: center;
+    width: 363px;
+    height: 130px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.setting_item{
+    width: 100px;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+#admin_name{
+    font-size: 30px;
+    padding-top: 55px;
+    color: #2541B2;
+    width: -webkit-fill-available;
+}
+.home_icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 75px;
+    margin-top: 60px;
+    margin-right: 5px;
+}
+#logout{
+    display: block;
+    font-weight: bolder;
+    width: 100px;
+    height: 75px;
+    margin-top: 50px;
+    margin-left: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #2541B2;
+    margin-right: 15px;
+}
+/******end header ******/
+/* end main items */
+
 /* login starting */
 * {
     box-sizing: border-box;
@@ -5,6 +68,7 @@
 body{
 background-image: url('../images/backgrauand.png');
 margin: 0px;
+
 }
 .login_container{
     display: flex;
@@ -75,22 +139,6 @@ input[name="log"]:hover{
 /* login ending */
 
 /*admin settings starting*/
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-color: green;
-}
-header img{
-display: block;
-margin: 0px;
-width: 100%;
-height: 150px;
-}
-.logo img{
-  display: inline-block;
-  width: 15%;
-  background-color: greenyellow;
-}
+
 /* admin settings ending */
+
