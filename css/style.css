@@ -64,11 +64,13 @@
 /* login starting */
 * {
     box-sizing: border-box;
-  }
+}
+html{
+    height: 100%;
+}
 body{
-background-image: url('../images/backgrauand.png');
-margin: 0px;
-
+    background-image: url('../images/backgrauand.png');
+    margin: 0px;
 }
 .login_container{
     display: flex;
@@ -141,4 +143,117 @@ input[name="log"]:hover{
 /*admin settings starting*/
 
 /* admin settings ending */
+
+/*
+    ****************
+    Router1 Page
+    **************** 
+*/
+.heading {
+    width: 100%;
+    height:200px;
+    background: url("../images/header_background.png");
+    background-size: 100% 100%;
+    border: 2px black solid;
+}
+.heading_container{
+    border: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*adminSettingsIcon properties*/
+.adminSettings{
+    border: 2px black solid;
+    display: flex;
+    align-items:flex-start;
+    margin-left: 5%;
+
+}
+.adminSettings div{
+    display: flex;
+    height: auto;
+    align-items: center;
+    border: 2px black solid;
+}
+.AdSetIcon{
+    border: 2px black solid;
+    height: 73px;
+    width: 73px;
+}
+
+/*adminName properties*/
+.adminName{
+    border: 2px black solid;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150%;
+    line-height: 46px;
+    color: #2541B2;
+}
+
+/*Logo Properties*/
+.Logo{
+    width:auto;
+    margin-left: 5%;
+}
+
+.Logo img{
+    width:85%;
+    height:85%;
+    min-width:10%; 
+}
+/*Logout & Home buttons properties*/
+.HomeAndLog{
+    border: 2px black solid;
+    
+    display: flex;
+    align-content: center;
+}
+
+.HIcon{
+    border: 2px black solid;
+    margin-top: 5%;
+}
+.logout{
+    border: 2px black solid;
+    min-width:10%;
+    margin-right: 5%;
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logout button {
+    width:150px;
+    min-width: 100px;
+    height:60px;    
+    border-radius: 30px;
+    border:0px;
+    align-self: flex-end;
+    font-family: Onyx;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    justify-content: center;
+    align-content: center;
+    /* identical to box height */
+
+
+    color: #2541B2;
+
+}
+.logout div{
+    border: 2px black solid;
+    
+}
+/*
+    *******************
+    Router1 Page ending
+    ******************* 
+ */
+
+
 
