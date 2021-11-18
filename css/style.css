@@ -70,6 +70,7 @@ html{
 }
 body{
     background-image: url('../images/backgrauand.png');
+    background-size: cover;
     margin: 0px;
 }
 .login_container{
@@ -150,65 +151,72 @@ input[name="log"]:hover{
     **************** 
 */
 
+/******Main body******/
+#body{
+    display: grid;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header" "body" "footer";
+    
+    
+}
 /******Header Begins******/
 .heading {
-    width: 100%;
-    height:200px;
+    grid-area: header;
+
     background: url("../images/header_background.png");
     background-size: 100% 100%;
-    border: 2px black solid;
 }
 .heading_container{
-    border: 2px black solid;
     display: flex;
     justify-content: space-between;
 }
 
 /*adminSettingsIcon properties*/
 .adminSettings{
-    border: 2px black solid;
+    margin-top: 2vh;
     display: flex;
     align-items:flex-start;
-    margin-left: 5%;
+    margin-left: 3vw;
 
 }
 .adminSettings div{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "Icon Name";
+    column-gap: 0.3vw;
     height: auto;
     align-items: center;
-    border: 2px black solid;
 }
 .AdSetIcon{
-    border: 2px black solid;
-    height: 73px;
-    width: 73px;
+    grid-area: Icon;
+    height: 3vw;
+    width: 3vw;
 }
 
 /*adminName properties*/
 .adminName{
-    border: 2px black solid;
+    grid-area: Name;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 150%;
-    line-height: 46px;
+    font-size: 1.1vw;
+    line-height: 2vh;
     color: #2541B2;
 }
 
 /*Logo Properties*/
 .Logo{
     width:auto;
-    margin-left: 5%;
+    margin-left: 5vw;
 }
 
-.Logo img{
+.hLogo{
     width:85%;
     height:85%;
     min-width:10%; 
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
-    border: 2px black solid;
     display: grid;
     column-gap: 5%;
     align-items:center;
@@ -221,8 +229,7 @@ input[name="log"]:hover{
     display: flex;
     align-items: center;
     grid-area: home;
-    border: 2px black solid;
-    margin-top: 5%;
+    margin-top: 20%;
 }
 #Home{
     width:80%;
@@ -232,22 +239,20 @@ input[name="log"]:hover{
     display: flex;
     align-items: center;
     grid-area: Logout;
-    border: 2px black solid;
-    min-width:10%;
 }
 .logout button {
-    width:150px;
-    min-width: 100px;
-    height:60px;    
-    border-radius: 30px;
+    width:8vw;
+    min-width: 70px;
+    height: 6vh;    
+    border-radius: 3vh;
     border:0px;
     align-self: flex-end;
 
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 2.5vw;
+    line-height: 3vh;
     justify-content: center;
     align-content: center;
     /* identical to box height */
@@ -256,29 +261,76 @@ input[name="log"]:hover{
 }
 .empty{
     grid-area: empty;
-    border: 2px black solid;
     
 }
 /******Header ends******/
 
 
 /******Body Begins******/
-
+.body{
+    grid-area: body;
+    
+}
 
 /******Body Ends******/
 
 /******Footer Begins******/
 .footer{
-    
+    grid-area: footer;
+    width: 100%;
+    background: url("../images/footer_background.png");
+    display: grid;
+    grid-template-columns: 40vw 20vw 40vw;
+    grid-template-areas: "fLogo empty team";
+    align-items: center;
+}
+
+.team{
+    grid-area: team;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.team div{
+    width: 20vw;
+    min-width: 200px;
+    text-align: center;
+    font-family: Times New Roman;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15pt;
+    line-height: 1vh;
+    color: #02186d;
+
+}
+@media only screen and (max-width: 1030px) {
+    /* For mobile phones: */
+    .team div {
+
+        font-size: 10pt;
+    }
+  }
+
+.fLogo{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+.fLogo svg{
+    max-width: 10vw;
+    min-width: 5vw;
+    height: 6vh;
+
 }
 
 /******Footer Ends******/
 
 
 /*
-    *******************
-    Router1 Page ending
-    ******************* 
+    **********************
+    Router1 Page Finished
+    ********************** 
  */
 
 
