@@ -207,23 +207,32 @@ input[name="log"]:hover{
 /*Logout & Home buttons properties*/
 .HomeAndLog{
     border: 2px black solid;
-    
-    display: flex;
-    align-content: center;
+    display: grid;
+    column-gap: 5%;
+    align-items:center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "home Logout" "empty empty";
+    margin-right: 5%;
 }
 
 .HIcon{
+    display: flex;
+    align-items: center;
+    grid-area: home;
     border: 2px black solid;
     margin-top: 5%;
 }
+#Home{
+    width:80%;
+    margin-bottom: 18px;
+}
 .logout{
+    display: flex;
+    align-items: center;
+    grid-area: Logout;
     border: 2px black solid;
     min-width:10%;
-    margin-right: 5%;
-    display: flex;
-    justify-self: flex-end;
-    flex-direction: column;
-    justify-content: space-around;
 }
 .logout button {
     width:150px;
@@ -245,7 +254,8 @@ input[name="log"]:hover{
     color: #2541B2;
 
 }
-.logout div{
+.empty{
+    grid-area: empty;
     border: 2px black solid;
     
 }
