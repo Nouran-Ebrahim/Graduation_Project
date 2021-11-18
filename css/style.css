@@ -149,6 +149,8 @@ input[name="log"]:hover{
     Router1 Page
     **************** 
 */
+
+/******Header Begins******/
 .heading {
     width: 100%;
     height:200px;
@@ -215,7 +217,6 @@ input[name="log"]:hover{
     grid-template-areas: "home Logout" "empty empty";
     margin-right: 5%;
 }
-
 .HIcon{
     display: flex;
     align-items: center;
@@ -241,6 +242,7 @@ input[name="log"]:hover{
     border-radius: 30px;
     border:0px;
     align-self: flex-end;
+
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
@@ -249,8 +251,6 @@ input[name="log"]:hover{
     justify-content: center;
     align-content: center;
     /* identical to box height */
-
-
     color: #2541B2;
 
 }
@@ -259,6 +259,22 @@ input[name="log"]:hover{
     border: 2px black solid;
     
 }
+/******Header ends******/
+
+
+/******Body Begins******/
+
+
+/******Body Ends******/
+
+/******Footer Begins******/
+.footer{
+    
+}
+
+/******Footer Ends******/
+
+
 /*
     *******************
     Router1 Page ending
