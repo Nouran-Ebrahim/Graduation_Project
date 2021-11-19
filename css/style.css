@@ -333,5 +333,72 @@ input[name="log"]:hover{
     ********************** 
  */
 
+/*
+    **********************
+    Start Router1 Page info
+    ********************** 
+ */
+ #infoPage{
+     width: 835px;
+     height: 953px;
+     text-align: center;
+ }
+ .return_button{
+    width:8vw;
+    min-width: 70px;
+    height: 6vh;    
+    border-radius: 3vh;
+    border:0px;
+    align-self: flex-end;
+    font-family: Onyx;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 3vh;
+    justify-content: center;
+    align-content: center;
+    /* identical to box height */
+    color: #2541B2;
 
+ }
+ .return_button:hover {
+    background: #E5D549;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+ .run_button{
+        width:8vw;
+        min-width: 70px;
+        height: 6vh;    
+        border-radius: 3vh;
+        border:0px;
+        align-self: flex-end;
+        font-family: Onyx;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.5vw;
+        line-height: 3vh;
+        justify-content: center;
+        align-content: center;
+        /* identical to box height */
+        color: #2541B2;
+ }
+ .run_button:hover {
+    background: #E5D549;
+    color: #fff;
+    transition: ease 0.3s all;
+}
 
+.router_info{
+    color: #1768AC;
+    font-size: 60px;
+    text-align: center;
+}
+.button_info{
+    text-align: end;
+}
+ /*
+    **********************
+   End Router1 Page info
+    ********************** 
+ */
