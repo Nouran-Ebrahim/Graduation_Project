@@ -338,10 +338,11 @@ input[name="log"]:hover{
     Start Router1 Page info
     ********************** 
  */
- #infoPage{
+ .info{
      width: 835px;
      height: 953px;
-     text-align: center;
+     background-color: #ffff;
+     margin: 20px;
  }
  .return_button{
     width:8vw;
@@ -357,7 +358,6 @@ input[name="log"]:hover{
     line-height: 3vh;
     justify-content: center;
     align-content: center;
-    /* identical to box height */
     color: #2541B2;
 
  }
@@ -397,6 +397,21 @@ input[name="log"]:hover{
 .button_info{
     text-align: end;
 }
+
+.information{
+    color: #2541B2;
+    display: grid;
+    font-size: large;
+    text-align: center;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.data{
+    color: #858585;
+}
+
  /*
     **********************
    End Router1 Page info
