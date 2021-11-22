@@ -153,6 +153,8 @@ input[name="log"]:hover{
 
 /******Main body******/
 #body{
+    width:100vw;
+    height: 100vh;
     display: grid;
     grid-template-rows: 20vh 70vh 10vh;
     grid-template-areas: "header" "body" "footer";
@@ -162,21 +164,30 @@ input[name="log"]:hover{
 /******Header Begins******/
 .heading {
     grid-area: header;
-
+    
+    height:20vh;
     background: url("../images/header_background.png");
-    background-size: 100% 100%;
+    background-size:100vw 100%;
 }
 .heading_container{
-    display: flex;
-    justify-content: space-between;
+    margin-top: 1%;
+    height:40%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20vw 10vw 20vw;
+    grid-template-areas: "Admin Logo buttons";
+    column-gap: 25vw;
+    align-items:center;
+    border: 1px black solid;
 }
 
 /*adminSettingsIcon properties*/
 .adminSettings{
-    margin-top: 2vh;
+    grid-area: Admin;
     display: flex;
-    align-items:flex-start;
-    margin-left: 3vw;
+    align-items:center;
+    margin-left: 2.5vw;
+
 
 }
 .adminSettings div{
@@ -206,63 +217,54 @@ input[name="log"]:hover{
 
 /*Logo Properties*/
 .Logo{
+    grid-area: Logo;
     width:auto;
-    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .hLogo{
     width:85%;
     height:85%;
-    min-width:10%; 
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
+    grid-area: buttons;
+    height: 80%;
     display: grid;
-    column-gap: 5%;
     align-items:center;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "home Logout" "empty empty";
-    margin-right: 5%;
+    column-gap: 1vw;
+    grid-template-columns:auto auto;
+    grid-template-areas:"home Logout";
+    margin-right: 2.5vw;
+    border: 1px black solid;
+    justify-content: center;
 }
 .HIcon{
-    display: flex;
-    align-items: center;
+    width:45px;
+    margin-bottom: 10%;
     grid-area: home;
-    margin-top: 20%;
-}
-#Home{
-    width:80%;
-    margin-bottom: 18px;
+    border: 1px black solid;
 }
 .logout{
-    display: flex;
-    align-items: center;
     grid-area: Logout;
-}
-.logout button {
-    width:8vw;
-    min-width: 70px;
-    height: 6vh;    
+    width: 8vw;
+    height: 100%;
     border-radius: 3vh;
-    border:0px;
-    align-self: flex-end;
 
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5vw;
-    line-height: 3vh;
+    font-size: 30pt;
     justify-content: center;
     align-content: center;
     /* identical to box height */
     color: #2541B2;
 
 }
-.empty{
-    grid-area: empty;
-    
-}
+
 /******Header ends******/
 
 
@@ -277,7 +279,7 @@ input[name="log"]:hover{
 /******Footer Begins******/
 .footer{
     grid-area: footer;
-    width: 100%;
+    width: 100vw;
     background: url("../images/footer_background.png");
     display: grid;
     grid-template-columns: 40vw 20vw 40vw;
@@ -293,13 +295,13 @@ input[name="log"]:hover{
     align-items: flex-end;
 }
 .team div{
-    width: 20vw;
+    width: 15vw;
     min-width: 200px;
     text-align: center;
     font-family: Times New Roman;
     font-style: italic;
     font-weight: normal;
-    font-size: 15pt;
+    font-size: 1.1vw;
     line-height: 1vh;
     color: #02186d;
 
@@ -309,6 +311,25 @@ input[name="log"]:hover{
     .team div {
 
         font-size: 10pt;
+    }
+    .logout {
+        width: 10vw;
+        font-size: 15pt;
+        
+    }
+    .HIcon{
+        width: 35px;
+    }
+    .Logo{
+        width: 20vw;
+    }
+    .heading{
+        height: 15vh;
+        margin-bottom: auto;
+    }
+    .footer{
+        height:15vh;
+        margin-top: auto;
     }
   }
 
