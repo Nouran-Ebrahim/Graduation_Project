@@ -178,7 +178,6 @@ input[name="log"]:hover{
     grid-template-areas: "Admin Logo buttons";
     column-gap: 25vw;
     align-items:center;
-    border: 1px black solid;
 }
 
 /*adminSettingsIcon properties*/
@@ -186,7 +185,7 @@ input[name="log"]:hover{
     grid-area: Admin;
     display: flex;
     align-items:center;
-    margin-left: 2.5vw;
+    margin-left: 2vw;
 
 
 }
@@ -238,15 +237,12 @@ input[name="log"]:hover{
     column-gap: 1vw;
     grid-template-columns:auto auto;
     grid-template-areas:"home Logout";
-    margin-right: 2.5vw;
-    border: 1px black solid;
     justify-content: center;
 }
 .HIcon{
     width:45px;
     margin-bottom: 10%;
     grid-area: home;
-    border: 1px black solid;
 }
 .logout{
     grid-area: Logout;
@@ -270,9 +266,68 @@ input[name="log"]:hover{
 
 /******Body Begins******/
 .body{
+    width:100%;
     grid-area: body;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "menu SECs";
+}
+.barBG{
+    position:absolute;
+    width: 15%;
+    height: 100%;
+    z-index: -1;
+    background-color: white;
+}
+.menu{
+    grid-area: menu;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    row-gap: 15%;
+    grid-template-areas: "R1" "R2" "R3";
+}
+
+.R1{
+    grid-area: R1;
+}
+.R2{
+    grid-area: R2;
+}
+.R3{
+    grid-area: R3;
+}
+
+.clr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    align-items:center;
+    justify-content: center;
+    grid-template-areas: "Ic R";
     
 }
+
+.clr svg{
+    margin-top: 10%;
+    width: 70%;
+    grid-area: Ic;
+}
+.clr p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    grid-area: R;
+    font-size: 200%;
+    color: #2541B2;
+}
+
+.editing{
+    grid-area: SECs;
+}
+
+
 
 /******Body Ends******/
 
@@ -306,16 +361,29 @@ input[name="log"]:hover{
     color: #02186d;
 
 }
+
+
+.fLogo{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px black solid;
+}
+.fLogo svg{
+    border: 1px black solid;
+    width: 30%;
+    height: 6vh;
+
+}
 @media only screen and (max-width: 1030px) {
     /* For mobile phones: */
     .team div {
-
         font-size: 10pt;
     }
     .logout {
         width: 10vw;
         font-size: 15pt;
-        
     }
     .HIcon{
         width: 35px;
@@ -324,28 +392,16 @@ input[name="log"]:hover{
         width: 20vw;
     }
     .heading{
-        height: 15vh;
+        height: 10vh;
         margin-bottom: auto;
     }
     .footer{
-        height:15vh;
+        height:10vh;
         margin-top: auto;
     }
-  }
-
-.fLogo{
-    display: flex;
-    align-items: flex-start;
-    margin-left: 5%;
 }
-.fLogo svg{
-    max-width: 10vw;
-    min-width: 5vw;
-    height: 6vh;
-
-}
-
 /******Footer Ends******/
+
 
 
 /*
