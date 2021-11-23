@@ -281,7 +281,6 @@ input[name="log"]:hover{
 }
 .menu{
     grid-area: menu;
-    background-color: aqua;
     display: grid;
     grid-template-rows: 20% 20% 20%;
     row-gap: 15%;
@@ -368,10 +367,8 @@ input[name="log"]:hover{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border: 1px black solid;
 }
 .fLogo svg{
-    border: 1px black solid;
     width: 30%;
     height: 6vh;
 
