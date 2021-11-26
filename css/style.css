@@ -420,33 +420,26 @@ input[name="log"]:hover{
     margin-top: 35px;
     }
  .info{
-     width: 900px;
-     height: 550px;
-     background:radial-gradient(rgba(255,255,255,0.6));
-     border-radius: 20px;
-     backdrop-filter: blur(3px);
-     box-shadow: 5px 10px 20px rgba(0,0,0,0.6);
+    width: 700px;
+    height: 550px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
     margin: inherit;
     padding: 30px;
 
 
  }
  .return_button{
-    width:8vw;
-    min-width: 70px;
-    height: 6vh;    
-    border-radius: 3vh;
-    border:0px;
+    height: 5vh;
+    border-radius: 2vh;
+    border: 0px;
     align-self: flex-end;
-    font-family: Onyx;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 3vh;
     justify-content: center;
     align-content: center;
     color: #2541B2;
-
  }
  .return_button:hover {
     background: #E5D549;
@@ -480,7 +473,7 @@ input[name="log"]:hover{
     color: #1768AC;
     font-size: 60px;
     width: 400px;
-    margin-left: 250px;
+    margin-left: 125px;
     text-align: center;
     font-family: onyx;
     box-shadow: 5px 5px 10px #e5d549;
