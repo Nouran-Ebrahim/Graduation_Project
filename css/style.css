@@ -70,6 +70,7 @@ html{
 }
 body{
     background-image: url('../images/backgrauand.png');
+    background-position: center;
     background-size: cover;
     margin: 0px;
 }
@@ -412,11 +413,23 @@ input[name="log"]:hover{
     Start Router1 Page info
     ********************** 
  */
+ #infoPage{
+     display: flex;
+     align-items: center;
+    justify-content: center; 
+    margin-top: 35px;
+    }
  .info{
-     width: 835px;
-     height: 953px;
-     background-color: #ffff;
-     margin: 20px;
+     width: 900px;
+     height: 550px;
+     background:radial-gradient(rgba(255,255,255,0.6));
+     border-radius: 20px;
+     backdrop-filter: blur(3px);
+     box-shadow: 5px 10px 20px rgba(0,0,0,0.6);
+    margin: inherit;
+    padding: 30px;
+
+
  }
  .return_button{
     width:8vw;
@@ -466,7 +479,11 @@ input[name="log"]:hover{
 .router_info{
     color: #1768AC;
     font-size: 60px;
+    width: 400px;
+    margin-left: 250px;
     text-align: center;
+    font-family: onyx;
+    box-shadow: 5px 5px 10px #e5d549;
 }
 .button_info{
     text-align: end;
@@ -474,16 +491,23 @@ input[name="log"]:hover{
 
 .information{
     color: #2541B2;
-    display: grid;
+    display:flex;
     font-size: large;
     text-align: center;
-    margin: 50px;
+    margin: 40px;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    column-gap: 50px;
 }
 .data{
+    font-size: x-large;
+    font-style: onyx;
+}
+.data_value{
     color: #858585;
+    font-size: x-large;
+    font-style: onyx;
 }
 
  /*
