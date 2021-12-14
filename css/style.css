@@ -102,13 +102,13 @@ body{
 }
 .lab{
     display: inline-block;
-      font-size: 2.5vw;
-      text-align: center;
-      width: 20%;
-      font-weight: bolder;
-      font-family: 'Turret Road', cursive;
-      color: #2541B2;
-      margin: 2% 0% 5% 10%;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 20%;
+    font-weight: bolder;
+    font-family: 'Turret Road', cursive;
+    color: #2541B2;
+    margin: 2% 0% 5% 10%;
 }
 .in{
     display: inline-block;
@@ -152,8 +152,8 @@ input[name="log"]:hover{
     font-family: 'Turret Road', cursive;
     color: #2541B2;
     font-size: 4vw;
-text-shadow: 3px 3px #E5D549 ;
-font-weight: bold;
+    text-shadow: 3px 3px #E5D549 ;
+    font-weight: bold;
 }
 
 #form2{
@@ -190,11 +190,13 @@ font-weight: bold;
     
 }
 /******Header Begins******/
-.heading {
+.hcontainer{
     grid-area: header;
+}
+.heading {
     display: flex;
     justify-content: center;
-    height:20vh;
+    height:calc(14vh + 3vw);
     background: url("../images/header_background.png");
     background-size:100vw 100%;
 }
@@ -249,7 +251,8 @@ font-weight: bold;
 }
 
 .hLogo{
-    height:8vw;
+    height:calc(1vw + 14vh);
+    width: 15vw;
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
@@ -262,25 +265,39 @@ font-weight: bold;
     grid-template-areas:"home Logout";
     justify-content: end;
 }
-.HIcon{
-    width:45px;
-    margin-bottom: 10%;
+
+#f1{
     grid-area: home;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-.logout{
+.HIcon{
+    width: 2.5vw;
+    margin-bottom: 10%;
+}
+
+#f2{
     grid-area: Logout;
-    width: 8vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+    
+}
+.button{
+    width: 7vw;
     height: 60%;
     border-radius: 3vh;
-
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
-    font-size: 30pt;
-    justify-content: center;
-    align-content: center;
+    font-size: 2.5vw;
+    line-height: 100%;
     /* identical to box height */
     color: #2541B2;
+    text-align: center;
+    text-justify:inter-word;
 
 }
 
@@ -292,7 +309,7 @@ font-weight: bold;
     width:100%;
     grid-area: body;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15vw 85vw;
     grid-template-areas: "menu SECs";
 }
 .barBG{
@@ -308,16 +325,6 @@ font-weight: bold;
     grid-template-rows: 20% 20% 20%;
     row-gap: 15%;
     grid-template-areas: "R1" "R2" "R3";
-}
-
-.R1{
-    grid-area: R1;
-}
-.R2{
-    grid-area: R2;
-}
-.R3{
-    grid-area: R3;
 }
 
 .clr{
@@ -341,13 +348,119 @@ font-weight: bold;
     font-weight: normal;
     height: auto;
     grid-area: R;
-    font-size: 200%;
+    font-size: calc(0.10*15vw);
     color: #2541B2;
 }
 
-.editing{
+.Secs{
     grid-area: SECs;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.container {
+    width:98%;
+    height:95%;
+}
+
+.sec{
+    height: 100%;
+    display:grid;
+    row-gap: 5%;
+    grid-template-rows: 10% 85%;
+    grid-template-areas: "header" "Settings";
+}
+
+.name{
+
+    margin: 0px;
+    grid-area: header;
+    font-family: Comic Sans MS;
+    font-style: normal;
+    font-weight: normal;
+    font-size:calc(2vh + 2vw);
+    line-height: 100%;
+    color: #1768AC;
+    text-shadow: 3px 6px 5px #E5D549;
+}
+.Settings{
+    grid-area: Settings;
+    display: grid;
+    grid-template-rows: 84% 15%;
+    grid-template-columns: 49% 49%;
+    row-gap: 1%;
+    column-gap: 2%;
+    grid-template-areas: "S1 S2" "View View";
+}
+
+.S1{
+    grid-area: S1;
+}
+.S2{
+    grid-area: S2;
+}
+.View{
+    grid-area: View;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.none{
+    display:none;
+}
+
+.dis{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: "I1" "I2" "I3" "I4" "I5";
+}
+
+.I5{
+    grid-area: I5;
+}
+.dp{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    grid-template-rows: 100%;
+    grid-template-areas: "labels txts";
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+}
+
+.txts{
+    grid-area: txts;
+
+    width: 100%;
+    min-height: 5vh;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 2.5vh;
+
+}
+.txts:focus{
+    outline-color: rgb(65, 78, 251);
+    outline-width: 1px;
+}
+
+.label{
+    line-height: 100%;
+    margin-bottom: 2% ;
+    grid-area: labels;
+    font-size: calc(1.5vw + 1vh);
+    font-family:'Turret Road', cursive;;
+    font-weight: bolder;
+    color: #2541B2;
+}
+
+
+input[name="View"]{
+    height: 80%;
+}
+
 
 
 
@@ -396,30 +509,7 @@ font-weight: bold;
     height: 6vh;
 
 }
-@media only screen and (max-width: 1030px) {
-    /* For mobile phones: */
-    .team div {
-        font-size: 10pt;
-    }
-    .logout {
-        width: 10vw;
-        font-size: 15pt;
-    }
-    .HIcon{
-        width: 35px;
-    }
-    .Logo{
-        width: 20vw;
-    }
-    .heading{
-        height: 10vh;
-        margin-bottom: auto;
-    }
-    .footer{
-        height:10vh;
-        margin-top: auto;
-    }
-}
+
 /******Footer Ends******/
 
 

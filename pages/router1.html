@@ -14,7 +14,8 @@
 <body id = "body">
   <div class="barBG">
   </div>
-  <header class = "heading">
+  <header class="hcontainer">
+    <div class = "heading">
       <div class = "heading_container">
           <div class = "adminSettings">
                   <img src="../images/settings_icon.png" class="AdSetIcon" alt="AdminSettingsIcon" />
@@ -70,12 +71,16 @@
               </svg>
           </div>
           <div class="HomeAndLog">
-              <img class="HIcon" src="../images/home_icon.png">
-              <button class="logout">Logout</button>
+              <a id="f1"  href="../pages/home.html">
+                <img class="HIcon" src="../images/home_icon.png">
+              </a>
+            <form id="f2" method="get" action="../pages/login.html">
+              <input class = "button" type="submit" name="logout" value="Logout">
+            </form>
           </div>  
       </div>
+    </div>
   </header>
-
   <div class = "body">
     <div class="menu">
       <div class="R1 clr">
@@ -97,10 +102,91 @@
         <p>Router 3</p>
       </div>
     </div>
-    <div class="editing">
-      <section class = "sec1"></section>
-      <section class = "sec2"></section>
-      <section class = "sec3"></section>
+    <div class="Secs">
+      <div class="container">
+        <section class = "sec">
+          <p class = "name">Router1</p>
+          <form class = "Settings" method="post" action="../pages/router1_info.html">
+            <div class = "S1 dis">
+              <div class="I1 dp">
+                <label class="label"> Hostname:</label>
+                <input type="text" name="Hostname" placeholder="Hostname" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label"> Enable:</label>
+                <input type="text" name="Enable" placeholder="Enable" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label"> Welcoming massage:</label>
+                <input type="text" name="WelcomingMassage" placeholder="Welcoming massage" class="txts" required>
+              </div>
+              <div class="I4 dp">
+                <label class="label"> Telnet Password:</label>
+                <input type="text" name="TalentPassword" placeholder="Talent Password" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label"> Console Password:</label>
+                <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts" required>
+              </div>  
+                
+                
+            </div>
+
+            <div class = "S2 dis">
+              <div class="I1 dp">
+                <label class="label">Interface Loopback:</label>
+                <input type="text" name="Interface" placeholder="Interface" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label">IP:</label>
+                <input type="text" name="IP" placeholder="IP" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label">Mask:</label>
+                <input type="text" name="mask" placeholder="Mask" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label">ID:</label>
+                <input type="text" name="ID" placeholder="ID" class="txts" required>
+              </div>
+            </div>
+
+            <div class = "View">
+              <input class = "button" type="submit" name="View" value="View">
+            </div>
+
+          </form>
+        </section>
+        <section class = "none">
+          <p class = "name">Router2</p>
+          <div class = "Settings">
+            <div class = "S1">
+           
+            </div>
+            <div class = "S2">
+
+            </div>
+            <div class = "View">
+
+            </div>
+          
+          </div>
+        </section>
+        <section class = "none">
+          <p class = "name">Router3</p>
+          <div class = "Settings">
+            <div class = "S1">
+           
+            </div>
+            <div class = "S2">
+
+            </div>
+            <div class = "View">
+
+            </div> 
+          </div>
+        </section>
+      </div>
     </div>
 
   </div>
