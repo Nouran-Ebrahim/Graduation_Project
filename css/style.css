@@ -283,7 +283,11 @@ font-weight: bold;
     color: #2541B2;
 
 }
-
+.logout:hover {
+    background: #E5D549;
+    color: #fff;
+    transition: ease 0.3s all;
+}
 /******Header ends******/
 
 
