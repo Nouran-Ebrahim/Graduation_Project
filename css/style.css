@@ -137,9 +137,9 @@ input[name="log"]{
     color: #2541B2;
 }
 input[name="log"]:hover{
-    background-color: #2541B2;
-    color: white;
-    border: 3px solid white;
+    background: #E5D549;
+    color: #fff;
+    transition: ease 0.3s all;
 }
 /* login ending */
 
@@ -300,7 +300,11 @@ input[name="log"]:hover{
     text-justify:inter-word;
 
 }
-
+.logout:hover {
+    background: #E5D549;
+    color: #fff;
+    transition: ease 0.3s all;
+}
 /******Header ends******/
 
 
@@ -428,7 +432,6 @@ input[name="log"]:hover{
     grid-template-areas: "labels txts";
     justify-content: center;
     align-items: center;
-    border: black solid 1px;
 }
 
 .txts{
