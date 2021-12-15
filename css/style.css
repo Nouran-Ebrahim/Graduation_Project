@@ -594,6 +594,16 @@ input[name="View"]{
     Start Router1 Page info
     ********************** 
  */
+ .router1{
+     display: none;
+ }
+ .router2{
+    display:inline-block;
+}
+.router3{
+    display:none;
+}
+
  #infoPage{
      display: flex;
      align-items: center;
@@ -683,6 +693,7 @@ input[name="View"]{
     font-size: x-large;
     font-style: onyx;
 }
+
 
  /*
     **********************
