@@ -13,6 +13,7 @@
 </head>
 <body id = "body">
   <div class="barBG">
+    <img src="../images/icons8-menu-120.png">
   </div>
   <header class="hcontainer">
     <div class = "heading">
@@ -104,9 +105,9 @@
     </div>
     <div class="Secs">
       <div class="container">
-        <section class = "sec">
+        <section class = "none">
           <p class = "name">Router1</p>
-          <form class = "Settings" method="post" action="../pages/router1_info.html">
+          <form class = "Settings sec1" method="post" action="../pages/router1_info.html">
             <div class = "S1 dis">
               <div class="I1 dp">
                 <label class="label"> Hostname:</label>
@@ -127,9 +128,7 @@
               <div class="I5 dp">
                 <label class="label"> Console Password:</label>
                 <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts" required>
-              </div>  
-                
-                
+              </div>
             </div>
 
             <div class = "S2 dis">
@@ -152,39 +151,113 @@
             </div>
 
             <div class = "View">
+              <button class = "button Next">Next</button>
+              <button calss = "button Back">Back</button>
+              <input class = "button" type="submit" name="View" value="View">
+            </div>
+
+          </form>
+        </section>
+        <section class = "sec">
+          <p class = "name">Router2</p>
+          <form class = "Settings sec2" method="post" action="../pages/router0_info.html">
+            <div class = "S1 dis">
+              <div class="I1 dp">
+                <label class="label"> Hostname:</label>
+                <input type="text" name="Hostname2" placeholder="Hostname" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label"> Enable:</label>
+                <input type="text" name="Enable2" placeholder="Enable" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label"> Welcoming massage:</label>
+                <input type="text" name="WelcomingMassage2" placeholder="Welcoming massage" class="txts" required>
+              </div>
+              <div class="I4 dp">
+                <label class="label"> Telnet Password:</label>
+                <input type="text" name="TalentPassword2" placeholder="Talent Password" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label"> Console Password:</label>
+                <input type="text" name="ConsolePassword2" placeholder="Console Password" class="txts" required>
+              </div>
+            </div>
+
+            <div class = "S2 dis">
+              <div class="I1 dp">
+                <label class="label">Interface Loopback:</label>
+                <input type="text" name="Interface2" placeholder="Interface" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label">IP:</label>
+                <input type="text" name="IP2" placeholder="IP" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label">Mask:</label>
+                <input type="text" name="mask2" placeholder="Mask" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label">ID:</label>
+                <input type="text" name="ID2" placeholder="ID" class="txts" required>
+              </div>
+            </div>
+
+            <div class = "View">
               <input class = "button" type="submit" name="View" value="View">
             </div>
 
           </form>
         </section>
         <section class = "none">
-          <p class = "name">Router2</p>
-          <div class = "Settings">
-            <div class = "S1">
-           
-            </div>
-            <div class = "S2">
-
-            </div>
-            <div class = "View">
-
-            </div>
-          
-          </div>
-        </section>
-        <section class = "none">
           <p class = "name">Router3</p>
-          <div class = "Settings">
-            <div class = "S1">
-           
+          <form class = "Settings sec3" method="post" action="../pages/router1_info.html">
+            <div class = "S1 dis">
+              <div class="I1 dp">
+                <label class="label"> Hostname:</label>
+                <input type="text" name="Hostname3" placeholder="Hostname" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label"> Enable:</label>
+                <input type="text" name="Enable3" placeholder="Enable" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label"> Welcoming massage:</label>
+                <input type="text" name="WelcomingMassage3" placeholder="Welcoming massage" class="txts" required>
+              </div>
+              <div class="I4 dp">
+                <label class="label"> Telnet Password:</label>
+                <input type="text" name="TalentPassword" placeholder="Talent Password" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label"> Console Password:</label>
+                <input type="text" name="ConsolePassword3" placeholder="Console Password" class="txts" required>
+              </div>  
             </div>
-            <div class = "S2">
 
+            <div class = "S2 dis">
+              <div class="I1 dp">
+                <label class="label">Interface Loopback:</label>
+                <input type="text" name="Interface3" placeholder="Interface" class="txts" required>
+              </div>
+              <div class="I2 dp">
+                <label class="label">IP:</label>
+                <input type="text" name="IP3" placeholder="IP" class="txts" required>
+              </div>
+              <div class="I3 dp">
+                <label class="label">Mask:</label>
+                <input type="text" name="mask3" placeholder="Mask" class="txts" required>
+              </div>
+              <div class="I5 dp">
+                <label class="label">ID:</label>
+                <input type="text" name="ID3" placeholder="ID" class="txts" required>
+              </div>
             </div>
+
             <div class = "View">
-
-            </div> 
-          </div>
+              <input class = "button" type="submit" name="View" value="View">
+            </div>
+          </form>
         </section>
       </div>
     </div>

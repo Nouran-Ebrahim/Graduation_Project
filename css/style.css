@@ -192,26 +192,30 @@ input[name="log"]:hover{
 /******Header Begins******/
 .hcontainer{
     grid-area: header;
-}
-.heading {
     display: flex;
     justify-content: center;
+}
+.heading {
+    width: 100%;
     height:calc(14vh + 3vw);
     background: url("../images/header_background.png");
     background-size:100vw 100%;
+    border: black solid 1px;
 }
 .heading_container{
-    height:fit-content;
+    height:100%;
     display: grid;
-    width: 98%;
-    grid-template-columns: 20% 15% 20%;
+    width: 98vw;
+    grid-template-columns: 30% 15% 30%;
     grid-template-areas: "Admin Logo buttons";
-    column-gap: 22.5%;
+    column-gap: 12.5%;
+    align-items: flex-start;
     
 }
 
 /*adminSettingsIcon properties*/
 .adminSettings{
+    border: black solid 1px;
     grid-area: Admin;
     display: grid;
     align-items: center;
@@ -224,8 +228,8 @@ input[name="log"]:hover{
 }
 .AdSetIcon{
     grid-area: Icon;
-    height: 3vw;
-    width: 3vw;
+    height: 50%;
+    width: 100%;
 }
 
 /*adminName properties*/
@@ -234,25 +238,24 @@ input[name="log"]:hover{
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.1vw;
-    line-height: 2vh;
+    font-size: calc(1vw + 2vh);
+    line-height: 100%;
     color: #2541B2;
 }
 
 /*Logo Properties*/
 .Logo{
     grid-area: Logo;
-    width:auto;
+
     height:fit-content;
     display: flex;
-    justify-content: center;
     align-items: center;
     
 }
 
 .hLogo{
-    height:calc(1vw + 14vh);
-    width: 15vw;
+    height:150px;
+    width: 300px;
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
@@ -283,28 +286,30 @@ input[name="log"]:hover{
     height:100%;
     display: flex;
     align-items: center;
+    border: black solid 1px;
     
 }
 .button{
     width: 7vw;
-    height: 60%;
+    height: 6vh;
     border-radius: 3vh;
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
     font-size: 2.5vw;
-    line-height: 100%;
+    line-height: 50%;
     /* identical to box height */
     color: #2541B2;
     text-align: center;
     text-justify:inter-word;
 
 }
-.logout:hover {
-    background: #E5D549;
+.button:hover {
+    background: #e9d520;
     color: #fff;
     transition: ease 0.3s all;
 }
+
 /******Header ends******/
 
 
@@ -313,7 +318,7 @@ input[name="log"]:hover{
     width:100%;
     grid-area: body;
     display: grid;
-    grid-template-columns: 15vw 85vw;
+    grid-template-columns: 15vw auto;
     grid-template-areas: "menu SECs";
 }
 .barBG{
@@ -322,6 +327,10 @@ input[name="log"]:hover{
     height: 100%;
     z-index: -1;
     background-color: white;
+}
+.barBG img{
+    margin-top: 15vh;
+    display: none;
 }
 .menu{
     grid-area: menu;
@@ -334,7 +343,7 @@ input[name="log"]:hover{
 .clr{
     width: 100%;
     display: grid;
-    grid-template-columns: 20% 50%;
+    grid-template-columns: 20% auto;
     align-items:center;
     justify-content: center;
     grid-template-areas: "Ic R";
@@ -343,7 +352,7 @@ input[name="log"]:hover{
 
 .clr svg{
     margin-top: 10%;
-    width: 70%;
+    width: 100%;
     grid-area: Ic;
 }
 .clr p{
@@ -352,7 +361,7 @@ input[name="log"]:hover{
     font-weight: normal;
     height: auto;
     grid-area: R;
-    font-size: calc(0.10*15vw);
+    font-size: calc(0.13*15vw);
     color: #2541B2;
 }
 
@@ -371,18 +380,19 @@ input[name="log"]:hover{
     height: 100%;
     display:grid;
     row-gap: 5%;
+    grid-template-columns: 5% 95%;
     grid-template-rows: 10% 85%;
-    grid-template-areas: "header" "Settings";
+    grid-template-areas: "header header" "empty Settings";
 }
 
 .name{
-
+    border: black solid 1px;
     margin: 0px;
     grid-area: header;
     font-family: Comic Sans MS;
     font-style: normal;
     font-weight: normal;
-    font-size:calc(2vh + 2vw);
+    font-size:35pt;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -391,9 +401,9 @@ input[name="log"]:hover{
     grid-area: Settings;
     display: grid;
     grid-template-rows: 84% 15%;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 48% 48%;
     row-gap: 1%;
-    column-gap: 2%;
+    column-gap: 4%;
     grid-template-areas: "S1 S2" "View View";
 }
 
@@ -453,9 +463,10 @@ input[name="log"]:hover{
     line-height: 100%;
     margin-bottom: 2% ;
     grid-area: labels;
-    font-size: calc(1.5vw + 1vh);
+    font-size: calc(1vw + 1vh);
     font-family:'Turret Road', cursive;;
     font-weight: bolder;
+    justify-self: start;
     color: #2541B2;
 }
 
@@ -474,6 +485,8 @@ input[name="View"]{
     grid-area: footer;
     width: 100vw;
     background: url("../images/footer_background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: grid;
     grid-template-columns: 40vw 20vw 40vw;
     grid-template-areas: "fLogo empty team";
@@ -513,8 +526,61 @@ input[name="View"]{
 
 }
 
+
 /******Footer Ends******/
 
+@media only screen and (max-width: 1023px) {
+    
+    
+}
+
+@media only screen and (max-width: 800px){
+    .barBG{
+        width: 40px;
+        display: flex;
+    }
+
+    .clr{
+        display: none;
+    }
+
+    .active{
+        
+    }
+
+    .barBG img{
+        display: block;
+        justify-self: center;
+        width: 95%;
+        height:5%;
+    }
+    .body{
+        grid-template-columns: 40px auto;
+        
+    }
+    .S2{
+        display: none;
+    }
+    .Settings{
+        grid-template-columns: auto auto;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .HomeAndLog{
+        column-gap: 0;
+    }
+    .adminSettings{
+        height: 50%;
+    }
+    .HIcon{
+        width: 50%;
+    }
+    .button{
+        width: 50px;
+        font-size: 100%;
+    }    
+}
 
 
 /*
