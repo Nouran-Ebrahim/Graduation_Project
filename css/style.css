@@ -650,7 +650,7 @@ input[name="View"]{
 }
 
  #infoPage{
-     display: flex;
+     display: grid;
      align-items: center;
     justify-content: center; 
     margin-top: 35px;
@@ -676,6 +676,8 @@ input[name="View"]{
     justify-content: center;
     align-content: center;
     color: #2541B2;
+    cursor: pointer;
+   
  }
  .return_button:hover {
     background: #E5D549;
@@ -696,6 +698,7 @@ input[name="View"]{
         line-height: 3vh;
         justify-content: center;
         align-content: center;
+        cursor: pointer;
         /* identical to box height */
         color: #2541B2;
  }
@@ -738,7 +741,41 @@ input[name="View"]{
     font-size: x-large;
     font-style: onyx;
 }
-
+@media  (max-width:360px){
+    .info {
+        width: 450px;
+        height: 750px;
+    }
+    .router_info{
+        font-size: 30px;
+         width: 300px;
+         margin-left: 50px;
+    }
+    .return_button{
+        font-size: 20px;
+    }
+    .run_button{
+        font-size: 20px;
+    }
+}
+@media  (max-width:500px){
+    .info {
+        width: 400px;
+        height: 750px;
+    }
+    .router_info{
+         font-size: 30px;
+         width: 300px;
+         margin-top: 15px;
+          margin-left: 25px;
+    }
+    .return_button{
+        font-size: 20px;
+    }
+    .run_button{
+        font-size: 20px;
+    }
+}
 
  /*
     **********************
