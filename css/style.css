@@ -194,22 +194,26 @@ input[name="log"]:hover{
     grid-area: header;
     display: flex;
     justify-content: center;
+    
 }
 .heading {
     width: 100%;
-    height:calc(14vh + 3vw);
+    height:calc(10vh + 5vw);
     background: url("../images/header_background.png");
     background-size:100vw 100%;
-    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    
 }
 .heading_container{
     height:100%;
     display: grid;
     width: 98vw;
-    grid-template-columns: 30% 15% 30%;
+    grid-template-columns: 15% 25% 10%;
     grid-template-areas: "Admin Logo buttons";
-    column-gap: 12.5%;
+    column-gap: 25%;
     align-items: flex-start;
+    justify-content: center;
     
 }
 
@@ -220,25 +224,31 @@ input[name="log"]:hover{
     display: grid;
     align-items: center;
     justify-content: start;
-    height: 70%;
+    height: 50%;
 
-    grid-template-columns: auto auto;
+    grid-template-columns: 25% 80%;
     grid-template-areas: "Icon Name";
     column-gap: 0.3vw;
 }
 .AdSetIcon{
     grid-area: Icon;
-    height: 50%;
+    height: 60%;
     width: 100%;
 }
 
 /*adminName properties*/
 .adminName{
+    display: flex;
+    margin:0;
+    width: 100%;
+    height: 100%;
     grid-area: Name;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
-    font-size: calc(1vw + 2vh);
+    justify-content: start;
+    align-items: center;
+    font-size:2vmax;
     line-height: 100%;
     color: #2541B2;
 }
@@ -246,21 +256,25 @@ input[name="log"]:hover{
 /*Logo Properties*/
 .Logo{
     grid-area: Logo;
-
-    height:fit-content;
+    
+    height:70%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    margin-bottom: 10%;
     
 }
 
 .hLogo{
-    height:150px;
-    width: 300px;
+    height:14vh;
+    width: 400px;
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
+    border: solid black 1px;
     grid-area: buttons;
-    height: 70%;
+    height: 50%;
     display: grid;
     align-items:center;
     column-gap: 1vw;
@@ -277,22 +291,23 @@ input[name="log"]:hover{
     height: 100%;
 }
 .HIcon{
-    width: 2.5vw;
-    margin-bottom: 10%;
+    
+    width: 3vw;
+    margin-bottom: 20%;
 }
 
 #f2{
     grid-area: Logout;
-    height:100%;
+    height:70%;
     display: flex;
     align-items: center;
-    border: black solid 1px;
+    
     
 }
 .button{
     width: 7vw;
-    height: 6vh;
-    border-radius: 3vh;
+    height: 100%;
+    border-radius: 3.5vh;
     font-family: Onyx;
     font-style: normal;
     font-weight: normal;
@@ -329,9 +344,16 @@ input[name="log"]:hover{
     background-color: white;
 }
 .barBG img{
-    margin-top: 15vh;
     display: none;
 }
+
+.Sbar{
+    display: none;
+    flex-direction: column;
+    row-gap: 32vh;
+}
+
+
 .menu{
     grid-area: menu;
     display: grid;
@@ -339,7 +361,6 @@ input[name="log"]:hover{
     row-gap: 15%;
     grid-template-areas: "R1" "R2" "R3";
 }
-
 .clr{
     width: 100%;
     display: grid;
@@ -361,7 +382,7 @@ input[name="log"]:hover{
     font-weight: normal;
     height: auto;
     grid-area: R;
-    font-size: calc(0.13*15vw);
+    font-size: 20pt;
     color: #2541B2;
 }
 
@@ -396,15 +417,23 @@ input[name="log"]:hover{
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
+    align-self: flex-start;
 }
 .Settings{
     grid-area: Settings;
     display: grid;
     grid-template-rows: 84% 15%;
-    grid-template-columns: 48% 48%;
     row-gap: 1%;
+    grid-template-areas: "Scontainer" "View";
+    
+}
+
+.Scontainer{
+    display: grid;
+    grid-area: Scontainer;
+    grid-template-columns: auto auto;
     column-gap: 4%;
-    grid-template-areas: "S1 S2" "View View";
+    grid-template-areas: "S1 S2";
 }
 
 .S1{
@@ -416,6 +445,7 @@ input[name="log"]:hover{
 .View{
     grid-area: View;
     display: flex;
+    column-gap: 2%;
     justify-content: end;
     align-items: center;
 }
@@ -424,11 +454,14 @@ input[name="log"]:hover{
     display:none;
 }
 
+
 .dis{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-areas: "I1" "I2" "I3" "I4" "I5";
+    justify-content: center;
+    align-items: center;
 }
 
 .I5{
@@ -472,6 +505,10 @@ input[name="log"]:hover{
 
 
 input[name="View"]{
+    height: 80%;
+}
+
+.Next , .Back{
     height: 80%;
 }
 
@@ -529,57 +566,163 @@ input[name="View"]{
 
 /******Footer Ends******/
 
-@media only screen and (max-width: 1023px) {
-    
+@media only screen and (max-width: 1280px) {
+    .clr{
+        border: black solid 1px;
+
+    }
+    .clr p{
+        font-size: 150%;
+    }
+    .heading_container{
+        grid-template-columns: 20% 25% 15%;
+        column-gap: 20%;
+    }
+    .adminName{
+        font-size: 2vmax;
+    }
+    .AdSetIcon{
+        width: 85%;
+    }
     
 }
 
 @media only screen and (max-width: 800px){
-    .barBG{
-        width: 40px;
-        display: flex;
+    p{
+        font-size: 10px;
+    }
+    
+    #f2{
+        height: 80%;
+    }
+    .button{
+        width: 70px;
+        font-size: 150%;
+        height: 100%;
+    }
+
+    .HIcon{
+        width: 25px;
+    }
+
+    .AdSetIcon{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .body{
+        grid-template-columns: 40px auto;
+        
+    }
+    .name{
+        font-size: 25pt;
+        align-self: flex-end;
+    }
+
+    .Scontainer{
+        grid-template-columns: 0px auto;
+        column-gap: 0px;
+    }
+    .inactive{
+        display: none;
+        width: 0px;
+    }
+    .label{
+        font-size: 20px;
     }
 
     .clr{
         display: none;
     }
 
-    .active{
-        
+    .barBG{
+        z-index: 1;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        top: 10vh;
+
     }
 
     .barBG img{
         display: block;
-        justify-self: center;
-        width: 95%;
-        height:5%;
+        width: 30px;
+        height:30px;
     }
-    .body{
-        grid-template-columns: 40px auto;
-        
+
+    
+    .ds{
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+        height: auto;
+        grid-area: R;
+        font-size: 20px;
+        color: #2541B2;
     }
-    .S2{
-        display: none;
+    
+    input[name="View"],.Next , .Back{
+
+        height: 75%;
     }
-    .Settings{
-        grid-template-columns: auto auto;
-    }    
+
 }
 
 @media screen and (max-width: 450px) {
-    .HomeAndLog{
-        column-gap: 0;
-    }
-    .adminSettings{
+    .heading_container{
         height: 50%;
+        grid-template-columns: 35% 25% 35%;
+        grid-template-areas: "Admin Logo buttons";
+        column-gap: 2.5%;
     }
+
     .HIcon{
-        width: 50%;
+        width: 20px;
+        margin-bottom: 10%;
     }
-    .button{
-        width: 50px;
-        font-size: 100%;
-    }    
+    .HomeAndLog{
+        border: 0px;
+        width: 80%;
+        grid-template-columns: 45% 50%;
+        grid-template-areas: "home Logout";
+        column-gap: 5%;
+        justify-self: end;
+    }
+
+    #f1{
+        justify-content: end;
+    }
+    #f2{
+        align-items: center;
+        justify-content: end;
+    }
+    input[name="logout"]{
+        width:100%;
+        font-size: 5vw;
+        text-align: center;
+        height: 80%;
+    }
+
+    .hLogo{
+        margin-left: 10%;
+        align-self: end;
+    }
+    
+    .adminSettings{
+        border: 0px;
+        height: 50%;
+        grid-template-columns: 20% auto;
+    }
+    .AdSetIcon{
+        width: 100%;
+        height: fit-content;
+    }
+    .adminName{
+        font-size: 70%;
+    }
+
+    
 }
 
 
