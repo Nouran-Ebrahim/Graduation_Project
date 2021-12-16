@@ -83,22 +83,27 @@ body{
     justify-content: flex-start;
     /*background-color: aqua;*/
     align-items: center;
-    margin-top: 3%;
+    margin-top: 4%;
 }
-
 
 
 .webname{
     /*background-color: crimson;*/
     width: 100%;
     height: 100%;
-    text-align: center;
     margin-bottom: 3%;
 }
-
+.webname img{
+    display: block;
+    /*background-color: aqua;*/
+    text-align: center;
+    margin-left: 38%;
+    width: 28vw;
+}
 #form1{
     /*background-color: darkblue;*/
     width: 80%;
+    margin-right: 2%;
 }
 .lab{
     display: inline-block;
@@ -112,8 +117,8 @@ body{
 }
 .in{
     display: inline-block;
-    height: 45px;
-    width: 45%;
+    height: 8vh;
+    width: 45vw;
     padding: 1%;
     outline: 0px;
     border-radius: 10px;
@@ -133,7 +138,7 @@ input[name="log"]{
     text-align: center;
     font-size: 2vw;
     border-radius: 20px;
-    margin-left: 44%;
+    margin-left: 48%;
     color: #2541B2;
 }
 input[name="log"]:hover{
@@ -141,6 +146,45 @@ input[name="log"]:hover{
     color: #fff;
     transition: ease 0.3s all;
 }
+
+@media only screen and (max-width: 769px) {
+    .login_container {
+        margin-top: 20%;
+        }
+        .in{
+            height: 6vh;
+    }
+    input[name="log"]{
+        margin-left: 50%;
+    }
+    .webname img{
+        margin-left: 42%;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    .login_container {
+        margin-top: 45%;
+        }
+    .in{
+            margin-bottom: 8%;
+            height: 5vh;
+    }
+    .lab{
+        font-size: 4vw;
+        width: 35%;
+    }
+    #form1{
+        margin-right: 17%;
+        width: 90%;
+    }
+    input[name="log"]{
+        margin-left: 59%;
+        font-size: 3vw;
+    }
+    .webname img{
+        margin-left: 44%;
+    }
+  }
 /* login ending */
 
 /*admin settings starting*/
@@ -154,10 +198,11 @@ input[name="log"]:hover{
     font-size: 4vw;
     text-shadow: 3px 3px #E5D549 ;
     font-weight: bold;
+    background-color: burlywood;
 }
 
 #form2{
-    /*background-color: darkblue;*/
+    background-color: darkblue;
     width: 80%;
 }
 .lab2{
@@ -748,7 +793,7 @@ input[name="View"]{
 }
 
  #infoPage{
-     display: flex;
+     display: grid;
      align-items: center;
     justify-content: center; 
     margin-top: 35px;
@@ -774,6 +819,8 @@ input[name="View"]{
     justify-content: center;
     align-content: center;
     color: #2541B2;
+    cursor: pointer;
+   
  }
  .return_button:hover {
     background: #E5D549;
@@ -794,6 +841,7 @@ input[name="View"]{
         line-height: 3vh;
         justify-content: center;
         align-content: center;
+        cursor: pointer;
         /* identical to box height */
         color: #2541B2;
  }
@@ -836,7 +884,41 @@ input[name="View"]{
     font-size: x-large;
     font-style: onyx;
 }
-
+@media  (max-width:360px){
+    .info {
+        width: 450px;
+        height: 750px;
+    }
+    .router_info{
+        font-size: 30px;
+         width: 300px;
+         margin-left: 50px;
+    }
+    .return_button{
+        font-size: 20px;
+    }
+    .run_button{
+        font-size: 20px;
+    }
+}
+@media  (max-width:500px){
+    .info {
+        width: 400px;
+        height: 750px;
+    }
+    .router_info{
+         font-size: 30px;
+         width: 300px;
+         margin-top: 15px;
+          margin-left: 25px;
+    }
+    .return_button{
+        font-size: 20px;
+    }
+    .run_button{
+        font-size: 20px;
+    }
+}
 
  /*
     **********************
