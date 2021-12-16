@@ -458,7 +458,7 @@ input[name="log"]:hover{
     font-family: Comic Sans MS;
     font-style: normal;
     font-weight: normal;
-    font-size:35pt;
+    font-size:40pt;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -491,7 +491,7 @@ input[name="log"]:hover{
     grid-area: View;
     display: flex;
     column-gap: 2%;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -507,6 +507,7 @@ input[name="log"]:hover{
     grid-template-areas: "I1" "I2" "I3" "I4" "I5";
     justify-content: center;
     align-items: center;
+    margin-right: 10%;
 }
 
 .I5{
@@ -656,7 +657,7 @@ input[name="View"]{
     }
     
     .body{
-        grid-template-columns: 40px auto;
+        grid-template-columns: 0px auto;
         
     }
     .name{
@@ -664,7 +665,11 @@ input[name="View"]{
         align-self: flex-end;
     }
 
-    .Scontainer{
+    .Scontainer1{
+        grid-template-columns: auto 0px;
+        column-gap: 0px;
+    }
+    .Scontainer2{
         grid-template-columns: 0px auto;
         column-gap: 0px;
     }
@@ -711,7 +716,7 @@ input[name="View"]{
 
         height: 75%;
     }
-
+    
 }
 
 @media screen and (max-width: 450px) {
@@ -766,6 +771,7 @@ input[name="View"]{
     .adminName{
         font-size: 70%;
     }
+
 
     
 }
