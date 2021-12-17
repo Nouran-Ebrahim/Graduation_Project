@@ -74,9 +74,6 @@ body{
 /* end main items */
 
 /* login starting */
-.page-container{
-    
-}
 .login_container{
     display: flex;
     flex-direction: column;
