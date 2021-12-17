@@ -869,32 +869,53 @@ input[name="View"]{
 .button_info{
     text-align: end;
 }
-
-.information{
-    color: #2541B2;
-    display:flex;
-    font-size: large;
-    text-align: center;
-    margin: 40px;
-    justify-content: center;
-    align-items: center;
+.all-information{
+    display: grid;
     justify-items: center;
-    column-gap: 50px;
+    padding: 10px;
 }
 .data{
-    font-size: x-large;
-    font-style: onyx;
+    display: flex;
+    justify-content: center;
 }
-.data_value{
+.information{
+    color: #2541B2;
+    text-decoration: solid;
+    font-size: 3vh;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+.data-value{
     color: #858585;
-    font-size: x-large;
-    font-style: onyx;
+    text-decoration: solid;
+    font-size: 3vh;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+@media  (max-width:500px){
+    .info {
+        width: 400px;
+        height: 825px;
+    }
+    .router_info{
+         font-size: 30px;
+         width: 300px;
+         margin-top: 15px;
+          margin-left: 25px;
+    } 
+    .data {
+        display: contents;
+        justify-content: center;
+    }
+    .return_button{
+        font-size: 20px;
+    }
+    .run_button{
+        font-size: 20px;
+    }
 }
 @media  (max-width:360px){
-    .info {
-        width: 450px;
-        height: 750px;
-    }
+   
     .router_info{
         font-size: 30px;
          width: 300px;
@@ -907,25 +928,6 @@ input[name="View"]{
         font-size: 20px;
     }
 }
-@media  (max-width:500px){
-    .info {
-        width: 400px;
-        height: 750px;
-    }
-    .router_info{
-         font-size: 30px;
-         width: 300px;
-         margin-top: 15px;
-          margin-left: 25px;
-    }
-    .return_button{
-        font-size: 20px;
-    }
-    .run_button{
-        font-size: 20px;
-    }
-}
-
  /*
     **********************
    End Router1 Page info
