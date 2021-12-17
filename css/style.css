@@ -74,7 +74,9 @@ body{
 /* end main items */
 
 /* login starting */
-
+.page-container{
+    
+}
 .login_container{
     display: flex;
     flex-direction: column;
@@ -891,6 +893,15 @@ input[name="View"]{
     font-size: 3vh;
     padding-top: 10px;
     padding-left: 5px;
+}
+@media (max-width:600px) {
+    .info {
+        width: 600px;
+        height: 550px;
+    }   
+    .router_info{
+        margin-left: 75px;
+    }
 }
 @media  (max-width:500px){
     .info {
