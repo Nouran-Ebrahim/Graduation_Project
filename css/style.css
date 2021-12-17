@@ -139,6 +139,7 @@ input[name="log"]{
     border-radius: 20px;
     margin-left: 48%;
     color: #2541B2;
+    margin-top: 15px;
 }
 input[name="log"]:hover{
     background: #E5D549;
@@ -187,21 +188,27 @@ input[name="log"]:hover{
 /* login ending */
 
 /*admin settings starting*/
-
+.admin_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    /*background-color: aqua;*/
+    align-items: center;
+}
 .Admin_settings{
     align-self: flex-start;
     margin-left: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 50px;
     font-family: 'Turret Road', cursive;
     color: #2541B2;
     font-size: 4vw;
     text-shadow: 3px 3px #E5D549 ;
     font-weight: bold;
-    background-color: burlywood;
 }
 
 #form2{
-    background-color: darkblue;
     width: 80%;
 }
 .lab2{
