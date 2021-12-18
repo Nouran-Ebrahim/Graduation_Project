@@ -83,7 +83,6 @@ body{
     justify-content: flex-start;
     /*background-color: aqua;*/
     align-items: center;
-    margin-top: 4%;
 }
 
 
@@ -198,11 +197,11 @@ input[name="log"]:hover{
     font-size: 4vw;
     text-shadow: 3px 3px #E5D549 ;
     font-weight: bold;
-    background-color: burlywood;
+   /* background-color: burlywood;*/
 }
 
 #form2{
-    background-color: darkblue;
+    /*background-color: darkblue;*/
     width: 80%;
 }
 .lab2{
