@@ -93,7 +93,6 @@ body{
     justify-content: flex-start;
     /*background-color: aqua;*/
     align-items: center;
-    margin-top: 4%;
 }
 
 
@@ -199,15 +198,15 @@ input[name="log"]:hover{
 /* login ending */
 
 /*admin settings starting*/
-.admin_container{
+/*.admin_container{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     justify-content: flex-start;
     /*background-color: aqua;*/
-    align-items: center;
-}
+    /*align-items: center;
+}*/
 .Admin_settings{
     align-self: flex-start;
     margin-left: 3%;
@@ -217,7 +216,10 @@ input[name="log"]:hover{
     font-size: 4vw;
     text-shadow: 3px 3px #E5D549 ;
     font-weight: bold;
+   /* background-color: burlywood;*/
 }
+
+
 
 #form2{
     width: 80%;
