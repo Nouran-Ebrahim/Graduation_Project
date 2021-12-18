@@ -1,6 +1,17 @@
 * {
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: onyximport;
+    src: url("../fonts/onyx/ONYX.TTF");
+}
+
+@font-face{
+    font-family: Comicimport;
+    src: url("../fonts/Comic/COMIC.TTF");
+}
+
 html{
     height: 100%;
 }
@@ -244,6 +255,7 @@ input[name="log"]:hover{
 .heading {
     width: 100%;
     height:calc(10vh + 5vw);
+
     background: url("../images/header_background.png");
     background-size:100vw 100%;
     display: flex;
@@ -251,6 +263,7 @@ input[name="log"]:hover{
     
 }
 .heading_container{
+
     height:100%;
     display: grid;
     width: 98vw;
@@ -264,13 +277,12 @@ input[name="log"]:hover{
 
 /*adminSettingsIcon properties*/
 .adminSettings{
-    border: black solid 1px;
+
     grid-area: Admin;
     display: grid;
     align-items: center;
     justify-content: start;
     height: 50%;
-
     grid-template-columns: 25% 80%;
     grid-template-areas: "Icon Name";
     column-gap: 0.3vw;
@@ -278,6 +290,10 @@ input[name="log"]:hover{
 .AdSetIcon{
     grid-area: Icon;
     height: 60%;
+    width: 100%;
+}
+.AdSetIcon img{
+    height: 100%;
     width: 100%;
 }
 
@@ -300,6 +316,7 @@ input[name="log"]:hover{
 
 /*Logo Properties*/
 .Logo{
+
     grid-area: Logo;
     
     height:70%;
@@ -312,12 +329,12 @@ input[name="log"]:hover{
 }
 
 .hLogo{
-    height:14vh;
-    width: 400px;
+    height:90%;
+    width: 90%;
 }
 /*Logout & Home buttons properties*/
 .HomeAndLog{
-    border: solid black 1px;
+
     grid-area: buttons;
     height: 50%;
     display: grid;
@@ -351,9 +368,10 @@ input[name="log"]:hover{
 }
 .button{
     width: 7vw;
-    height: 100%;
-    border-radius: 3.5vh;
-    font-family: Onyx;
+    height: 80%;
+    border-radius: 4vh;
+    font-family: onyximport;
+
     font-style: normal;
     font-weight: normal;
     font-size: 2.5vw;
@@ -452,10 +470,10 @@ input[name="log"]:hover{
 }
 
 .name{
-    border: black solid 1px;
+
     margin: 0px;
     grid-area: header;
-    font-family: Comic Sans MS;
+    font-family: Comicimport;
     font-style: normal;
     font-weight: normal;
     font-size:40pt;
@@ -474,17 +492,16 @@ input[name="log"]:hover{
 }
 
 .Scontainer{
-    display: grid;
+    display: flex;
     grid-area: Scontainer;
-    grid-template-columns: auto auto;
-    column-gap: 4%;
-    grid-template-areas: "S1 S2";
 }
 
 .S1{
     grid-area: S1;
+    width: 50%;
 }
 .S2{
+    width: 50%;
     grid-area: S2;
 }
 .View{
@@ -543,8 +560,8 @@ input[name="log"]:hover{
     margin-bottom: 2% ;
     grid-area: labels;
     font-size: calc(1vw + 1vh);
-    font-family:'Turret Road', cursive;;
-    font-weight: bolder;
+    font-family:Comicimport;
+    font-weight:bold;
     justify-self: start;
     color: #2541B2;
 }
@@ -587,7 +604,7 @@ input[name="View"]{
     width: 15vw;
     min-width: 200px;
     text-align: center;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: normal;
     font-size: 1.1vw;
@@ -603,8 +620,8 @@ input[name="View"]{
     align-items: center;
     justify-content: flex-start;
 }
-.fLogo svg{
-    width: 30%;
+.fLogo img{
+    width: fit-content;
     height: 6vh;
 
 }
@@ -613,10 +630,7 @@ input[name="View"]{
 /******Footer Ends******/
 
 @media only screen and (max-width: 1280px) {
-    .clr{
-        border: black solid 1px;
-
-    }
+    
     .clr p{
         font-size: 150%;
     }
@@ -655,6 +669,10 @@ input[name="View"]{
         width: 100%;
         height: fit-content;
     }
+
+    .adminName{
+        font-size: 80%;
+    }
     
     .body{
         grid-template-columns: 0px auto;
@@ -665,17 +683,11 @@ input[name="View"]{
         align-self: flex-end;
     }
 
-    .Scontainer1{
-        grid-template-columns: auto 0px;
-        column-gap: 0px;
-    }
-    .Scontainer2{
-        grid-template-columns: 0px auto;
-        column-gap: 0px;
+    .dis{
+        width: 100%;
     }
     .inactive{
         display: none;
-        width: 0px;
     }
     .label{
         font-size: 20px;
@@ -721,10 +733,12 @@ input[name="View"]{
 
 @media screen and (max-width: 450px) {
     .heading_container{
-        height: 50%;
+        height: 60%;
         grid-template-columns: 35% 25% 35%;
         grid-template-areas: "Admin Logo buttons";
         column-gap: 2.5%;
+        margin-top: 1.5%;
+        
     }
 
     .HIcon{
@@ -732,18 +746,20 @@ input[name="View"]{
         margin-bottom: 10%;
     }
     .HomeAndLog{
-        border: 0px;
         width: 80%;
         grid-template-columns: 45% 50%;
         grid-template-areas: "home Logout";
         column-gap: 5%;
         justify-self: end;
+        height: 70%;
+
     }
 
     #f1{
         justify-content: end;
     }
     #f2{
+        height: 100%;
         align-items: center;
         justify-content: end;
     }
@@ -754,14 +770,16 @@ input[name="View"]{
         height: 80%;
     }
 
+    .Logo{
+        margin-top: 5%;
+    }
     .hLogo{
-        margin-left: 10%;
+        margin-left: 5%;
         align-self: end;
     }
     
     .adminSettings{
-        border: 0px;
-        height: 50%;
+        height: 80%;
         grid-template-columns: 20% auto;
     }
     .AdSetIcon{
@@ -770,10 +788,14 @@ input[name="View"]{
     }
     .adminName{
         font-size: 70%;
+        margin-bottom: 5%;
     }
 
 
+    .fLogo img{
+        height: 4vh;
     
+    }
 }
 
 
