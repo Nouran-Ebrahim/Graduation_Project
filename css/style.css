@@ -197,26 +197,16 @@ input[name="log"]:hover{
   }
 /* login ending */
 
-/*admin settings starting*/
-/*.admin_container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    /*background-color: aqua;*/
-    /*align-items: center;
-}*/
 .Admin_settings{
     align-self: flex-start;
     margin-left: 3%;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     font-family: 'Turret Road', cursive;
     color: #2541B2;
     font-size: 4vw;
     text-shadow: 3px 3px #E5D549 ;
     font-weight: bold;
-   /* background-color: burlywood;*/
+    background-color: burlywood;
 }
 
 
@@ -233,6 +223,34 @@ input[name="log"]:hover{
       font-family: 'Turret Road', cursive;
       color: #2541B2;
       margin: 0% 0% 3% 10%;
+}
+
+@media only screen and (max-width: 769px) {
+    .lab2{
+        font-size: 3vw;
+        width: 33%;
+    }
+    #form2{
+        width: 90%;
+        background-color: aqua;
+    }
+    .admin{
+        margin-top: 0%;
+    }
+
+}
+@media only screen and (max-width: 426px) {
+    .lab2{
+        font-size: 4vw;
+        width: 40%;
+    }
+    #form2{
+        width: 100%;
+        background-color: aqua;
+    }
+    .admin{
+        margin-top: 9%;
+    }
 }
 
 /* admin settings ending */
