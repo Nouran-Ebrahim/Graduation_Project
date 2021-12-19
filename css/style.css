@@ -820,7 +820,7 @@ input[name="View"]{
     }
  .info{
     width: 700px;
-    height: 625px;
+    height: fit-content;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
@@ -913,7 +913,7 @@ input[name="View"]{
 @media (max-width:600px) {
     .info {
         width: 600px;
-        height: 625px;
+        
     }   
     .router_info{
         margin-left: 85px;
@@ -922,7 +922,7 @@ input[name="View"]{
 @media  (max-width:500px){
     .info {
         width: 400px;
-        height: 1050px;
+        
     }
     .router_info{
          font-size: 30px;
@@ -946,7 +946,7 @@ input[name="View"]{
 @media  (max-width:360px){
     .info {
         width: 400px;
-        height: 1050px;
+        
     }
     .router_info{
         font-size: 30px;
