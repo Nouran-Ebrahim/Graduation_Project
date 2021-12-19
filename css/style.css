@@ -849,7 +849,7 @@ input[name="View"]{
     transition: ease 0.3s all;
 }
  .run_button{
-        width:9vw;
+        width:fit-content;
         min-width: 90px;
         height: 6vh;    
         border-radius: 3vh;
