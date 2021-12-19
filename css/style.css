@@ -73,9 +73,10 @@ body{
     border-radius: 10px;
     text-align: center;
     margin-left: 1%;
+    font-size: 150%;
 }
 .in:focus{
-    outline: #2541b2 3px solid;
+    outline: rgb(65, 78, 251) 2px solid;
 }
 input[name="log"]{
     display: block;
@@ -94,6 +95,8 @@ input[name="log"]{
 input[name="log"]:hover{
     background: #E5D549;
     color: #fff;
+    border: 0px;
+    cursor: pointer;
     transition: ease 0.3s all;
 }
 
@@ -377,6 +380,8 @@ input[name="log"]:hover{
 .button:hover {
     background: #e9d520;
     color: #fff;
+    border:0px;
+    cursor: pointer;
     transition: ease 0.3s all;
 }
 
@@ -534,12 +539,11 @@ input[name="log"]:hover{
 
 .txts{
     grid-area: txts;
-
     width: 100%;
-    min-height: 5vh;
+    height: 5vh;
     text-align: center;
     font-weight: bolder;
-    border-radius: 2.5vh;
+    border-radius: 10px;
 
 }
 .txts:focus{
@@ -820,7 +824,7 @@ input[name="View"]{
     }
  .info{
     width: 700px;
-    height: fit-content;
+    height: 625px;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
@@ -849,8 +853,8 @@ input[name="View"]{
     transition: ease 0.3s all;
 }
  .run_button{
-        width:fit-content;
-        min-width: fit-content;
+        width:9vw;
+        min-width: 90px;
         height: 6vh;    
         border-radius: 3vh;
         border:0px;
@@ -863,6 +867,7 @@ input[name="View"]{
         justify-content: center;
         align-content: center;
         cursor: pointer;
+        /* identical to box height */
         color: #2541B2;
  }
  .run_button:hover {
@@ -912,7 +917,7 @@ input[name="View"]{
 @media (max-width:600px) {
     .info {
         width: 600px;
-        
+        height: 625px;
     }   
     .router_info{
         margin-left: 85px;
@@ -921,7 +926,7 @@ input[name="View"]{
 @media  (max-width:500px){
     .info {
         width: 400px;
-        
+        height: 1050px;
     }
     .router_info{
          font-size: 30px;
@@ -945,7 +950,7 @@ input[name="View"]{
 @media  (max-width:360px){
     .info {
         width: 400px;
-        
+        height: 1050px;
     }
     .router_info{
         font-size: 30px;
