@@ -850,7 +850,7 @@ input[name="View"]{
 }
  .run_button{
         width:fit-content;
-        min-width: 90px;
+        min-width: fit-content;
         height: 6vh;    
         border-radius: 3vh;
         border:0px;
@@ -863,7 +863,6 @@ input[name="View"]{
         justify-content: center;
         align-content: center;
         cursor: pointer;
-        /* identical to box height */
         color: #2541B2;
  }
  .run_button:hover {
