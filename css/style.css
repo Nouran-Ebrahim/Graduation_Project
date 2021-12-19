@@ -803,10 +803,10 @@ input[name="View"]{
     ********************** 
  */
  .router1{
-     display: none;
+     display:inline-block;
  }
  .router2{
-    display:inline-block;
+    display:none;
 }
 .router3{
     display:none;
@@ -820,14 +820,15 @@ input[name="View"]{
     }
  .info{
     width: 700px;
-    height: 550px;
+    height: 625px;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
     margin: inherit;
     padding: 30px;
-
-
+ }
+ #info-title{
+    text-align: center;
  }
  .return_button{
     height: 5vh;
@@ -873,9 +874,10 @@ input[name="View"]{
 
 .router_info{
     color: #1768AC;
-    font-size: 60px;
-    width: 400px;
+    font-size: 40px;
+    margin-top: 5px;
     margin-left: 125px;
+    width: 400px;
     text-align: center;
     font-family: onyx;
     box-shadow: 5px 5px 10px #e5d549;
@@ -894,6 +896,7 @@ input[name="View"]{
 }
 .information{
     color: #2541B2;
+    font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     font-size: 3vh;
     padding-top: 10px;
@@ -901,6 +904,7 @@ input[name="View"]{
 }
 .data-value{
     color: #858585;
+    font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     font-size: 3vh;
     padding-top: 10px;
@@ -909,22 +913,22 @@ input[name="View"]{
 @media (max-width:600px) {
     .info {
         width: 600px;
-        height: 550px;
+        height: 625px;
     }   
     .router_info{
-        margin-left: 75px;
-    }
+        margin-left: 85px;
+   } 
 }
 @media  (max-width:500px){
     .info {
         width: 400px;
-        height: 825px;
+        height: 1050px;
     }
     .router_info{
          font-size: 30px;
          width: 300px;
          margin-top: 15px;
-          margin-left: 25px;
+         margin-left: 8px;
     } 
     .data {
         display: contents;
@@ -932,17 +936,21 @@ input[name="View"]{
     }
     .return_button{
         font-size: 20px;
+       
     }
     .run_button{
         font-size: 20px;
+        
     }
 }
 @media  (max-width:360px){
-   
+    .info {
+        width: 400px;
+        height: 1050px;
+    }
     .router_info{
         font-size: 30px;
          width: 300px;
-         margin-left: 50px;
     }
     .return_button{
         font-size: 20px;
