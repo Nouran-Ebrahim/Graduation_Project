@@ -849,8 +849,8 @@ input[name="View"]{
     transition: ease 0.3s all;
 }
  .run_button{
-        width:8vw;
-        min-width: 70px;
+        width:9vw;
+        min-width: 90px;
         height: 6vh;    
         border-radius: 3vh;
         border:0px;
@@ -928,7 +928,7 @@ input[name="View"]{
          font-size: 30px;
          width: 300px;
          margin-top: 15px;
-         margin-left: 8px;
+         margin-left: 10px;
     } 
     .data {
         display: contents;
@@ -957,6 +957,7 @@ input[name="View"]{
     }
     .run_button{
         font-size: 20px;
+        width:10vw;
     }
 }
  /*
