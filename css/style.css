@@ -33,7 +33,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: cursive;
+    font-family: Comicimport,'Turret Road', cursive;
 }
 .login_container{
     width: 320px;
