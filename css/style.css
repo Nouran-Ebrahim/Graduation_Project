@@ -819,7 +819,7 @@ input[name="View"]{
    padding: 5%;
    }
    .container-info{
-    width: 400px;
+    width:fit-content;
     height: fit-content;
     background-color: #ffff;
     border-radius: 20px;
@@ -829,12 +829,12 @@ input[name="View"]{
  .router_info{
     color: #1768AC;
     font-size: 40px;
-    width: 300px;
+    width: 100%;
     text-align: center;
     font-family: onyx;
     margin-top: 5%;
     box-shadow: 5px 5px 10px #e5d549;
-    margin-left: 7%;
+   
 }
  #info-title{
    justify-content: center;
@@ -867,7 +867,7 @@ input[name="View"]{
     transition: ease 0.3s all;
 }
  .run_button{
-        width:9vw;
+        width: 50px;
         min-width: 90px;
         height: 6vh;    
         border-radius: 3vh;
@@ -876,8 +876,7 @@ input[name="View"]{
         font-family: Onyx;
         font-style: normal;
         font-weight: normal;
-        font-size: 2.5vw;
-        line-height: 3vh;
+        font-size: 25px;
         justify-content: center;
         align-content: center;
         cursor: pointer;
@@ -894,6 +893,7 @@ input[name="View"]{
 .all-information{
     display: grid;
     justify-items: center;
+    width: max-content;
     padding: 10px;
 }
 .data{
@@ -921,9 +921,7 @@ input[name="View"]{
         width: 600px;
         height: 625px;
     }   
-    .router_info{
-        margin-left: 85px;
-   } 
+    
 }
 @media  (max-width:500px){
     .info {
@@ -932,9 +930,7 @@ input[name="View"]{
     }
     .router_info{
          font-size: 30px;
-         width: 300px;
-         margin-top: 15px;
-         margin-left: 10px;
+         
     } 
     .data {
         display: contents;
@@ -956,7 +952,7 @@ input[name="View"]{
     }
     .router_info{
         font-size: 30px;
-         width: 300px;
+       
     }
     .return_button{
         font-size: 20px;
