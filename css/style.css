@@ -812,34 +812,42 @@ input[name="View"]{
     Start Router1 Page info
     ********************** 
  */
- .router1{
-     display:inline-block;
- }
- .router2{
-    display:none;
-}
-.router3{
-    display:none;
-}
-
  #infoPage{
-     display: grid;
-     align-items: center;
-    justify-content: center; 
-    margin-top: 35px;
-    }
- .info{
-    width: 700px;
-    height: 625px;
+    display: grid;
+    align-items: center;
+   justify-content: center; 
+   padding: 5%;
+   }
+   .container-info{
+    width: 400px;
+    height: fit-content;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
-    margin: inherit;
-    padding: 30px;
- }
- #info-title{
+    padding: 5%;
+ } 
+ .router_info{
+    color: #1768AC;
+    font-size: 40px;
+    width: 300px;
     text-align: center;
+    font-family: onyx;
+    margin-top: 5%;
+    box-shadow: 5px 5px 10px #e5d549;
+    margin-left: 7%;
+}
+ #info-title{
+   justify-content: center;
  }
+ .router1{
+    display:inline-block;
+}
+.router2{
+   display:none;
+}
+.router3{
+   display:none;
+}
  .return_button{
     height: 5vh;
     border-radius: 2vh;
@@ -873,24 +881,12 @@ input[name="View"]{
         justify-content: center;
         align-content: center;
         cursor: pointer;
-        /* identical to box height */
         color: #2541B2;
  }
  .run_button:hover {
     background: #E5D549;
     color: #fff;
     transition: ease 0.3s all;
-}
-
-.router_info{
-    color: #1768AC;
-    font-size: 40px;
-    margin-top: 5px;
-    margin-left: 125px;
-    width: 400px;
-    text-align: center;
-    font-family: onyx;
-    box-shadow: 5px 5px 10px #e5d549;
 }
 .button_info{
     text-align: end;
