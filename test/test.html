@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>AutoNet</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+    </head>
+    <body>
+        <div class="body-container row container-fluid px-0 mx-0">
+            <a class="row btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample">
+                Link with href
+            </a>
+            <div class="col-auto offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="col-1 d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="0" aria-selected="true" data-bs-target="#Sections" data-bs-slide-to="0">Home</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="1" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="1">Profile</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="2" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="2">Messages</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Sections" class="col carousel slide px-0 pointer-event"  data-bs-interval="false" data-bs-wrap="false">
+                <div class="carousel-inner">
+                    <div class="S1 carousel-item active">
+                        S1
+                    </div>
+                    <div class="S2 carousel-item">
+                        S2
+                    </div>
+                    <div class="S3 carousel-item">
+                        S3
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="js/jquery.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

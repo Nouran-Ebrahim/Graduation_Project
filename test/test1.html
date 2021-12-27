@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>AutoNet</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+        <link rel='stylesheet' type='text/css' href='bootstrap-icons-1.7.2/bootstrap-icons.css'>
+    </head>
+    <body>
+        <div class="body container-fluid px-0">
+            <header class="row container-fluid px-0 mx-0" style="height: 10%;">
+
+            </header>
+            <div class="body-container row container-fluid d-flex flex-nowrap px-0 mx-0">
+                <nav class="d-none d-md-block col-md-3 col-lg-2 px-0 navbar navbar-nav navbar-light">
+                    <div class="d-flex flex-column px-2">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasExampleLabel">AutoNet</h5>
+                        </div>
+                        <div class="col-12 px-0 offcanvas-body">
+                            <div class="col-12">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Routers
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show mx-auto" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <input class= "filters col-auto form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                                <div class="btns-container my-3 list-group-flush">
+                                                    <button type="button" class="list-group-item btn-lg list-group-item-action active R" aria-current="true" role="tab" aria-selected="true" data-bs-target="#Sections" data-bs-slide-to="0">Router1</button>
+                                                    <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="1">Router2</button>
+                                                    <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="2">Router3</button>
+                                                    <button type="button" class="list-group-item btn-lg list-group-item-action R" aria-current="true" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="3">Router4</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Switches
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Switch buttons Here
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div>black</div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div id="Sections" class="col carousel slide px-0 pointer-event"  data-bs-interval="false" data-bs-wrap="false">
+                    <div class="carousel-inner">
+                        <div class="S1 carousel-item d-flex  active">
+                            <div class="main-pg">
+                                <div class="btns-container my-3 list-group-flush">
+                                    <button type="button" class="btn-lg list-group-item list-group-item-action btns">
+                                        <i class="bi bi-house-fill"></i>
+                                        Home
+                                    </button>
+                                    <button type="button" class="btn-lg list-group-item list-group-item-action btns">
+                                        <i class="bi bi-gear"></i>
+                                        Admin
+                                    </button>
+                                    <button type="button" class="btn-lg list-group-item list-group-item-action btns">
+                                        <svg style="vertical-align:-.125em;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="network-wired" height="18" width="18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"></path>
+                                        </svg>
+                                        Switches
+                                    </button>
+                                    <button type="button" class="btn-lg list-group-item list-group-item-action btns">
+                                        <i class="bi bi-router-fill"></i>
+                                        Routers
+                                    </button>
+                                    <button type="button" class="btn-lg list-group-item list-group-item-action btns">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        Logout
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div id="routers">
+                                <div class="accordion-body">
+                                    <h2 class="accordion-header mb-3" id="headingOne">
+                                        Routers
+                                    </h2>
+                                    <input class= "filters col-auto form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                    <div class="btns-container my-3 list-group-flush">
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action active R" aria-current="true" role="tab" aria-selected="true" data-bs-target="#Sections" data-bs-slide-to="0">Router1</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="1">Router2</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="2">Router3</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" aria-current="true" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="3">Router4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="switches">
+                                <div class="accordion-body">
+                                    <h2 class="accordion-header mb-3" id="headingOne">
+                                        Switches
+                                    </h2>
+                                    <input class= "filters col-auto form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                    <div class="btns-container my-3 list-group-flush">
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action active R" aria-current="true" role="tab" aria-selected="true" data-bs-target="#Sections" data-bs-slide-to="0">Switch1</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="1">Switch2</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="2">Switch3</button>
+                                        <button type="button" class="list-group-item btn-lg list-group-item-action R" aria-current="true" role="tab" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="3">Switch4</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="S2 carousel-item">
+                            Router2
+                        </div>
+                        <div class="S3 carousel-item">
+                            Router3
+                        </div>
+                        <div class="S4 carousel-item">
+                            Router4
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row container-fluid px-0 mx-0" style="height: 10%;">
+    
+            </footer>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

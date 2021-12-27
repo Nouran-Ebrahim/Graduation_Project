@@ -1,0 +1,108 @@
+html,body{
+    height: 100%;
+}
+
+
+.header-container{
+    background-color: #D5EEEA;
+}
+
+.header-btns-container{
+    height: 70%;
+    align-self: flex-end;
+    background-image: url("../Path9.png");
+    background-position:bottom right;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.S1{
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.S2{
+    background-color: red;
+    font-size: 100px;
+    overflow: hidden;
+}
+.S3{
+    background-color: green;
+    font-size: 100px;
+    overflow: hidden;
+}
+.S4{
+    background-color: black;
+    color: white;
+    font-size: 100px;
+    overflow: hidden;
+}
+
+.body{
+    height: 100%;
+    background-image: url("../background.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+.navbar{
+    background-color: rgb(131 202 242 / 80%);
+}
+.btns,.R{
+    background-color: rgba(0, 0, 0, 0);
+}
+.btns{
+    color: white;
+    filter: brightness(15px);
+    height: 80%;
+    font-size: 3vh;
+    margin-right: 3%;
+
+}
+
+
+
+.Next,.Back{
+    width:100%;
+}
+#Sections,.device,.devices-pg{
+    height: 100%;
+}
+
+.btns-container{
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height:100%;
+}
+.btns-container::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+.btns-container::-webkit-scrollbar-track {
+    opacity: 0;        /* color of the tracking area */
+}
+.btns-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.185);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+}
+
+
+#sw-btns,#rt-btns,#SWs{
+    display: none;
+}
+.device-name{font-size: 60px;}
+@media (max-width: 992px) {
+    .device-name{font-size: 40px;}
+}
+
+@media (max-width: 768px) {
+    .device-name{font-size: 35px;}
+}
+/*.row div {
+
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+    data-bs-target="#Sections" data-bs-slide-to="0"
+}*/
