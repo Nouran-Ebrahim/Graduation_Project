@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
@@ -14,14 +14,19 @@
 <body>
     <div class="body container-fluid d-flex align-items-center ">
         <div class="body-container container p-2 d-flex flex-column">
-            <div><a class=" menu-icon"><i class="bi bi-list"></i></a></div>
+            <div><a class=" menu-icon" data-bs-toggle="offcanvas" href="#navigation" role="button"
+                    aria-controls="navigation" aria-labelledby="navigationLabel"><i class="bi bi-list"></i></a></div>
             <div class="d-flex flex-nowrap ">
-                <nav class="d-none d-md-block col-md-3 col-lg-2 px-0 navbar navbar-nav navbar-light Radius">
+                <nav id="navigation"
+                    class="col-6 d-md-block col-md-3 col-lg-2 px-0 navbar navbar-nav navbar-light Radius">
                     <div class="d-flex flex-column px-2">
                         <div class="offcanvas-header py-0 d-flex flex-column align-items-start">
-                            <div class="row d-flex"><i class="bi bi-arrow-left mb-2"></i></div>
-                            <h3 class="offcanvas-title" id="offcanvasExampleLabel"><img src="../images/website name.png"
-                                    height="100%" width="100%"></h5>
+                            <div class="w-100 justify-content-between d-flex mt-2">
+                                <i class="bi bi-arrow-left mb-2"></i>
+                                <button type="button" class="menu-icon btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-title" id="offcanvasExampleLabel"><img src="./images/website name.png"
+                                    height="100%" width="100%"></div>
                         </div>
                         <div class="col-12 px-0 offcanvas-body">
                             <div class="col-12">
@@ -82,50 +87,52 @@
                 <div id="Sections" class="col container carousel slide  pointer-event Radius" data-bs-interval="false"
                     data-bs-wrap="false">
                     <div class="carousel-inner">
-                        <div class="S1 carousel-item d-flex flex-column  active">
+                        <div class="S1 carousel-item active">
                             <p class="name mt-4 ms-3" style="height:10%">Router1</p>
                             <form class="Settings sec1" method="post" action="../pages/router1_info.html">
                                 <div class="row Scontainer  d-flex ">
-                                    <div class="offset-md-1 col-12 col-md-5 pe-4 S1 dis inactive">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-6"> Hostname:</label>
-                                            <input type="text" name="Hostname" placeholder="Hostname" class="txts col-6"
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-6"> Enable:</label>
-                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-6" required>
-                                        </div>
-                                        <div class="col-12 dp my-5">
-                                            <label class="label col-6"> Welcoming massage:</label>
+                                            <label class="label col-12"> Welcoming massage:</label>
                                             <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
-                                                class="txts col-6" required>
+                                                class="txts col-12" required>
                                         </div>
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-6"> Telnet Password:</label>
+                                            <label class="label col-12"> Telnet Password:</label>
                                             <input type="text" name="TalentPassword" placeholder="Talent Password"
-                                                class="txts col-6" required>
+                                                class="txts col-12" required>
                                         </div>
                                     </div>
 
                                     <div class="col-12 col-md-5 S2 dis">
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-6"> Console Password:</label>
+                                            <label class="label col-12"> Console Password:</label>
                                             <input type="text" name="ConsolePassword" placeholder="Console Password"
-                                                class="txts col-6" required>
+                                                class="txts col-12" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label ">Interface Loopback:</label>
-                                            <input type="text" name="Interface" placeholder="Interface" class="txts col-6"
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-6">Mask:</label>
-                                            <input type="text" name="mask" placeholder="Mask" class="txts col-6" required>
-                                        </div>
-                                        <div class="col-12 dp my-5">
-                                            <label class="label col-6">ID:</label>
-                                            <input type="text" name="ID" placeholder="ID" class="txts col-6" required>
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
                                         </div>
                                     </div>
                                 </div>
@@ -136,13 +143,166 @@
                             </form>
                         </div>
                         <div class="S2 carousel-item">
-                            Router2
+                            <p class="name mt-4 ms-3" style="height:10%">Router2</p>
+                            <form class="Settings sec2" method="post" action="../pages/router1_info.html">
+                                <div class="row Scontainer  d-flex ">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Welcoming massage:</label>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Telnet Password:</label>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Console Password:</label>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Interface Loopback:</label>
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="View d-flex justify-content-center mb-5">
+                                    <input class="btn-primary btn-lg button" type="submit" name="View" value="View">
+                                </div>
+                            </form>
                         </div>
                         <div class="S3 carousel-item">
-                            Router3
+                            <p class="name mt-4 ms-3" style="height:10%">Router3</p>
+                            <form class="Settings sec3" method="post" action="../pages/router1_info.html">
+                                <div class="row Scontainer d-flex">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Welcoming massage:</label>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Telnet Password:</label>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Console Password:</label>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Interface Loopback:</label>
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="View d-flex justify-content-center mb-5">
+                                    <input class="btn-primary btn-lg button" type="submit" name="View" value="View">
+                                </div>
+                            </form>
                         </div>
                         <div class="S4 carousel-item">
-                            Router4
+                            <p class="name mt-4 ms-3" style="height:10%">Router4</p>
+                            <form class="Settings sec4" method="post" action="../pages/router1_info.html">
+                                <div class="row Scontainer  d-flex ">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Welcoming massage:</label>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Telnet Password:</label>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Console Password:</label>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Interface Loopback:</label>
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="View d-flex justify-content-center mb-5">
+                                    <input class="btn-primary btn-lg button" type="submit" name="View" value="View">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

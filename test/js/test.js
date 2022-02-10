@@ -18,28 +18,24 @@ $(document).ready(function(){
         }
       });
     });
-    $("#Switches").click(function(){
-      $(".main-pg").hide("slide",function(){
-        $("#sw-btns").show("slide");
-      });
-    });
-    $("#sw-btns .R").click(function(){
-      $("#sw-btns").hide("slide",function(){
-        $(".main-pg").show("slide");
-      });
-    });
 
-    $("#Routers").click(function(){
-      $(".main-pg").hide("slide",function(){
-        $("#rt-btns").show("slide");
-      });
-      
-    });
-    $("#rt-btns .R").click(function(){
-      $("#rt-btns").hide("slide",function(){
-        $(".main-pg").show("slide");
-      });
-    });
+    const canvToNav = ()=>{
+      if($(window).width() < 768){
+        if($("#navigation").hasClass("navbar")){
+          $("#navigation").toggleClass("navbar navbar-nav navbar-light Radius offcanvas offcanvas-start")
+        }
+      }
+      else{
+        if($("#navigation").hasClass("offcanvas")){
+          $("#navigation")
+          .toggleClass("navbar navbar-nav navbar-light Radius offcanvas offcanvas-start")
+          .removeAttr('style');
+        }
+      }
+    }
 
+    canvToNav();
+
+    $(window).resize(canvToNav)
 })
 
