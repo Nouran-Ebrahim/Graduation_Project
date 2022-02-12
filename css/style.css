@@ -812,154 +812,119 @@ input[name="View"]{
     Start Router1 Page info
     ********************** 
  */
- #infoPage{
+.mainContainer{
     display: grid;
-    align-items: center;
-   justify-content: center; 
-   padding: 5%;
-   }
-   .container-info{
-    width:fit-content;
-    height: fit-content;
+    justify-content: center; 
+    padding: 5%;
+    animation-name: showinfo ;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.infoContainer{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: 30em;
+    height: 30em;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
+    opacity: 95%;
     padding: 5%;
- } 
- .router_info{
-    color: #1768AC;
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-    font-family: onyx;
-    margin-top: 5%;
-    box-shadow: 5px 5px 10px #e5d549;
-   
 }
- #info-title{
-   justify-content: center;
- }
- .router1{
-    display:inline-block;
-}
-.router2{
-   display:none;
-}
-.router3{
-   display:none;
-}
- .return_button{
-    height: 5vh;
+.info_button{
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     border-radius: 2vh;
-    border: 0px;
-    align-self: flex-end;
-    font-size: 2vw;
-    line-height: 3vh;
-    justify-content: center;
-    align-content: center;
+    border: 0;
+    right: 0;
     color: #2541B2;
     cursor: pointer;
-   
- }
- .return_button:hover {
+    position: absolute;
+    margin: 1.5em;
+}
+.info_button:hover {
     background: #E5D549;
     color: #fff;
     transition: ease 0.3s all;
 }
- .run_button{
-        width: 50px;
-        min-width: 90px;
-        height: 6vh;    
-        border-radius: 3vh;
-        border:0px;
-        align-self: flex-end;
-        font-family: Onyx;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        justify-content: center;
-        align-content: center;
-        cursor: pointer;
-        color: #2541B2;
- }
- .run_button:hover {
-    background: #E5D549;
-    color: #fff;
-    transition: ease 0.3s all;
+
+#return_button{
+    align-self: start;
 }
-.button_info{
-    text-align: end;
+#run_button{
+    align-self: end;
 }
-.all-information{
-    display: grid;
-    justify-items: center;
-    width: max-content;
-    padding: 10px;
-}
-.data{
+.headerContainer{
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
-.information{
-    color: #2541B2;
+.activeDevice{
+    display: grid;
+    position: absolute;
+    padding: 0.5em;
+    font-size: 18px;
+    font-family:Comicimport;
+    background-color: #ffff;
+    box-shadow: 5px 5px 10px #e5d549;
+    color: #1768AC;
+    border-radius: 0.2em;
+    margin: 4%;
+    width: 70%;
+    text-align: center;
+}
+.nameDevice{
+    display: none;
+}
+#router1{
+    display: block;
+}
+.all_infomation{
+    display: grid;
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
-    font-size: 3vh;
-    padding-top: 10px;
-    padding-right: 5px;
+    text-align: center;
+    margin-top: 15%;
+}
+.data{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+
+    
+}
+.information{
+color: #2541B2;
+    font-family: Comicimport,'Turret Road', cursive;
+    text-decoration: solid;
+    align-content: center;
 }
 .data-value{
     color: #858585;
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
-    font-size: 3vh;
-    padding-top: 10px;
-    padding-left: 5px;
 }
-@media (max-width:600px) {
-    .info {
-        width: 600px;
-        height: 625px;
-    }   
-    
-}
-@media  (max-width:500px){
-    .info {
-        width: 400px;
-        height: 1050px;
+@keyframes showinfo {
+    0%{
+       display: none;
     }
-    .router_info{
-         font-size: 30px;
-         
-    } 
-    .data {
-        display: contents;
-        justify-content: center;
+    25%{
+      width: 10em;
     }
-    .return_button{
-        font-size: 20px;
-       
+    75%{
+        width: 20em;
     }
-    .run_button{
-        font-size: 20px;
-        
-    }
-}
-@media  (max-width:360px){
-    .info {
-        width: 400px;
-        height: 1050px;
-    }
-    .router_info{
-        font-size: 30px;
-       
-    }
-    .return_button{
-        font-size: 20px;
-    }
-    .run_button{
-        font-size: 20px;
-        width:20vw;
+    100%{
+      display:grid;
+      width: 30em;
     }
 }
  /*
