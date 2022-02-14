@@ -417,12 +417,12 @@ border: solid #E5D549;
             margin-left: 35%;
         }
         .in3{
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
         .lab3{
             font-size: 4vw;
-            background-color: brown;
-            width: 50%;
+            width: 60%;
+            background-color: burlywood;
         }
     }
 /*
@@ -1018,8 +1018,10 @@ input[name="View"]{
 .infoContainer{
     display: grid;
     position: relative;
-    max-width: 20em;
-    height: 35em;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    width: 30em;
+    height: 30em;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
@@ -1038,10 +1040,7 @@ input[name="View"]{
     color: #2541B2;
     cursor: pointer;
     position: absolute;
-    padding: 0.3em;
-    margin-right: 1em;
-    margin-top: 1em;
-
+    margin: 1.5em;
 }
 .info_button:hover {
     background: #E5D549;
@@ -1058,6 +1057,7 @@ input[name="View"]{
 .headerContainer{
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 .activeDevice{
     display: grid;
@@ -1069,6 +1069,7 @@ input[name="View"]{
     box-shadow: 5px 5px 10px #e5d549;
     color: #1768AC;
     border-radius: 0.2em;
+    margin: 4%;
     width: 70%;
     text-align: center;
 }
@@ -1083,12 +1084,17 @@ input[name="View"]{
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
+<<<<<<< HEAD
     height: 15em;
     overflow: scroll;
+=======
+    margin-top: 15%;
+>>>>>>> ecbd9185119946864c71d8071e3fc172798c8962
 }
 .data{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -1122,7 +1128,10 @@ color: #2541B2;
       width: 30em;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecbd9185119946864c71d8071e3fc172798c8962
  /*
     **********************
    End Router1 Page info
