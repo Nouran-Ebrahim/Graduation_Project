@@ -299,7 +299,7 @@ i{
     font-family: Comicimport;
     font-style: normal;
     font-weight: normal;
-    font-size:3vw;
+    font-size:2.5vw;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -315,7 +315,7 @@ i{
     font-size: 18px;
     padding: 10px;
     margin-top: 3%;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-bottom: 10%;
     border-radius: 10%;
     outline: none;
@@ -406,6 +406,9 @@ border: solid #E5D549;
         }
         .change-sett{
             margin-top: 40%;
+        }
+        #change-bt{
+            margin-left: 35%;
         }
     }
 /*
