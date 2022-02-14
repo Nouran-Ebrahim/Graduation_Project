@@ -12,14 +12,18 @@
     src: url("../fonts/Comic/COMIC.TTF");
 }
 
-html{
-    height: 100%;
+html,body{
+    height: 100vh;
 }
-body{
+.body-containing{
+    height: 100%;
     background-image: url('../images/backgrauand.png');
-    background-position: center;
+    background-repeat:no-repeat;
     background-size: cover;
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -290,8 +294,7 @@ i{
     box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
     overflow: hidden;
     width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
+    
 }
 .sett{
 
@@ -299,7 +302,7 @@ i{
     font-family: Comicimport;
     font-style: normal;
     font-weight: normal;
-    font-size:3vw;
+    font-size:2.5vw;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -315,7 +318,7 @@ i{
     font-size: 18px;
     padding: 10px;
     margin-top: 3%;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-bottom: 10%;
     border-radius: 10%;
     outline: none;
@@ -351,8 +354,13 @@ border: solid #E5D549;
   display: flex;
   justify-content: start;
   align-items: flex-start;
-  margin-left: 8%;
+  padding-left: 2%;
 }
+
+.back-bt i{
+    margin-left: 0px;
+}
+
 .lab3,.in3{
     margin-left: 30px;
     }
@@ -365,7 +373,7 @@ border: solid #E5D549;
     }
     .in3{
         width: 80%;
-        height: 20px;
+        height: 5vh;
         outline: none;
         border-top: none;
         border-left: none;
@@ -373,11 +381,11 @@ border: solid #E5D549;
         border-bottom: solid #E5D549;
         background: transparent;
         color: black;
-        font-size: 15px;
+        font-size: 1vw;
         letter-spacing: 1px;
         font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
-        padding-bottom: 3px;
-        margin-bottom: 15px;
+        padding-bottom: 1%;
+        margin-bottom: 5%;
     }
     .in3:focus{
         border-bottom: solid #2541B2;
@@ -393,19 +401,24 @@ border: solid #E5D549;
         }
         .change-sett{
             width: 80%;
-            margin-left: 10%;
-            margin-top: 20%;
+            
         }
         .sett{
             font-size: 6vw;
         }
+        .in3{
+            font-size: 2.5vw;
+        }
     }
     @media only screen and (max-width: 426px) {
-        .back-bt{
-            margin-left: 14.5%;
+        #change-bt{
+            margin-left: 35%;
         }
-        .change-sett{
-            margin-top: 40%;
+        .in3{
+            font-size: 4vw;
+        }
+        .lab3{
+            font-size: 4vw;
         }
     }
 /*
