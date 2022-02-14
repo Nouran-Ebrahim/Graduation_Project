@@ -1025,6 +1025,7 @@ input[name="View"]{
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
     opacity: 95%;
     padding: 5%;
+    grid-auto-rows: 15% 20% 50% 15%;
 }
 .info_button{
     width: fit-content;
@@ -1082,6 +1083,8 @@ input[name="View"]{
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
+    height: 15em;
+    overflow: scroll;
 }
 .data{
     display: flex;
@@ -1119,27 +1122,7 @@ color: #2541B2;
       width: 30em;
     }
 }
-@media (max-width:312px) {
-    .infoContainer{
-        height: 45em;
-    }
-}
-@media (max-width:312px) {
-    .infoContainer{
-        height: 50em;
-    }
-}
-@media (max-width:165px) {
-    .infoContainer{
-        height: 55em;
-    }
-    .activeDevice{
-        font-size: 15px;
-    }
-    .all_infomation{
-        font-size: 14px;
-    }
-}
+
  /*
     **********************
    End Router1 Page info
