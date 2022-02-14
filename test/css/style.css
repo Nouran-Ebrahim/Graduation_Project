@@ -1,12 +1,12 @@
 
 @font-face{
     font-family: onyximport;
-    src: url("../fonts/onyx/ONYX.TTF");
+    src: url("../../fonts/onyx/ONYX.TTF");
 }
 
 @font-face{
     font-family: Comicimport;
-    src: url("../fonts/Comic/COMIC.TTF");
+    src: url("../../fonts/Comic/COMIC.TTF");
 }
 
 html,body{
@@ -16,7 +16,7 @@ html,body{
 /*===== the main body =====*/
 .body{
     height: 100%;
-    background-image: url("../background.png");
+    background-image: url("../../images/backgrauand.png");
     background-repeat:no-repeat;
     background-size:cover;
 }
