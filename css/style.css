@@ -1017,18 +1017,17 @@ input[name="View"]{
 }
 .infoContainer{
     display: grid;
+    grid-template-rows: 10% 20% 60% 15%;
     position: relative;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    width: 30em;
     height: 30em;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
     opacity: 95%;
     padding: 5%;
-    grid-auto-rows: 15% 20% 50% 15%;
+
 }
+
 .info_button{
     width: fit-content;
     height: fit-content;
@@ -1040,7 +1039,7 @@ input[name="View"]{
     color: #2541B2;
     cursor: pointer;
     position: absolute;
-    margin: 1.5em;
+    margin-right: 1.5em;
 }
 .info_button:hover {
     background: #E5D549;
@@ -1069,7 +1068,6 @@ input[name="View"]{
     box-shadow: 5px 5px 10px #e5d549;
     color: #1768AC;
     border-radius: 0.2em;
-    margin: 4%;
     width: 70%;
     text-align: center;
 }
@@ -1080,7 +1078,8 @@ input[name="View"]{
     display: block;
 }
 .all_infomation{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
@@ -1088,15 +1087,12 @@ input[name="View"]{
     overflow: scroll;
 }
 .data{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto ;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2em;
     text-align: center;
     justify-content: center;
     align-content: center;
-    gap: 1em;
-
-    
 }
 .information{
 color: #2541B2;
