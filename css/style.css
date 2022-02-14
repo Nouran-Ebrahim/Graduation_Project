@@ -373,7 +373,7 @@ border: solid #E5D549;
     }
     .in3{
         width: 80%;
-        height: 20px;
+        height: 5vh;
         outline: none;
         border-top: none;
         border-left: none;
@@ -381,11 +381,11 @@ border: solid #E5D549;
         border-bottom: solid #E5D549;
         background: transparent;
         color: black;
-        font-size: 15px;
+        font-size: 1vw;
         letter-spacing: 1px;
         font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
-        padding-bottom: 3px;
-        margin-bottom: 15px;
+        padding-bottom: 1%;
+        margin-bottom: 5%;
     }
     .in3:focus{
         border-bottom: solid #2541B2;
@@ -406,10 +406,19 @@ border: solid #E5D549;
         .sett{
             font-size: 6vw;
         }
+        .in3{
+            font-size: 2.5vw;
+        }
     }
     @media only screen and (max-width: 426px) {
         #change-bt{
             margin-left: 35%;
+        }
+        .in3{
+            font-size: 4vw;
+        }
+        .lab3{
+            font-size: 4vw;
         }
     }
 /*
