@@ -13,7 +13,7 @@
 }
 
 html,body{
-    height: 100vh;
+    height: 100%;
 }
 body{
     background-image: url('../images/backgrauand.png');
@@ -422,7 +422,7 @@ border: solid #E5D549;
         .lab3{
             font-size: 4vw;
             width: 60%;
-            background-color: burlywood;
+            /*background-color: burlywood;*/
         }
     }
 /*
