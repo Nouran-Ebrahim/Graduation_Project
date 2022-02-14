@@ -15,11 +15,13 @@
 html,body{
     height: 100vh;
 }
-.body-containing{
-    height: 100%;
+body{
     background-image: url('../images/backgrauand.png');
     background-repeat:no-repeat;
     background-size: cover;
+}
+.body-containing{
+    height: 100%;
     margin: 0px;
     display: flex;
     justify-content: center;
