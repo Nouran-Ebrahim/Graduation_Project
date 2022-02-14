@@ -43,7 +43,7 @@ body{
     backdrop-filter: blur(3px);
     border-radius: 20px;
 }
-img{
+.webImage{
     width:195px ;
     margin-left: 17%;
     margin-top: -50px;
@@ -116,6 +116,57 @@ i{
 
 
 /* login ending */
+
+/******** Home Page *******/
+/*************************/
+
+.homePage{
+    display: block;
+    position: relative;
+    margin : 0;
+    padding: 0;
+  }
+.header{
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background-color: #e3f0fb;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
+    grid-template-columns: 25% 75%;
+}
+.websitName{
+    height: 5em;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+.menuContainer{
+    display: grid;
+    grid-template-columns: 10em 10em 15% 10% 10%;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    background-color: #e5d549;
+    top: 6em;
+    position: relative;
+    height: 4em;
+    align-items: center;
+}
+.userName{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+.search{
+
+}
+.menuButton{
+
+}
+
+
+/********* End Home Page *******/
+/*******************************/
 
 .Admin_settings{
     align-self: flex-start;
