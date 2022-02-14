@@ -343,6 +343,7 @@ border: solid #E5D549;
         .change-sett{
             width: 80%;
             margin-left: 10%;
+            margin-top: 20%;
         }
         .sett{
             font-size: 6vw;
@@ -351,6 +352,9 @@ border: solid #E5D549;
     @media only screen and (max-width: 426px) {
         .back-bt{
             margin-left: 14.5%;
+        }
+        .change-sett{
+            margin-top: 40%;
         }
     }
 /*
