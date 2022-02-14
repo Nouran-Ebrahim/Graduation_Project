@@ -1016,10 +1016,8 @@ input[name="View"]{
 .infoContainer{
     display: grid;
     position: relative;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    width: 30em;
-    height: 30em;
+    max-width: 20em;
+    height: 35em;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
@@ -1037,7 +1035,10 @@ input[name="View"]{
     color: #2541B2;
     cursor: pointer;
     position: absolute;
-    margin: 1.5em;
+    padding: 0.3em;
+    margin-right: 1em;
+    margin-top: 1em;
+
 }
 .info_button:hover {
     background: #E5D549;
@@ -1054,7 +1055,6 @@ input[name="View"]{
 .headerContainer{
     display: flex;
     justify-content: center;
-    margin-top: 1em;
 }
 .activeDevice{
     display: grid;
@@ -1066,7 +1066,6 @@ input[name="View"]{
     box-shadow: 5px 5px 10px #e5d549;
     color: #1768AC;
     border-radius: 0.2em;
-    margin: 4%;
     width: 70%;
     text-align: center;
 }
@@ -1081,12 +1080,10 @@ input[name="View"]{
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
-    margin-top: 15%;
 }
 .data{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto ;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -1118,6 +1115,27 @@ color: #2541B2;
     100%{
       display:grid;
       width: 30em;
+    }
+}
+@media (max-width:312px) {
+    .infoContainer{
+        height: 45em;
+    }
+}
+@media (max-width:312px) {
+    .infoContainer{
+        height: 50em;
+    }
+}
+@media (max-width:165px) {
+    .infoContainer{
+        height: 55em;
+    }
+    .activeDevice{
+        font-size: 15px;
+    }
+    .all_infomation{
+        font-size: 14px;
     }
 }
  /*
