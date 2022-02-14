@@ -1,51 +1,280 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <title>AutoNet</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
-        <link rel='stylesheet' type='text/css' href='css/style.css'>
-    </head>
-    <body>
-        <div class="body-container row container-fluid px-0 mx-0">
-            <a class="row btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample">
-                Link with href
-            </a>
-            <div class="col-auto offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="col-1 d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="0" aria-selected="true" data-bs-target="#Sections" data-bs-slide-to="0">Home</button>
-                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="1" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="1">Profile</button>
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="2" aria-selected="false" data-bs-target="#Sections" data-bs-slide-to="2">Messages</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Sections" class="col carousel slide px-0 pointer-event"  data-bs-interval="false" data-bs-wrap="false">
-                <div class="carousel-inner">
-                    <div class="S1 carousel-item active">
-                        S1
-                    </div>
-                    <div class="S2 carousel-item">
-                        S2
-                    </div>
-                    <div class="S3 carousel-item">
-                        S3
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+<html lang="en">
 
-        <script src="js/jquery.js"></script>
-        <script src="js/test.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-    </body>
+<head>
+    <meta charset='utf-8'>
+    <title>AutoNet</title>
+    <link rel="icon" href="../images/Group 1.png" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='bootstrap-icons-1.7.2/bootstrap-icons.css'>
+</head>
+
+<body>
+    <div class="body container-fluid d-flex align-items-center ">
+        <div class="body-container container p-2">
+            <div class="row d-flex justify-content-between top-bar">
+                <a class="menu-icon top-bar-contents" data-bs-toggle="offcanvas" href="#navigation" role="button"
+                    aria-controls="navigation" aria-labelledby="navigationLabel"><i class="bi bi-list"></i>
+                </a>
+                <img class="top-bar-contents logo" src="../images/website name.png" alt="Page Logo">
+            </div>
+            <div class="d-flex flex-nowrap">
+                <nav id="navigation" class="col-md-3 d-md-block col-lg-2 navbar navbar-nav navbar-light Radius">
+                    <div class="d-flex flex-column px-2">
+                        <div class="offcanvas-header p-0 d-flex flex-column align-items-start">
+                            <div class="w-100 justify-content-between d-flex mb-2 px-2">
+                                <a class="d-flex" href="#">
+                                    <i class="bi bi-arrow-left-circle"></i></a>
+                                <a type="button" class="top-bar-contents" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"><i class="bi bi-x-circle"></i></a>
+                            </div>
+                            <div class="offcanvas-title" id="offcanvasExampleLabel"><img src="./images/website name.png"
+                                    height="100%" width="100%"></div>
+                        </div>
+                        <div class="px-0 offcanvas-body">
+                            <div>
+                                <input class="filters form-control me-2 my-2" type="search"
+                                    placeholder="Search" aria-label="Search" />
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Routers
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show mx-auto"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="btns-container my-1 list-group-flush">
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action active R"
+                                                        aria-current="true" role="tab" aria-selected="true"
+                                                        data-bs-target="#Sections" data-bs-slide-to="0" name="router">Router1</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        role="tab" aria-selected="false" data-bs-target="#Sections"
+                                                        data-bs-slide-to="0" name="router">Router2</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        role="tab" aria-selected="false" data-bs-target="#Sections"
+                                                        data-bs-slide-to="0" name="router">Router3</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="0" name="router">Router4</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="0" name="router">Router5</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Switches
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="btns-container my-1 list-group-flush">
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" name="switch">Switch1</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" name="switch">Switch2</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" name="switch">Switch3</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" name="switch">Switch4</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" name="switch">Switch5</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch6</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch7</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch8</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch9</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch10</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch11</button>
+                                                    <button type="button"
+                                                        class="list-group-item btn-lg list-group-item-action R"
+                                                        aria-current="true" role="tab" aria-selected="false"
+                                                        data-bs-target="#Sections"
+                                                        data-bs-slide-to="1" name="switch">Switch12</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </nav>
+                <div id="Sections" class="col-lg-10 col-md-9 container carousel slide  pointer-event Radius" data-bs-interval="false"
+                    data-bs-wrap="false">
+                    <div class="carousel-inner">
+                        <!--Routers Pages-->
+                        <div class="carousel-item active">
+                            <p id="router" class="name mt-2 ms-3">Router1</p>
+                            <form class="Settings sec1" method="post" action="../pages/router1_info.html">
+                                <div class="row Scontainer d-flex">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Welcoming massage:</label>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Telnet Password:</label>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Console Password:</label>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label ">Interface Loopback:</label>
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="View d-flex justify-content-center mb-3">
+                                    <input class="btn-primary btn-lg button" type="submit" name="View" value="View">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="carousel-item">
+                            <p id="switch" class="name mt-2 ms-3">Switch1</p>
+                            <form class="Settings sec2" method="post" action="../pages/router1_info.html">
+                                <div class="row Scontainer  d-flex ">
+                                    <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Hostname:</label>
+                                            <input type="text" name="Hostname" placeholder="Hostname"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Enable:</label>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Welcoming massage:</label>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Telnet Password:</label>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12"> Console Password:</label>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Interface Loopback:</label>
+                                            <input type="text" name="Interface" placeholder="Interface"
+                                                class="txts col-12" required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">Mask:</label>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                                required>
+                                        </div>
+                                        <div class="col-12 dp my-5">
+                                            <label class="label col-12">ID:</label>
+                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="View d-flex justify-content-center mb-3">
+                                    <input class="btn-primary btn-lg button" type="submit" name="View" value="View">
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
