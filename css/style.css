@@ -1027,6 +1027,7 @@ input[name="View"]{
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
     opacity: 95%;
     padding: 5%;
+    grid-auto-rows: 15% 20% 50% 15%;
 }
 .info_button{
     width: fit-content;
@@ -1083,7 +1084,8 @@ input[name="View"]{
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
-    margin-top: 15%;
+    height: 15em;
+    overflow: scroll;
 }
 .data{
     display: grid;
