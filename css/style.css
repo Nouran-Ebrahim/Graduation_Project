@@ -229,7 +229,79 @@ i{
 }
 
 /* admin settings ending */
+.change-sett{
+   /* background-color: burlywood;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
+    overflow: hidden;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+.sett{
 
+    margin-top: 5%;
+    font-family: Comicimport;
+    font-style: normal;
+    font-weight: normal;
+    font-size:260%;
+    line-height: 100%;
+    color: #1768AC;
+    text-shadow: 3px 6px 5px #E5D549;
+    margin-bottom: 10px;
+    /*background-color: brown;*/
+}
+#form3{
+   background-color: cornflowerblue;
+    margin-top: 5%;
+    width: 60%;
+}
+#change-bt{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    border-radius: 10%;
+    outline: none;
+    border: solid #E5D549;
+    color: #2541B2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background-color: white;
+    text-align: center;
+    }
+
+#change-bt:hover{
+background: #E5D549;
+color: #fff;
+border: solid #E5D549;
+}
+.bi-arrow-left-circle{
+    color: black;
+    font-size: 20px;
+}
+.change-data{
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.back-bt{
+  width: 100%;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 8%;
+}
 /*
     ****************
     Router1 Page
