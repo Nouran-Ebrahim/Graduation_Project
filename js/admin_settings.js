@@ -7,12 +7,8 @@ txts.forEach((txt)=>{
         counter = false;
     }
 })
-
+if(counter === true){
     chngButton.addEventListener("click",() =>{
-        if(counter === true){
         alert("Data Changed Successfully");
-        console.log('change')
-        }
     })
-
-console.log("loo")
+}
