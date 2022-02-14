@@ -52,7 +52,8 @@ body{
 .webImage{
     width:195px ;
     margin-left: 17%;
-    margin-top: -50px;
+    margin-top: 10px;
+    margin-bottom: 2em;
 }
 h2{
     margin-top: 1px;
@@ -338,10 +339,7 @@ background: #E5D549;
 color: #fff;
 border: solid #E5D549;
 }
-.bi-arrow-left-circle{
-    color: black;
-    font-size: 20px;
-}
+
 .change-data{
     width: 100%;
     /*background-color: green;*/
@@ -357,10 +355,13 @@ border: solid #E5D549;
   justify-content: start;
   align-items: flex-start;
   padding-left: 2%;
+    padding-top: 1%;
 }
 
 .back-bt i{
     margin-left: 0px;
+    font-size: 26px;
+    color: black;
 }
 
 .lab3,.in3{
@@ -1084,7 +1085,18 @@ input[name="View"]{
     text-decoration: solid;
     text-align: center;
     height: 15em;
-    overflow: scroll;
+    overflow-y: scroll;
+
+}
+.all_infomation::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+.all_infomation::-webkit-scrollbar-track{
+    opacity: 0;        /* color of the tracking area */
+}
+.all_infomation::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.185);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
 }
 .data{
     display: flex;
