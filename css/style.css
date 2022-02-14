@@ -35,7 +35,7 @@ body{
     background-position: center;
     background-size: cover;
     margin: 0px;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +70,8 @@ margin-left: 30px;
     margin-bottom: 10px;
     font-weight: bold;
     font-family: Comicimport,'Turret Road', cursive;
-    color: #2541B2;
+    /* color: #2541B2; */
+    color: #000;
 }
 .in{
     width: 80%;
