@@ -12,14 +12,18 @@
     src: url("../fonts/Comic/COMIC.TTF");
 }
 
-html{
-    height: 100%;
+html,body{
+    height: 100vh;
 }
-body{
+.body-containing{
+    height: 100%;
     background-image: url('../images/backgrauand.png');
-    background-position: center;
+    background-repeat:no-repeat;
     background-size: cover;
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -290,8 +294,7 @@ i{
     box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
     overflow: hidden;
     width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
+    
 }
 .sett{
 
@@ -398,17 +401,13 @@ border: solid #E5D549;
         }
         .change-sett{
             width: 80%;
-            margin-left: 10%;
-            margin-top: 20%;
+            
         }
         .sett{
             font-size: 6vw;
         }
     }
     @media only screen and (max-width: 426px) {
-        .change-sett{
-            margin-top: 40%;
-        }
         #change-bt{
             margin-left: 35%;
         }

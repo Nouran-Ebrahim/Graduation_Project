@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset='utf-8'>
@@ -15,24 +15,27 @@
 </head>
 
 <body>
-  <div class="change-sett">
-    <div class="back-bt">
-      <a class="d-flex align-items-center" href="../test/test1.html">
-        <i class="bi bi-arrow-left-circle"></i></a>
-    </div>
-    <div class="change-data">
-      <p class="sett ">Admin settings</p>
-      <form method="get" id="form3" name="myForm" action="../pages/login.html">
-        <label style="display: block;" class="lab3">Admin Name:</label>
-        <input type="text" name="Adminname" placeholder="admin name " class="in3" required autocomplete="off">
-        <label style="display: block;" class="lab3"> Old Password:</label>
-        <input type="password" name="pass" placeholder="old password" class="in3" id="pass" required>
-        <label style="display: block;" class="lab3"> New Password:</label>
-        <input type="password" name="npass" placeholder="new password" class="in3" id="npass" required>
-        <input type="submit" name="change" id="change-bt" value="Change">
-      </form>
+  <div class="body-containing">
+    <div class="change-sett">
+      <div class="back-bt">
+        <a class="d-flex align-items-center" href="../test/test1.html">
+          <i class="bi bi-arrow-left-circle"></i></a>
+      </div>
+      <div class="change-data">
+        <p class="sett ">Admin settings</p>
+        <form method="get" id="form3" name="myForm" action="../pages/login.html">
+          <label style="display: block;" class="lab3">Admin Name:</label>
+          <input type="text" name="Adminname" placeholder="admin name " class="in3" required autocomplete="off">
+          <label style="display: block;" class="lab3"> Old Password:</label>
+          <input type="password" name="pass" placeholder="old password" class="in3" id="pass" required>
+          <label style="display: block;" class="lab3"> New Password:</label>
+          <input type="password" name="npass" placeholder="new password" class="in3" id="npass" required>
+          <input type="submit" name="change" id="change-bt" value="Change">
+        </form>
+      </div>
     </div>
   </div>
+
   <script src='../js/admin_settings.js'></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
