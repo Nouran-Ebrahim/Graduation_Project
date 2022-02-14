@@ -248,7 +248,7 @@ i{
     font-family: Comicimport;
     font-style: normal;
     font-weight: normal;
-    font-size:260%;
+    font-size:3vw;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -256,9 +256,9 @@ i{
     /*background-color: brown;*/
 }
 #form3{
-   background-color: cornflowerblue;
+  /* background-color: cornflowerblue;*/
     margin-top: 5%;
-    width: 60%;
+    width: 80%;
 }
 #change-bt{
     font-size: 18px;
@@ -288,7 +288,7 @@ border: solid #E5D549;
 }
 .change-data{
     width: 100%;
-    background-color: green;
+    /*background-color: green;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,12 +296,63 @@ border: solid #E5D549;
 }
 .back-bt{
   width: 100%;
-  background-color: greenyellow;
+  /*background-color: greenyellow;*/
   display: flex;
   justify-content: start;
   align-items: flex-start;
   margin-left: 8%;
 }
+.lab3,.in3{
+    margin-left: 30px;
+    }
+    .lab3{
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-family: Comicimport,'Turret Road', cursive;
+        color: #2541B2;
+    }
+    .in3{
+        width: 80%;
+        height: 20px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #E5D549;
+        background: transparent;
+        color: black;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
+        padding-bottom: 3px;
+        margin-bottom: 15px;
+    }
+    .in3:focus{
+        border-bottom: solid #2541B2;
+    }
+    @media only screen and (max-width: 769px) {
+        .lab3{
+            font-size: 3.5vw;
+            width: 38%;
+        }
+        #form3{
+            width: 90%;
+            /*background-color: aqua;*/
+        }
+        .change-sett{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .sett{
+            font-size: 6vw;
+        }
+    }
+    @media only screen and (max-width: 426px) {
+        .back-bt{
+            margin-left: 14.5%;
+        }
+    }
 /*
     ****************
     Router1 Page

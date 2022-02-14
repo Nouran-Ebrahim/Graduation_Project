@@ -1,5 +1,5 @@
 const chngButton = document.getElementById("change-bt");
-const txts = document.getElementsByClassName("in");
+const txts = document.getElementsByClassName("in3");
 var counter = true;
 
 txts.forEach((txt)=>{
