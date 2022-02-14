@@ -351,8 +351,13 @@ border: solid #E5D549;
   display: flex;
   justify-content: start;
   align-items: flex-start;
-  margin-left: 8%;
+  padding-left: 2%;
 }
+
+.back-bt i{
+    margin-left: 0px;
+}
+
 .lab3,.in3{
     margin-left: 30px;
     }
@@ -401,9 +406,6 @@ border: solid #E5D549;
         }
     }
     @media only screen and (max-width: 426px) {
-        .back-bt{
-            margin-left: 14.5%;
-        }
         .change-sett{
             margin-top: 40%;
         }
