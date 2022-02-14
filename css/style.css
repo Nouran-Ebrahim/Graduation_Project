@@ -1084,12 +1084,8 @@ input[name="View"]{
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
     text-align: center;
-<<<<<<< HEAD
     height: 15em;
     overflow: scroll;
-=======
-    margin-top: 15%;
->>>>>>> ecbd9185119946864c71d8071e3fc172798c8962
 }
 .data{
     display: grid;
@@ -1128,10 +1124,6 @@ color: #2541B2;
       width: 30em;
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> ecbd9185119946864c71d8071e3fc172798c8962
  /*
     **********************
    End Router1 Page info
