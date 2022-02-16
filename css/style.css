@@ -335,7 +335,7 @@ margin-left: 30px;
 }
 .infoContainer{
     display: grid;
-    grid-template-rows: 10% 20% 60% 15%;
+    grid-template-rows: 7% 20% 60% 15%;
     position: relative;
     height: 30em;
     background-color: #ffff;
@@ -375,6 +375,31 @@ margin-left: 30px;
     display: flex;
     justify-content: center;
     margin-top: 1em;
+}
+.close-bt{
+    width: 100%;
+   /* background-color: greenyellow;*/
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    
+}
+.bi-x-circle::before{
+    border-radius: 20px;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.bi-x-circle:hover::before{
+    background-color: #E5D549;
+    color: rgb(255, 255, 255);
+}
+.bi-x-circle{
+    color: black;
+    font-size: 23px;
+}
+.bi-arrow-left-circle{
+    color: black;
+    font-size: 23px;
 }
 .activeDevice{
     display: grid;

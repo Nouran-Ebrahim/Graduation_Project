@@ -9,16 +9,19 @@
     <link rel="icon" href="../images/Group 1.png" type="image/x-icon">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
-
+    <link rel='stylesheet' type='text/css' href='../bootstrap-icons-1.7.2/bootstrap-icons.css'>
 </head>
 
 <body>
     <div class="mainContainer">
         <div class="infoContainer">
-            <div>
-            <button class="info_button return" id="return_button">X</button>
-        </div>
+            <div class='close-bt'>
+                <!-- <button class="info_button return" id="return_button">X</button> -->
+                <a class="d-flex" href="#">
+                    <i class="bi bi-x-circle" style="color: black;"></i></a>
+            </div>
             <div class="headerContainer">
                 <div class="activeDevice">
                     <div class="nameDevice" id="router1">Router 1 Information</div>
@@ -75,8 +78,8 @@
                 </div>
             </div>
             <div>
-            <button class="info_button" id="run_button">Run&Save</button>
-        </div>
+                <button class="info_button" id="run_button">Run&Save</button>
+            </div>
         </div>
 
     </div>
