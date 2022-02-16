@@ -20,13 +20,7 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
 }
-.body-containing{
-    height: 100%;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 /* login starting */
@@ -55,13 +49,7 @@ body{
     margin-top: 10px;
     margin-bottom: 2em;
 }
-h2{
-    margin-top: 1px;
-    margin-left: 37%;
-    font-size: 22px;
-    font-family: Comicimport,'Turret Road', cursive;
-    color: #2541B2;
-}
+
 .lab,.in{
 margin-left: 30px;
 }
@@ -168,262 +156,168 @@ margin-left: 30px;
 
 /********* End Home Page *******/
 /*******************************/
-
-.Admin_settings{
-    align-self: flex-start;
-    margin-left: 3%;
-    margin-bottom: 2.5%;
-    font-family: Comicimport,'Turret Road', cursive;
-    color: #2541B2;
-    font-size: 3.8vw;
-    text-shadow: 3px 6px 5px #E5D549;
-    font-weight: bold;
-    /*background-color: burlywood;*/
-}
-
-#form2{
-    width: 80%;
-}
-.lab2{
-    display: inline-block;
-      font-size: 1.8vw;
-      text-align: center;
-      width: 22%;
-      font-weight: bolder;
-      font-family: Comicimport,'Turret Road', cursive;
-      color: #2541B2;
-      margin: 0% 0% 3% 10%;
-}
-.admin{
-    margin-top: 0%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+/*admin setting start*/
+.body-containing{
     height: 100%;
-    justify-content: flex-start;
-    /*background-color: aqua;*/
+    margin: 0px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.in1{
-    display: inline-block;
-    height: 8vh;
-    width: 45vw;
-    padding: 1%;
-    outline: 0px;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 1%;
-    font-size: 150%;
-}
-.in1:focus{
-    outline: rgb(65, 78, 251) 2px solid;
-}
-#change{
-    display: block;
-    font-weight: bolder;
-    padding: 2.5%;
-    line-height: 10%;
-    background-color: white;
-    text-align: center;
-    font-size: 2vw;
-    border-radius: 5px;
-    margin-left: 50%;
-    color: #2541B2;
-    margin-top: 15px;
-    border: solid #E5D549;
-}
-#change:hover{
-    background: #E5D549;
-    color: #fff;
-    border: 0px;
-    cursor: pointer;
-    transition: ease 0.3s all;
-    border: solid #E5D549;
-}
-@media only screen and (max-width: 769px) {
-    .lab2{
-        font-size: 3.5vw;
-        width: 38%;
-    }
-    #form2{
-        width: 90%;
-        /*background-color: aqua;*/
-    }
-    .admin{
-        margin-top: 4%;
-    }
-#change{
-  margin-left: 65%;
-  font-weight: bold;
-  font-size: 3vw; 
-}
-.Admin_settings{
-    font-size: 6.5vw;
-    text-shadow: 3px 3px 3px #E5D549;
-    margin-bottom: 3%;
-}
-}
-@media only screen and (max-width: 441px) {
-    .lab2{
-        font-size: 4vw;
-        width: 40%;
-    }
-    #form2{
-        width: 100%;
-        /*background-color: aqua;*/
-    }
-    .admin{
-        margin-top: 9%;
-    }
-    #change{
-        font-weight: bold;
+.change-sett{
+    /* background-color: burlywood;*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
+     overflow: hidden;
+     width: 50%;
+     
+ }
+ .sett{
+ 
+     margin-top: 5%;
+     font-family: Comicimport;
+     font-style: normal;
+     font-weight: normal;
+     font-size:2.5vw;
+     line-height: 100%;
+     color: #1768AC;
+     text-shadow: 3px 6px 5px #E5D549;
+     margin-bottom: 10px;
+     /*background-color: brown;*/
+ }
+ #form3{
+   /* background-color: cornflowerblue;*/
+     margin-top: 5%;
+     width: 80%;
+ }
+ #change-bt{
+     font-size: 18px;
+     padding: 10px;
+     margin-top: 3%;
+     margin-left: 40%;
+     margin-bottom: 10%;
+     border-radius: 10%;
+     outline: none;
+     border: solid #E5D549;
+     color: #2541B2;
+     cursor: pointer;
+     font-weight: bold;
+     transition: 0.3s ease;
+     background-color: white;
+     text-align: center;
      }
-}
+ 
+ #change-bt:hover{
+ background: #E5D549;
+ color: #fff;
+ border: solid #E5D549;
+ }
+ 
+ .change-data{
+     width: 100%;
+     /*background-color: green;*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .back-bt{
+   width: 100%;
+   /*background-color: greenyellow;*/
+   display: flex;
+   justify-content: start;
+   align-items: flex-start;
+   padding-left: 2%;
+     padding-top: 1%;
+ }
+ 
+ 
+ .bi-arrow-left-circle::before{
+     border-radius: 20px;
+     transition: color 0.2s linear, background-color 0.2s linear;
+ }
+ 
+ .bi-arrow-left-circle:hover::before{
+     background-color: #E5D549;
+     color: rgb(255, 255, 255);
+ }
+ .bi-arrow-left-circle{
+     color: black;
+     font-size: 20px;
+ }
+ .bi-arrow-left-circle{
+     color: black;
+     font-size: 23px;
+ }
+ .lab3,.in3{
+     margin-left: 30px;
+     }
+     .lab3{
+         font-size: 1.5vw;
+         margin-bottom: 10px;
+         font-weight: bold;
+         font-family: Comicimport,'Turret Road', cursive;
+         color: #2541B2;
+     }
+     .in3{
+         width: 80%;
+         height: 5vh;
+         outline: none;
+         border-top: none;
+         border-left: none;
+         border-right: none;
+         border-bottom: solid #E5D549;
+         background: transparent;
+         color: black;
+         font-size: 1vw;
+         letter-spacing: 1px;
+         font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
+         padding-bottom: 1%;
+         margin-bottom: 5%;
+     }
+     .in3:focus{
+         border-bottom: solid #2541B2;
+     }
+     @media only screen and (max-width: 769px) {
+         .lab3{
+             font-size: 3.5vw;
+             width: 38%;
+         }
+         #form3{
+             width: 90%;
+             /*background-color: aqua;*/
+         }
+         .change-sett{
+             width: 80%;
+             
+         }
+         .sett{
+             font-size: 6vw;
+         }
+         .in3{
+             font-size: 2.5vw;
+         }
+     }
+     @media only screen and (max-width: 426px) {
+         #change-bt{
+             margin-left: 35%;
+         }
+         .in3{
+             font-size: 3.5vw;
+         }
+         .lab3{
+             font-size: 4vw;
+             width: 60%;
+             /*background-color: burlywood;*/
+         }
+     }
+ 
 
 /* admin settings ending */
-.change-sett{
-   /* background-color: burlywood;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
-    overflow: hidden;
-    width: 50%;
-    
-}
-.sett{
-
-    margin-top: 5%;
-    font-family: Comicimport;
-    font-style: normal;
-    font-weight: normal;
-    font-size:2.5vw;
-    line-height: 100%;
-    color: #1768AC;
-    text-shadow: 3px 6px 5px #E5D549;
-    margin-bottom: 10px;
-    /*background-color: brown;*/
-}
-#form3{
-  /* background-color: cornflowerblue;*/
-    margin-top: 5%;
-    width: 80%;
-}
-#change-bt{
-    font-size: 18px;
-    padding: 10px;
-    margin-top: 3%;
-    margin-left: 40%;
-    margin-bottom: 10%;
-    border-radius: 10%;
-    outline: none;
-    border: solid #E5D549;
-    color: #2541B2;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s ease;
-    background-color: white;
-    text-align: center;
-    }
-
-#change-bt:hover{
-background: #E5D549;
-color: #fff;
-border: solid #E5D549;
-}
-
-.change-data{
-    width: 100%;
-    /*background-color: green;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.back-bt{
-  width: 100%;
-  /*background-color: greenyellow;*/
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  padding-left: 2%;
-    padding-top: 1%;
-}
-
-.back-bt i{
-    margin-left: 0px;
-    font-size: 26px;
-    color: black;
-}
-.back-bt i:hover{
-color: #E5D549;
-font-weight:bold ;
-}
-
-.lab3,.in3{
-    margin-left: 30px;
-    }
-    .lab3{
-        font-size: 1.5vw;
-        margin-bottom: 10px;
-        font-weight: bold;
-        font-family: Comicimport,'Turret Road', cursive;
-        color: #2541B2;
-    }
-    .in3{
-        width: 80%;
-        height: 5vh;
-        outline: none;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: solid #E5D549;
-        background: transparent;
-        color: black;
-        font-size: 1vw;
-        letter-spacing: 1px;
-        font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
-        padding-bottom: 1%;
-        margin-bottom: 5%;
-    }
-    .in3:focus{
-        border-bottom: solid #2541B2;
-    }
-    @media only screen and (max-width: 769px) {
-        .lab3{
-            font-size: 3.5vw;
-            width: 38%;
-        }
-        #form3{
-            width: 90%;
-            /*background-color: aqua;*/
-        }
-        .change-sett{
-            width: 80%;
-            
-        }
-        .sett{
-            font-size: 6vw;
-        }
-        .in3{
-            font-size: 2.5vw;
-        }
-    }
-    @media only screen and (max-width: 426px) {
-        #change-bt{
-            margin-left: 35%;
-        }
-        .in3{
-            font-size: 3.5vw;
-        }
-        .lab3{
-            font-size: 4vw;
-            width: 60%;
-            /*background-color: burlywood;*/
-        }
-    }
 
 
 /*
