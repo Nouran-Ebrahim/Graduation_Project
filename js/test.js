@@ -8,8 +8,11 @@ $(document).ready(function(){
     $(this).addClass("active");
   });
 
+
+
+
   $(".filters").on("keyup",function(){
-    var text = $(this).val().toLowerCase();
+    let text = $(this).val().toLowerCase();
     $(".btns-container button").each(function(){
       if($(this).text().toLowerCase().search(text) > -1){
         $(this).show();
@@ -19,6 +22,11 @@ $(document).ready(function(){
     });
   });
 
+  
+  
+  
+  
+  
   const canvToNav = ()=>{
     if($(window).width() < 768){
       if($("#navigation").hasClass("navbar")){
