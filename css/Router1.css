@@ -44,13 +44,13 @@ html,body{
 
 
 /*=========================== Design the Scroll Bar =========================*/
-.Settings::-webkit-scrollbar,.btns-container::-webkit-scrollbar {
+.Settings::-webkit-scrollbar{
     width: 5px;               /* width of the entire scrollbar */
 }
-.Settings::-webkit-scrollbar-track,.btns-container::-webkit-scrollbar-track {
+.Settings::-webkit-scrollbar-track{
     opacity: 0;        /* color of the tracking area */
 }
-.Settings::-webkit-scrollbar-thumb,.btns-container::-webkit-scrollbar-thumb {
+.Settings::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.185);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
 }
@@ -103,7 +103,9 @@ html,body{
 
 
 
-/*====== Side Bar ====== */
+/*==============================*/
+/*========== Side Bar ==========*/
+/*==============================*/
 .navbar{
     border-radius: 10px;
     background-color: rgb(131 202 242 / 70%);
@@ -147,6 +149,17 @@ html,body{
 .bi-x-circle{
     font-size: 20px;
     color: black;
+}
+
+.bi-x-circle::before,.bi-arrow-left-circle::before{
+    border-radius: 20px;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.bi-x-circle:hover::before,.bi-arrow-left-circle:hover::before{
+
+    background-color: #E5D549;
+    color: rgb(255, 255, 255);
 }
 .bi-arrow-left-circle{
     color: black;
