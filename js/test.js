@@ -2,6 +2,13 @@
 $(".R").click(function () {
   $(".R").removeClass("active");
   $(this).addClass("active");
+  let deviceName= $(this).text();
+  if ($(this).attr('name')==="router"){
+    $("#router").text("Router ID : "+deviceName);
+  }
+  else{
+    $("#switch").text("Switch ID : "+deviceName);
+  }
 });
 $(".btns").click(function () {
   $(".btns").removeClass("active");
@@ -21,7 +28,24 @@ $(".filters").on("keyup", function () {
     }
   });
 });
-
+$(".viewButton").click(function(){
+  
+const txts = document.getElementsByClassName("txts");
+var counter = true;
+    for (const txt of txts) {
+        if(txt.value === ""){
+            counter = false;
+        }
+    }
+    if(counter === true){
+      console.log("false")
+      $(".mainInfo").css("display","flex");
+    }
+   
+})
+$(".close-bt").click(function(){
+  $(".mainInfo").css("display","none");
+})
 
 
 
@@ -45,3 +69,8 @@ const canvToNav = () => {
 canvToNav();
 
 $(window).resize(canvToNav)
+
+// select the router page 
+
+
+

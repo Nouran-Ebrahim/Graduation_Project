@@ -585,10 +585,17 @@ margin-left: 30px;
     Start Router1 Page info
     ********************** 
  */
+
+ .mainInfo{
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+ }
 .mainContainer{
-    display: grid;
-    justify-content: center; 
-    padding: 5%;
     animation-name: showinfo ;
     animation-duration: 0.2s;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -601,7 +608,7 @@ margin-left: 30px;
     background-color: #ffff;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgb(0 0 0 / 60%);
-    opacity: 95%;
+    opacity: 90%;
     padding: 5%;
 
 }
