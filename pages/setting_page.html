@@ -166,28 +166,28 @@
                         <!--Routers Pages-->
                         <div class="carousel-item active">
                             <p id="router" class="name mt-2 ms-3">Router ID : Router1</p>
-                            <div class="Settings sec1" method="post" >
+                            <form class="Settings sec1" method="post" >
                                 <div class="row Scontainer d-flex">
                                     <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Hostname:</label>
                                             <input type="text" name="Hostname" placeholder="Hostname"
-                                                class="txts col-12" required>
+                                                class="txts txtRouter col-12  r-hostname" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Enable:</label>
-                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts txtRouter col-12 r-enable"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Welcoming massage:</label>
                                             <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
-                                                class="txts col-12" required>
+                                                class="txts txtRouter col-12 r-massage" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Telnet Password:</label>
                                             <input type="text" name="TalentPassword" placeholder="Talent Password"
-                                                class="txts col-12" required>
+                                                class="txts txtRouter col-12 r-telnet" required>
                                         </div>
                                     </div>
 
@@ -195,30 +195,30 @@
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Console Password:</label>
                                             <input type="text" name="ConsolePassword" placeholder="Console Password"
-                                                class="txts col-12" required>
+                                                class="txts txtRouter col-12 r-console" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label ">Interface Loopback:</label>
                                             <input type="text" name="Interface" placeholder="Interface"
-                                                class="txts col-12" required>
+                                                class="txts txtRouter col-12 r-loopback" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">Mask:</label>
-                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                            <input type="text" name="mask" placeholder="Mask" class="txts txtRouter col-12 r-mask"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">IP:</label>
-                                            <input type="text" name="IP" placeholder="IP" class="txts col-12" required>
+                                            <input type="text" name="IP" placeholder="IP" class="txts txtRouter col-12 r-ip" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="View d-flex justify-content-center mb-3">
-                                    <button class="btn-primary btn-lg button  viewButton" name="View" value="View">View</button>
+                                    <input class="btn-primary btn-lg button  viewButton" id="view-rt" type="button" name="View" value="View">
                                 </div>
 
-                            </div>
-                        </div>
+                            </form>
+                        </div> 
 
                         <!--Switches Pages-->
                         <div class="carousel-item">
@@ -229,49 +229,48 @@
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Hostname:</label>
                                             <input type="text" name="Hostname" placeholder="Hostname"
-                                                class="txts col-12" required>
+                                                class="txts txtSwitch col-12" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Enable:</label>
-                                            <input type="text" name="Enable" placeholder="Enable" class="txts col-12"
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts txtSwitch col-12"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Welcoming massage:</label>
                                             <input type="text" name="WelcomingMassage" placeholder="Welcoming massage"
-                                                class="txts col-12" required>
+                                                class="txts txtSwitch col-12" required>
                                         </div>
+                                        <div class="col-12 col-md-5 S2 dis">
+                                            <div class="col-12 dp my-5">
+                                                <label class="label col-12"> Console Password:</label>
+                                                <input type="text" name="ConsolePassword" placeholder="Console Password"
+                                                    class="txts txtSwitch col-12" required>
+                                            </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Telnet Password:</label>
                                             <input type="text" name="TalentPassword" placeholder="Talent Password"
-                                                class="txts col-12" required>
+                                                class="txts txtSwitch col-12" required>
                                         </div>
                                     </div>
-
-                                    <div class="col-12 col-md-5 S2 dis">
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-12"> Console Password:</label>
-                                            <input type="text" name="ConsolePassword" placeholder="Console Password"
-                                                class="txts col-12" required>
-                                        </div>
-                                        <div class="col-12 dp my-5">
-                                            <label class="label col-12">Interface Loopback:</label>
-                                            <input type="text" name="Interface" placeholder="Interface"
-                                                class="txts col-12" required>
+                                            <label class="label col-12">Interface Vlan:</label>
+                                            <input type="text" name="Interface-vlan" placeholder="Interface"
+                                                class="txts txtSwitch col-12" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">Mask:</label>
-                                            <input type="text" name="mask" placeholder="Mask" class="txts col-12"
+                                            <input type="text" name="mask" placeholder="Mask" class="txts txtSwitch col-12"
                                                 required>
                                         </div>
                                         <div class="col-12 dp my-5">
-                                            <label class="label col-12">ID:</label>
-                                            <input type="text" name="ID" placeholder="ID" class="txts col-12" required>
+                                            <label class="label col-12">IP:</label>
+                                            <input type="text" name="IP" placeholder="IP" class="txts txtSwitch col-12" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="View d-flex justify-content-center mb-3">
-                                    <input class="btn-primary btn-lg button viewButton" type="button" name="View" value="View">
+                                    <input class="btn-primary btn-lg button viewButton" id="view-sw" type="button" name="View" value="View">
                                 </div>
                             </form>
                         </div>
@@ -293,22 +292,6 @@
                     <div class="headerContainer">
                         <div class="activeDevice">
                             <div class="nameDevice" id="router1">Router 1 Information</div>
-                            <div class="nameDevice" id="router2">Router 2 Information</div>
-                            <div class="nameDevice" id="router3">Router 3 Information</div>
-                            <div class="nameDevice" id="router4">Router 4 Information</div>
-                            <div class="nameDevice" id="router5">Router 5 Information</div>
-                            <div class="nameDevice" id="switch1">Switch 1 Information</div>
-                            <div class="nameDevice" id="switch2">Switch 2 Information</div>
-                            <div class="nameDevice" id="switch3">Switch 3 Information</div>
-                            <div class="nameDevice" id="switch4">Switch 4 Information</div>
-                            <div class="nameDevice" id="switch5">Switch 5 Information</div>
-                            <div class="nameDevice" id="switch6">Switch 6 Information</div>
-                            <div class="nameDevice" id="switch7">Switch 7 Information</div>
-                            <div class="nameDevice" id="switch8">Switch 8 Information</div>
-                            <div class="nameDevice" id="switch9">Switch 9 Information</div>
-                            <div class="nameDevice" id="switch10">Switch 10 Information</div>
-                            <div class="nameDevice" id="switch11">Switch 11 Information</div>
-                            <div class="nameDevice" id="switch12">Switch 12 Information</div>
                         </div>
                     </div>
                     <div class="all_infomation">
@@ -323,26 +306,26 @@
                         <div class="data">
                             <div class=" information">Welcoming massege:</div>
                             <div class="data-value" id="text-data">Lorem ipsum dolor sit amet.</div>
+                        </div> 
+                        <div class="data">
+                            <div class=" information">Console Password:</div>
+                            <div class="data-value" id="console-password">User Data</div>
                         </div>
                         <div class="data">
                             <div class=" information">Telnet Password:</div>
                             <div class="data-value" id="telnet-password">User Data</div>
                         </div>
                         <div class="data">
-                            <div class=" information">Console Password:</div>
-                            <div class="data-value" id="console-password">User Data</div>
-                        </div>
-                        <div class="data">
                             <div class=" information">Interface Loopback:</div>
                             <div class="data-value" id="interface-data">User Data</div>
                         </div>
                         <div class="data">
-                            <div class=" information">Mask:</div>
-                            <div class="data-value" id="mask_data">User Data</div>
+                            <div class=" information">IP:</div>
+                            <div class="data-value" id="ip_data">User Data</div>
                         </div>
                         <div class="data">
-                            <div class=" information">ID:</div>
-                            <div class="data-value" id="id_data">User Data</div>
+                            <div class=" information">Mask:</div>
+                            <div class="data-value" id="mask_data">User Data</div>
                         </div>
                     </div>
                     <div>

@@ -2,12 +2,15 @@
 $(".R").click(function () {
   $(".R").removeClass("active");
   $(this).addClass("active");
-  let deviceName= $(this).text();
-  if ($(this).attr('name')==="router"){
-    $("#router").text("Router ID : "+deviceName);
+  let deviceName = $(this).text();
+  if ($(this).attr('name') === "router") {
+    $("#router").text("Router ID : " + deviceName);
+    $(".nameDevice").text(deviceName + " information");
+
   }
-  else{
-    $("#switch").text("Switch ID : "+deviceName);
+  else {
+    $("#switch").text("Switch ID : " + deviceName);
+    $(".nameDevice").text(deviceName + " information");
   }
 });
 $(".btns").click(function () {
@@ -28,25 +31,38 @@ $(".filters").on("keyup", function () {
     }
   });
 });
-$(".viewButton").click(function(){
-  
-const txts = document.getElementsByClassName("txts");
-var counter = true;
-    for (const txt of txts) {
-        if(txt.value === ""){
-            counter = false;
-        }
-    }
-    if(counter === true){
-      console.log("false")
-      $(".mainInfo").css("display","flex");
-    }
-   
-})
-$(".close-bt").click(function(){
-  $(".mainInfo").css("display","none");
-})
 
+//
+$(".viewButton").click((event) => {
+  if (event.target.id === "view-rt") {
+    console.log('true');
+    var txts = document.getElementsByClassName("txtRouter");
+  } else {
+    console.log('false');
+    var txts = document.getElementsByClassName("txtSwitch");
+  }
+  var counter = true;
+  for (const txt of txts) {
+    if (txt.value === "") {
+      counter = false;
+    }
+  }
+  if (counter === true) {
+    // showing information //
+    var data = document.getElementsByClassName("data-value");
+    for (let i = 0; i < data.length; i++) {
+      data[i].textContent = txts[i].value;
+      console.log(data[i]);
+    }
+    $(".mainInfo").css("display", "flex");
+  } else {
+    alert("Please Fill all inputs")
+  }
+
+})
+$(".close-bt").click(function () {
+  $(".mainInfo").css("display", "none");
+})
 
 
 
