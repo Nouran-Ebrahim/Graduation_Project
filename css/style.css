@@ -549,7 +549,7 @@ margin-left: 30px;
     }
     .body-container{                /*change the Container Height*/
         padding-top: 0 !important;
-        height: 600px;
+        height: 85%;
     }
     
     .top-bar-contents{              /*display the top bar and set vertical paddings*/
@@ -558,7 +558,7 @@ margin-left: 30px;
         display: block;
     }
     .Settings{                      /*change Inputs Section height*/
-        height: 490px;
+        height:65vh;
     }
 
     .logo{                          /*Set the Width of the Logo which inside the side*/
