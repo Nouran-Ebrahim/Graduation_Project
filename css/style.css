@@ -218,13 +218,15 @@ margin-left: 30px;
  #form3{
    /* background-color: cornflowerblue;*/
      margin-top: 5%;
-     width: 80%;
+     display: flex;
+    flex-direction: column;
+
+    width: 80%;
  }
  #change-bt{
      font-size: 18px;
      padding: 10px;
      margin-top: 3%;
-     margin-left: 40%;
      margin-bottom: 10%;
      border-radius: 10%;
      outline: none;
@@ -235,6 +237,8 @@ margin-left: 30px;
      transition: 0.3s ease;
      background-color: white;
      text-align: center;
+    align-self: center;
+    justify-self: center
      }
  
  #change-bt:hover{
@@ -329,9 +333,7 @@ margin-left: 30px;
          }
      }
      @media only screen and (max-width: 426px) {
-         #change-bt{
-             margin-left: 35%;
-         }
+
          .in3{
              font-size: 3.5vw;
          }
@@ -400,7 +402,7 @@ margin-left: 30px;
     font-family: Comicimport;
     font-style: normal;
     font-weight: normal;
-    font-size:40pt;
+    font-size:2rem;
     line-height: 100%;
     color: #1768AC;
     text-shadow: 3px 6px 5px #E5D549;
@@ -530,13 +532,20 @@ margin-left: 30px;
         justify-content: center;
         align-items: center;
     }
+    .body-container{
+        max-height: 528px;
+        overflow-y: hidden;
+    }
 }
 
 
 /* in small screens */
 @media (max-width: 767px) {
+    .abs{
+        margin-top: 1rem !important;
+    }
     .name{                          /*change font size*/
-        font-size: 35px;
+        font-size: 2rem;
     }
     .body-container{                /*change the Container Height*/
         padding-top: 0 !important;
@@ -566,7 +575,12 @@ margin-left: 30px;
 
 }
 
-
+@media (max-width: 576px){
+.name{
+    font-size: 18pt;
+    line-height: 30px;
+}
+}
  /*
     **********************
        End Router1 Page
@@ -720,6 +734,7 @@ color: #2541B2;
     color: #858585;
     font-family: Comicimport,'Turret Road', cursive;
     text-decoration: solid;
+    word-break: break-all
 }
 @keyframes showinfo {
     0%{
@@ -736,7 +751,13 @@ color: #2541B2;
       width: 30em;
     }
 }
- /*
+@media (max-width: 392px){
+    .mainContainer{
+       width: fit-content;
+    }
+}
+
+    /*
     **********************
    End Router1 Page info
     ********************** 

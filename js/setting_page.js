@@ -35,11 +35,13 @@ $(".filters").on("keyup", function () {
 //
 $(".viewButton").click((event) => {
   if (event.target.id === "view-rt") {
-    console.log('true');
     var txts = document.getElementsByClassName("txtRouter");
+    $(".sw").css("display","none");
+    $(".rout").css("display","block");
   } else {
-    console.log('false');
     var txts = document.getElementsByClassName("txtSwitch");
+    $(".sw").css("display","block");
+    $(".rout").css("display","none");
   }
   var counter = true;
   for (const txt of txts) {
