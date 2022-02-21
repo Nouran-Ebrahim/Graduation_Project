@@ -120,7 +120,7 @@ margin-left: 30px;
 .homePage{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -130,7 +130,6 @@ margin-left: 30px;
     justify-content: space-between;
     flex-direction: row;
     position: relative;
-    width: 100%;
     height: 10em;
     background-color: #e3f0fb;
     box-shadow: 0px 0px 30px rgb(0 0 0 / 70%);
@@ -154,6 +153,7 @@ margin-left: 30px;
     align-items: center;
     padding: 1em;
 }
+
 .userName{
     text-align: center;
     justify-content: center;
@@ -186,6 +186,78 @@ margin-left: 30px;
 .menuButton:hover{
  color: #fff;
 }
+@media (max-width:768px) {
+    .menuButton{
+        display: none;
+    }
+    .footer{
+        flex-direction: column !important;
+    }
+    .userName{
+        margin-right: 10%;
+    }
+  .navBar{
+      display: block  !important;
+  }  
+.header .links{
+    position: relative;
+}
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span{
+    width: 100%;
+}
+.header .links ul::before{
+ content:"";
+ border-width: 10px;
+ border-style: solid;
+ border-color: transparent transparent #f6f6f6 transparent;
+ position: absolute;
+ right: 5px;
+ top: -20px;
+
+}
+.header .links ul li a {
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+   color: #333;
+   transition:0.3s ;
+}
+.header .links ul li :hover{
+   padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+   border-bottom : 1px solid #ddd ;
+}
+    
+}
+/********* nav bar *********/
+.navBar{
+    display: none;
+}
+.header .links ul{
+    LIST-STYLE: NONE;
+    MARGIN: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px );
+    display: none;
+    z-index: 1;
+ 
+ }
 /***** footer *********/
 .footer{
     display: flex;
@@ -224,6 +296,12 @@ margin-left: 30px;
     .userName{
     margin-right: 0;
     }
+}
+@media (max-width:458px) {
+    .homePage{
+        width: fit-content;
+    }
+    
 }
 
 /********* End Home Page *******/

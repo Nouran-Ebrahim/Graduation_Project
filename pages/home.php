@@ -31,10 +31,26 @@ if(isset( $_SESSION["user"]) == false){
                <a href="setting_page.php" style="display: block;"> <button class="menuButton" id="startButton">Start Configration</button></a>
                <a href="admin_settings.php"style="display: block;" >  <button class="menuButton" id="settingButton">Admin Setting</button></a>
                <a href="logout.php"style="display: block;" ><button class="menuButton" id="logoutButton">Logout</button></a>
+
+               <div class="links navBar" id="showNav">
+                <span class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+               </span>
+               <ul id="showing">
+                 <li><a href="setting_page.php"> Start Configration </a></li>
+                 <li><a href="admin_settings.php"> Admin Setting </a></li>
+                 <li><a href="logout.php"> Logout </a></li>
+                </ul>
+               </div>
             </div>
-        </div>
-        <div>
+            
+            
+    </div>
+     <div>
             <pre>
+                lorem50
             Lorem ipsum dolor, 
             sit amet consectetur adipisicing 
             elit. Placeat
@@ -82,8 +98,21 @@ if(isset( $_SESSION["user"]) == false){
         </div>
     </div>
 
+    <script>
+             var show = document.getElementById("showNav");
+             var showing = document.getElementById("showing");
+             var i=0;
+             show.addEventListener("click",() =>{
+                 if (i===0){
+                 showing.style.display="block"
+                  i=1
+                }else{
+                    showing.style.display="none"
+                 i=0
+                }
 
+             })
+              </script>
 
 </body>
-
 </html>
