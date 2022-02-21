@@ -18,19 +18,19 @@
                 <a class="menu-icon top-bar-contents" data-bs-toggle="offcanvas" href="#navigation" role="button"
                     aria-controls="navigation" aria-labelledby="navigationLabel"><i class="bi bi-list"></i>
                 </a>
-                <a style="width: fit-content;" href="home.html"><img class="top-bar-contents logo" src="../images/website name.png" alt="Page Logo"></a>
+                <a style="width: fit-content;" href="home.php"><img class="top-bar-contents logo" src="../images/website name.png" alt="Page Logo"></a>
             </div>
             <div class="d-flex flex-nowrap">
                 <nav id="navigation" class="col-md-3 d-md-block col-lg-2 navbar navbar-nav navbar-light Radius">
                     <div class="d-flex flex-column px-2">
                         <div class="offcanvas-header p-0 d-flex flex-column align-items-start">
                             <div class="w-100 justify-content-between d-flex mb-2 px-2">
-                                <a class="d-flex" href="home.html">
+                                <a class="d-flex" href="home.php">
                                     <i class="bi bi-arrow-left-circle"></i></a>
                                 <a type="button" class="top-bar-contents" data-bs-dismiss="offcanvas"
                                     aria-label="Close"><i class="bi bi-x-circle"></i></a>
                             </div>
-                            <a class="offcanvas-title" id="offcanvasExampleLabel" href="home.html">
+                            <a class="offcanvas-title" id="offcanvasExampleLabel" href="home.php">
                                 <img src="../images/website name.png" height="100%" width="100%"></a>
                         </div>
                         <div class="px-0 offcanvas-body">

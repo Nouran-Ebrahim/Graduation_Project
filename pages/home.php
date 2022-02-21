@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset( $_SESSION["user"]) == false){
+    header("location:login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -17,10 +24,13 @@
         <div class="header">
             <img class="websitName" src="../images/website name.png">
             <div class="menuContainer">
-                <label class="userName" id="name">Admin Name</label>
-               <a href="setting_page.html" style="display: block;"> <button class="menuButton" id="startButton">Start Configration</button></a>
-               <a href="admin_settings.html"style="display: block;" >  <button class="menuButton" id="settingButton">Admin Setting</button></a>
-               <a href="login.html"style="display: block;" ><button class="menuButton" id="logoutButton">Logout</button></a>
+                <label class="userName" id="name"><?php
+                  echo $_SESSION["user"];
+                ?>
+                </label>
+               <a href="setting_page.php" style="display: block;"> <button class="menuButton" id="startButton">Start Configration</button></a>
+               <a href="admin_settings.php"style="display: block;" >  <button class="menuButton" id="settingButton">Admin Setting</button></a>
+               <a href="logout.php"style="display: block;" ><button class="menuButton" id="logoutButton">Logout</button></a>
             </div>
         </div>
         <div>
