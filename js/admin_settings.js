@@ -10,9 +10,9 @@ chngButton.addEventListener("click",() =>{
             counter = false;
         }
     }
-    if(counter === true){
-        alert("Data Changed Successfully");
-    }
+    //if(counter === true){
+      //  alert("Data Changed Successfully");
+    //}
    
 })
 
