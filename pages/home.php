@@ -48,39 +48,8 @@ if(isset( $_SESSION["user"]) == false){
             
             
     </div>
-     <div>
-            <pre>
-                lorem50
-            Lorem ipsum dolor, 
-            sit amet consectetur adipisicing 
-            elit. Placeat
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            quod debitis necessitatibus minima optio
-            reiciendis quo vero corporis vitae, magni aspernatur
-            
-            
-            
-            , temporib
-            
-            
-            
-            
-            us ad voluptate! Non consequatur iusto
-            doloribus quia fugiat.
-        </pre>
+     <div class="homeBody"  style="background: #fff;height: 400px;">
+
         </div>
         <div class="footer">
             <div class="image">
