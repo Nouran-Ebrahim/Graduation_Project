@@ -302,7 +302,7 @@ margin-left: 30px;
 }
 @media (max-width:337px) {
     .homePage{
-        width: fit-content;
+        width: fit-content ;
     }
     
 }

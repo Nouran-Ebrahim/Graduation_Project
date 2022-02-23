@@ -25,7 +25,7 @@ if (isset($_SESSION["user"]) == false) {
   <div class="body-containing">
     <div class="change-sett">
       <div class="back-bt">
-        <a class="d-flex" href="../pages/home.html">
+        <a class="d-flex" href="../pages/home.php">
           <i class="bi bi-arrow-left-circle"></i></a>
 
       </div>
