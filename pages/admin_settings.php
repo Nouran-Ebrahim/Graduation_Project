@@ -4,6 +4,10 @@ if (isset($_SESSION["user"]) == false) {
   header("location:login.php");
   exit();
 }
+$servername = "localhost";
+$dbname = "autonet";
+$username = "root";
+$pasword = "";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +35,7 @@ if (isset($_SESSION["user"]) == false) {
       </div>
       <div class="change-data">
         <p class="sett ">Admin settings</p>
-        <form method="post" id="form3" name="myForm" action="../pages/login.html">
+        <form method="post" id="form3" name="myForm" >
           <label style="display: block;" class="lab3">Admin Name:</label>
           <input type="text" name="Adminname" placeholder="admin name " class="in3" required autocomplete="off">
           <label style="display: block;" class="lab3"> Old Password:</label>
@@ -39,16 +43,32 @@ if (isset($_SESSION["user"]) == false) {
           <label style="display: block;" class="lab3"> New Password:</label>
           <input type="password" name="npass" placeholder="new password" class="in3" id="npass" required>
           <?php
-          if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if ($_SESSION["user"] === $_POST['Adminname'] && $_SESSION["pass"] === $_POST['pass']) {
-              //$oldPassword = $conn->query("SELECT Admin_Password FROM admin_info ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
-              //$replace = array_replace($oldPassword, $_POST['pass']);
-              echo "data is right";
+          try {
+            $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $pasword);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $adminPassword = $conn->query("SELECT Admin_Password FROM admin_info ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
+            $adminName = $conn->query("SELECT Admin_Name FROM admin_info ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
+            if (isset($_SESSION["user"])){
+            if( $_SERVER["REQUEST_METHOD"] == "POST") {
+                if ((in_array($_POST['Adminname'], $adminName)) && (in_array($_POST["pass"], $adminPassword))) {
+                 $update=" UPDATE admin_info
+                  SET Admin_Password = ".$_POST['npass']."
+                  WHERE id = 1";
+                  $conn->exec($update);
+                  echo "data is right";
+                }
+                else{
+                  echo "data is false";
+                }
+            }} else {
+                echo "no session" ;
+                header("location:login.php");
+                exit();
             }
-            else{
-              echo "data is false";
-            }
-          }
+        } catch (PDOException $e) {
+            echo "connection error" . $e->getMessage();
+        }
+          
           ?>
           <input type="submit" name="change" id="change-bt" value="Change">
         </form>
@@ -58,7 +78,7 @@ if (isset($_SESSION["user"]) == false) {
 
   <script src='../js/admin_settings.js'></script>
   <script src="../js/jquery.js"></script>
-  <script src="../js/jquery-ui.min.js"></script>
+ <script src="../js/jquery-ui.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
