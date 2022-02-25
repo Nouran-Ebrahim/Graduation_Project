@@ -48,11 +48,12 @@ $pasword = "";
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $adminPassword = $conn->query("SELECT Admin_Password FROM admin_info ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
             $adminName = $conn->query("SELECT Admin_Name FROM admin_info ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
-            if (isset($_SESSION["user"])){
+            
             if( $_SERVER["REQUEST_METHOD"] == "POST") {
+              if (isset($_SESSION["user"])){
                 if ((in_array($_POST['Adminname'], $adminName)) && (in_array($_POST["pass"], $adminPassword))) {
                  $update=" UPDATE admin_info
-                  SET Admin_Password = ".$_POST['npass']."
+                  SET Admin_Password = '".$_POST['npass']."'
                   WHERE id = 1";
                   $conn->exec($update);
                   echo "data is right";
@@ -60,10 +61,11 @@ $pasword = "";
                 else{
                   echo "data is false";
                 }
-            }} else {
-                echo "no session" ;
-                header("location:login.php");
-                exit();
+            }
+            else {
+              echo "no session" ;
+              header("location:login.php");
+              exit();} 
             }
         } catch (PDOException $e) {
             echo "connection error" . $e->getMessage();
