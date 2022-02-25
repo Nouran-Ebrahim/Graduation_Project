@@ -15,4 +15,22 @@ chngButton.addEventListener("click",() =>{
     //}
    
 })
+function see(){
+    var pass=document.getElementById("pass");
+    if(pass.type==="password"){
+        pass.type="text"
+    }
+    else{
+        pass.type="password"
+    }
+}
+function see1(){
+    var npass=document.getElementById("npass");
+    if(npass.type==="password"){
+        npass.type="text"
+    }
+    else{
+        npass.type="password"
+    }
+}
 

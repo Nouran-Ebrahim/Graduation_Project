@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -303,51 +307,72 @@
                     <div class="all_infomation">
                         <div class="data">
                             <div class=" information">Host Name:</div>
-                            <div class="data-value" id="hostname-data">Lorem ipsum dolor sit</div>
+                            <div class="data-value" id="hostname-data"><?php 
+                            echo $var1="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">Enable:</div>
-                            <div class="data-value" id="Enable-data">User Data</div>
+                            <div class="data-value" id="Enable-data"><?php 
+                            echo $var2="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">Welcoming massege:</div>
-                            <div class="data-value" id="text-data">Lorem ipsum dolor sit amet.</div>
+                            <div class="data-value" id="text-data"><?php 
+                            echo $var3="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">Console Password:</div>
-                            <div class="data-value" id="console-password">User Data</div>
+                            <div class="data-value" id="console-password"><?php 
+                            echo $var4="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">Telnet Password:</div>
-                            <div class="data-value" id="telnet-password">User Data</div>
+                            <div class="data-value" id="telnet-password"><?php 
+                            echo $var5="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information rout">Interface Loopback:</div>
                             <div class=" information sw">Interface Vlan:</div>
-                            <div class="data-value" id="interface-data">User Data</div>
+                            <div class="data-value" id="interface-data"><?php 
+                            echo $var6="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">IP:</div>
-                            <div class="data-value" id="ip_data">User Data</div>
+                            <div class="data-value" id="ip_data"><?php 
+                            echo $var7="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                         <div class="data">
                             <div class=" information">Mask:</div>
-                            <div class="data-value" id="mask_data">User Data</div>
+                            <div class="data-value" id="mask_data"><?php 
+                            echo $var8="Lorem ipsum dolor sit amet.";
+                            ?></div>
                         </div>
                     </div>
+                    <form method="POST">
                     <div>
-                        <button class="info_button" id="run_button">Run&Save</button>
+                     <button type="submit" class="info_button" id="run_button">Run&Save</button>
                     </div>
+                    </form>
                 </div>
 
             </div>
         </div>
     </div>
-
+     
     <script src="../js/jquery.js"></script>
     <script src="../js/setting_page.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+ <?php
+require "../pages/connection.php";
+?>
 </body>
 
 </html>

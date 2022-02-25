@@ -25,7 +25,7 @@ session_start();
             <input id="userName" type="text" name="Adminname" placeholder="admin name " class="in" required autocomplete="off">
             <label style="display: block;" class="lab"> Password:</label>
             <input type="password" name="pass" placeholder="password" class="in" id="pass" required>
-            <i class="fas fa-eye" onclick="see()"></i>
+            <i class=" show_icon fas fa-eye" onclick="see()"></i>
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (empty($_POST["Adminname"]) == true || empty($_POST["pass"]) == true) {

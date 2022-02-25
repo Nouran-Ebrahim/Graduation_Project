@@ -6,11 +6,14 @@ $(".R").click(function () {
   if ($(this).attr('name') === "router") {
     $("#router").text("Router ID : " + deviceName);
     $(".nameDevice").text(deviceName + " information");
-
+    $("#adds").css("display","none");
+    console.log("router");
   }
   else {
     $("#switch").text("Switch ID : " + deviceName);
     $(".nameDevice").text(deviceName + " information");
+    $("#addr").css("display","none");
+    console.log("switch");
   }
 });
 $(".btns").click(function () {
@@ -38,6 +41,7 @@ $(".viewButton").click((event) => {
     var txts = document.getElementsByClassName("txtRouter");
     $(".sw").css("display","none");
     $(".rout").css("display","block");
+
   } else {
     var txts = document.getElementsByClassName("txtSwitch");
     $(".sw").css("display","block");
@@ -54,7 +58,7 @@ $(".viewButton").click((event) => {
     var data = document.getElementsByClassName("data-value");
     for (let i = 0; i < data.length; i++) {
       data[i].textContent = txts[i].value;
-      console.log(data[i]);
+     // console.log(data[i]);
     }
     $(".mainInfo").css("display", "flex");
   } else {

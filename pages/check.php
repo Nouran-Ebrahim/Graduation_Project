@@ -16,7 +16,7 @@ try {
         }
         else{
             echo '<script>alert("your pass and admin name is not correct")</script>';
-           header("REFRESH:1;URL=login.php");
+           header("REFRESH:0.5;URL=login.php");
         }
     } else {
         echo "no session" ;
