@@ -1,13 +1,18 @@
 
-$(".R").click(function () {
+$(".R").click(function (e) {
   $(".R").removeClass("active");
   $(this).addClass("active");
   let deviceName = $(this).text();
+  var hiddenr=document.getElementById("hiddr");
+  var hiddensw=document.getElementById("hiddsw");
   if ($(this).attr('name') === "router") {
     $("#router").text("Router ID : " + deviceName);
     $(".nameDevice").text(deviceName + " information");
     $("#adds").css("display","none");
-    console.log("router");
+    var thiss=$(this).attr('id')
+    $('#hiddr').val(thiss)
+    console.log($('#hiddr').val());
+    console.log(thiss);
   }
   else {
     $("#switch").text("Switch ID : " + deviceName);

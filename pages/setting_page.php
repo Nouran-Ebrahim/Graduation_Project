@@ -58,25 +58,25 @@ session_start();
                                                         class="list-group-item btn-lg list-group-item-action active R"
                                                         aria-current="true" role="tab" aria-selected="true"
                                                         data-bs-target="#Sections" data-bs-slide-to="0"
-                                                        name="router">Router1</button>
+                                                        name="router" id="R1">Router1</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         role="tab" aria-selected="false" data-bs-target="#Sections"
-                                                        data-bs-slide-to="0" name="router">Router2</button>
+                                                        data-bs-slide-to="0" name="router" id="R2">Router2</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         role="tab" aria-selected="false" data-bs-target="#Sections"
-                                                        data-bs-slide-to="0" name="router">Router3</button>
+                                                        data-bs-slide-to="0" name="router" id="R3">Router3</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
                                                         data-bs-target="#Sections" data-bs-slide-to="0"
-                                                        name="router">Router4</button>
+                                                        name="router" id="R4">Router4</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
                                                         data-bs-target="#Sections" data-bs-slide-to="0"
-                                                        name="router">Router5</button>
+                                                        name="router" id="R5">Router5</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,7 +171,7 @@ session_start();
                         <div class="carousel-item active">
                             <p id="router" class="name mt-2 ms-3">Router ID : 1.25.258.258</p>
                             <div class="Settings">
-                                <form class="sec1" method="post">
+                                <form class="sec1" method="post" action="addrouter.php">
                                     <div class="row Scontainer d-flex">
                                         <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                             <div class="col-12 dp my-5 abs">
@@ -223,6 +223,7 @@ session_start();
                                         <input class="btn-primary btn-lg button  viewButton" id="view-rt" type="button"
                                             name="View" value="View">
                                     </div>
+                                    <input type="hidden" name="id" value="1" id="hiddr">
                                 </form>
                             </div>
                             
@@ -231,7 +232,7 @@ session_start();
                         <!--Switches Pages-->
                         <div class="carousel-item">
                             <p id="switch" class="name mt-2 ms-3">Switch1</p>
-                            <form class="Settings sec2" method="post">
+                            <form class="Settings sec2" method="post" action="addsw.php">
                                 <div class="row Scontainer  d-flex ">
                                     <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                         <div class="col-12 dp my-5 abs">
@@ -282,6 +283,7 @@ session_start();
                                     <input class="btn-primary btn-lg button viewButton" id="view-sw" type="button"
                                         name="View" value="View">
                                 </div>
+                                <input type="hidden" name="id" value="1" id="hiddsw">
                             </form>
                         </div>
 
@@ -307,54 +309,38 @@ session_start();
                     <div class="all_infomation">
                         <div class="data">
                             <div class=" information">Host Name:</div>
-                            <div class="data-value" id="hostname-data"><?php 
-                            echo $var1="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="hostname-data">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">Enable:</div>
-                            <div class="data-value" id="Enable-data"><?php 
-                            echo $var2="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="Enable-data">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">Welcoming massege:</div>
-                            <div class="data-value" id="text-data"><?php 
-                            echo $var3="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="text-data">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">Console Password:</div>
-                            <div class="data-value" id="console-password"><?php 
-                            echo $var4="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="console-password">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">Telnet Password:</div>
-                            <div class="data-value" id="telnet-password"><?php 
-                            echo $var5="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="telnet-password">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information rout">Interface Loopback:</div>
                             <div class=" information sw">Interface Vlan:</div>
-                            <div class="data-value" id="interface-data"><?php 
-                            echo $var6="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="interface-data">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">IP:</div>
-                            <div class="data-value" id="ip_data"><?php 
-                            echo $var7="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="ip_data">Lorem ipsum dolor sit amet.</div>
                         </div>
                         <div class="data">
                             <div class=" information">Mask:</div>
-                            <div class="data-value" id="mask_data"><?php 
-                            echo $var8="Lorem ipsum dolor sit amet.";
-                            ?></div>
+                            <div class="data-value" id="mask_data">Lorem ipsum dolor sit amet.</div>
                         </div>
-                    </div>
+                    </div> 
                     <form method="POST">
                     <div>
                      <button type="submit" class="info_button" id="run_button">Run&Save</button>
