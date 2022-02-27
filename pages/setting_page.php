@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(isset( $_SESSION["user"]) == false){
+    header("location:login.php");
+    exit();
+}
 
 ?>
 <!DOCTYPE html>
@@ -176,7 +180,7 @@ session_start();
                                         <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                             <div class="col-12 dp my-5 abs">
                                                 <label class="label col-12"> Hostname:</label>
-                                                <input type="text" name="Hostname" placeholder="Hostname"
+                                                <input type="text" name="Hostname"  placeholder="Hostname"
                                                     class="txts txtRouter col-12  r-hostname" required>
                                             </div>
                                             <div class="col-12 dp my-5">
@@ -223,12 +227,32 @@ session_start();
                                         <input class="btn-primary btn-lg button  viewButton" id="view-rt" type="button"
                                             name="View" value="View">
                                     </div>
-                                    <input type="hidden" name="id" value="1" id="hiddr">
+                                    
                                 </form>
                             </div>
                             
                         </div>
-
+                         <form method="POST" id="hid_subr">
+                         <input type="hidden" name="r_id" value="1" id="hiddr">
+                         </form>
+                         <?php  
+                         $servername = "localhost";
+                         $dbname = "autonet";
+                         $username = "root";
+                         $pasword = "";
+                         try {
+                             $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $pasword);
+                             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                $alldata = $conn->query("SELECT * FROM routers WHERE $_POST[r_id] ")->fetchAll(pdo::FETCH_COLUMN);  //one COLUMNS 
+                                print_r($alldata);
+                            }
+                         }
+                          catch (PDOException $e) {
+                             echo "connection error" . $e->getMessage();
+                           }
+    
+                         ?>
                         <!--Switches Pages-->
                         <div class="carousel-item">
                             <p id="switch" class="name mt-2 ms-3">Switch1</p>

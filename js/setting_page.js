@@ -16,7 +16,8 @@ $(".R").click(function (e) {
 
     console.log(thiss);
 
-    $('#run_button').attr('name') = "router";
+    $('#run_button').attr('name','router');
+     document.getElementById('hid_subr').submit();
   }
   else {
     $("#switch").text("Switch ID : " + deviceName);
@@ -31,7 +32,7 @@ $(".R").click(function (e) {
 
     console.log($('#hiddsw').val());
 
-    $('#run_button').attr('name') = "switch";
+    $('#run_button').attr('name','switch');
   }
 });
 $(".btns").click(function () {
