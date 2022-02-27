@@ -2,23 +2,36 @@
 $(".R").click(function (e) {
   $(".R").removeClass("active");
   $(this).addClass("active");
-  let deviceName = $(this).text();
-  var hiddenr=document.getElementById("hiddr");
-  var hiddensw=document.getElementById("hiddsw");
+  const deviceName = $(this).text();
   if ($(this).attr('name') === "router") {
     $("#router").text("Router ID : " + deviceName);
+
     $(".nameDevice").text(deviceName + " information");
-    $("#adds").css("display","none");
-    var thiss=$(this).attr('id')
-    $('#hiddr').val(thiss)
-    console.log($('#hiddr').val());
+
+    $("#adds").css("display", "none");
+
+    const thiss = $(this).attr('id')[1];
+
+    $('#hiddr').val(thiss);
+
     console.log(thiss);
+
+    $('#run_button').attr('name') = "router";
   }
   else {
     $("#switch").text("Switch ID : " + deviceName);
+
     $(".nameDevice").text(deviceName + " information");
-    $("#addr").css("display","none");
-    console.log("switch");
+
+    $("#addr").css("display", "none");
+
+    const thiss = $(this).attr('id');
+
+    $('#hiddsw').val(thiss.slice(1, thiss.length));
+
+    console.log($('#hiddsw').val());
+
+    $('#run_button').attr('name') = "switch";
   }
 });
 $(".btns").click(function () {
@@ -44,13 +57,13 @@ $(".filters").on("keyup", function () {
 $(".viewButton").click((event) => {
   if (event.target.id === "view-rt") {
     var txts = document.getElementsByClassName("txtRouter");
-    $(".sw").css("display","none");
-    $(".rout").css("display","block");
+    $(".sw").css("display", "none");
+    $(".rout").css("display", "block");
 
   } else {
     var txts = document.getElementsByClassName("txtSwitch");
-    $(".sw").css("display","block");
-    $(".rout").css("display","none");
+    $(".sw").css("display", "block");
+    $(".rout").css("display", "none");
   }
   var counter = true;
   for (const txt of txts) {
@@ -63,7 +76,7 @@ $(".viewButton").click((event) => {
     var data = document.getElementsByClassName("data-value");
     for (let i = 0; i < data.length; i++) {
       data[i].textContent = txts[i].value;
-     // console.log(data[i]);
+      // console.log(data[i]);
     }
     $(".mainInfo").css("display", "flex");
   } else {
@@ -99,5 +112,16 @@ $(window).resize(canvToNav)
 
 // select the router page 
 
+const runButton = document.getElementById('run_button');
+
+runButton.addEventListener('click', function (e) {
+  if(e.target.name === "router"){
+    const frm = document.getElementById('r_frm');
+    frm.submit();
+  } else{
+    const frm = document.getElementById('sw_frm');
+    frm.submit();
+  }
+})
 
 

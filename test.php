@@ -14,7 +14,7 @@
             HostName:
         </label>
         <input id="txt" name="text" type="text" />
-
+        <input id="hide" type="hidden" value="1"/>
 
         <input id="Vie" type="button" value="View"/>
 
@@ -22,7 +22,7 @@
     </form>
 
 
-    <input id="sub" type="button" value="Save&Run" />
+    <input id="sub" type="button" value="Save&Run"/>
     <div>
     </div>
 

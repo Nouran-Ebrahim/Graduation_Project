@@ -96,62 +96,62 @@ session_start();
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S1"
                                                         name="switch">Switch1</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S2"
                                                         name="switch">Switch2</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S3"
                                                         name="switch">Switch3</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S4"
                                                         name="switch">Switch4</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S5"
                                                         name="switch">Switch5</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S6"
                                                         name="switch">Switch6</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S7"
                                                         name="switch">Switch7</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S8"
                                                         name="switch">Switch8</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S9"
                                                         name="switch">Switch9</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S10"
                                                         name="switch">Switch10</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S11"
                                                         name="switch">Switch11</button>
                                                     <button type="button"
                                                         class="list-group-item btn-lg list-group-item-action R"
                                                         aria-current="true" role="tab" aria-selected="false"
-                                                        data-bs-target="#Sections" data-bs-slide-to="1"
+                                                        data-bs-target="#Sections" data-bs-slide-to="1" id="S12"
                                                         name="switch">Switch12</button>
                                                 </div>
                                             </div>
@@ -171,7 +171,7 @@ session_start();
                         <div class="carousel-item active">
                             <p id="router" class="name mt-2 ms-3">Router ID : 1.25.258.258</p>
                             <div class="Settings">
-                                <form class="sec1" method="post" action="addrouter.php">
+                                <form id="r_frm" class="sec1" method="post" action="addrouter.php">
                                     <div class="row Scontainer d-flex">
                                         <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                             <div class="col-12 dp my-5 abs">
@@ -232,7 +232,7 @@ session_start();
                         <!--Switches Pages-->
                         <div class="carousel-item">
                             <p id="switch" class="name mt-2 ms-3">Switch1</p>
-                            <form class="Settings sec2" method="post" action="addsw.php">
+                            <form id="sw_frm" class="Settings sec2" method="post" action="addsw.php">
                                 <div class="row Scontainer  d-flex ">
                                     <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                         <div class="col-12 dp my-5 abs">
@@ -341,11 +341,9 @@ session_start();
                             <div class="data-value" id="mask_data">Lorem ipsum dolor sit amet.</div>
                         </div>
                     </div> 
-                    <form method="POST">
                     <div>
-                     <button type="submit" class="info_button" id="run_button">Run&Save</button>
+                     <button type="button" class="info_button" name="router" id="run_button">Run&Save</button>
                     </div>
-                    </form>
                 </div>
 
             </div>

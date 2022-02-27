@@ -1,7 +1,7 @@
 
 <?php
 
-
+echo 'switch';
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
                //$n = $_POST['Adminname'];
                //$pass = $_POST['pass'];
