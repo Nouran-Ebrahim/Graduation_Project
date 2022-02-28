@@ -1,7 +1,5 @@
 
 <?php
-
- if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 //$n = $_POST['Adminname'];
                 //$pass = $_POST['pass'];
 
@@ -21,5 +19,4 @@
                 } catch (PDOException $e) {
                     echo "<span class=\"error\">Connection Failed or data already exists</span>";
                 }
-           }
             ?>
