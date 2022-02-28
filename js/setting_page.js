@@ -1,4 +1,5 @@
-
+const parsedUrl = new URL(window.location.href);
+console.log(parsedUrl.searchParams.get("r_id"));
 $(".R").click(function (e) {
   $(".R").removeClass("active");
   $(this).addClass("active");
