@@ -417,6 +417,7 @@ margin-left: 30px;
          font-weight: bold;
          font-family: Comicimport,'Turret Road', cursive;
          color: #2541B2;
+         display: block;
      }
      .in3{
          width: 80%;
@@ -432,7 +433,7 @@ margin-left: 30px;
          letter-spacing: 1px;
          font-family: Arial, Helvetica, sans-serif, Comicimport,'Turret Road', cursive;
          padding-bottom: 1%;
-         margin-bottom: 5%;
+         margin-bottom: 4%;
      }
      .in3:focus{
          border-bottom: solid #2541B2;
@@ -456,6 +457,7 @@ margin-left: 30px;
          .in3{
              font-size: 2.5vw;
          }
+
      }
      @media only screen and (max-width: 426px) {
 
@@ -469,7 +471,40 @@ margin-left: 30px;
          }
      }
  
-
+.show_eye{
+    color: #2541B2;
+    cursor: pointer;
+    /* background-color: #858585; */
+    position: relative;
+    right: 4%;
+    bottom: -8px;
+}
+.po{
+    /*background-color: #E5D549; */
+    width: 100%;
+    position: relative;
+}
+@media only screen and (max-width: 940px) {
+    .show_eye{
+        right: 6%;
+    }
+}
+@media only screen and (max-width: 940px){
+    .show_eye{
+        right: 5%;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .show_eye{
+        right: 7%;
+    }
+}
+@media only screen and (max-width: 364px) {
+    .show_eye{
+        left:85% ;
+        bottom: 36px;
+    }
+}
 /* admin settings ending */
 /*
     **********************

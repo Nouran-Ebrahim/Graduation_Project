@@ -31,7 +31,7 @@ session_start();
                 if (empty($_POST["Adminname"]) == true || empty($_POST["pass"]) == true) {
                     echo "<h5 style=\"color:red\"> you sholud write username and pass to log</h5>";
                 } else {
-                    $user = $_POST['Adminname'];
+                    $user =trim($_POST['Adminname']);
                     $pass = $_POST["pass"];
                     $_SESSION["user"] = $user;
                     $_SESSION["pass"] = $pass;

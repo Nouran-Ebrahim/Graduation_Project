@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 echo 'router';
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
                //$n = $_POST['Adminname'];

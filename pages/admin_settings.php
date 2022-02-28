@@ -37,14 +37,18 @@ $pasword = "";
       <div class="change-data">
         <p class="sett ">Admin settings</p>
         <form method="post" id="form3" name="myForm">
-          <label style="display: block;" class="lab3">Admin Name:</label>
+          <label class="lab3">Admin Name:</label>
           <input type="text" name="Adminname" placeholder="admin name " class="in3" required autocomplete="off">
-          <label style="display: block;" class="lab3"> Old Password:</label>
-          <input type="password" name="pass" placeholder="old password" class="in3" id="pass" required>
-          <i class="fas fa-eye" onclick="see()"></i>
-          <label style="display: block;" class="lab3"> New Password:</label>
+          <label class="lab3"> Old Password:</label>
+          <div class="po">
+            <input type="password" name="pass" placeholder="old password" class="in3" id="pass" required>
+            <i class="show_eye fas fa-eye" onclick="see()"></i>
+          </div>
+          <label class="lab3"> New Password:</label>
+          <div class="po">
           <input type="password" name="npass" placeholder="new password" class="in3" id="npass" required>
-          <i class="fas fa-eye" onclick="see1()"></i>
+          <i class="show_eye fas fa-eye" onclick="see1()"></i>  
+        </div>
           <?php
           try {
             $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $pasword);

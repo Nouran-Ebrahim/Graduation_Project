@@ -161,8 +161,8 @@ if (isset($_SESSION["user"]) == false) {
                             try {
                                 $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $pasword);
                                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                $alldata = $conn->query("SELECT * FROM routers WHERE $r_id "); 
-                                $alldata->fetch();
+                                $alldata = $conn->query("SELECT * FROM routers WHERE $r_id ")->fetch(PDO::FETCH_BOTH); 
+                                print_r($alldata);
                                 
                             } catch (PDOException $e) {
                                 echo "connection error" . $e->getMessage();
