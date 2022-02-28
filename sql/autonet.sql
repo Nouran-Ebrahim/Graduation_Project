@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2022 at 01:31 PM
--- Server version: 10.4.16-MariaDB
--- PHP Version: 7.4.12
+-- Generation Time: Feb 28, 2022 at 10:22 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -85,6 +85,14 @@ CREATE TABLE `switches` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `switches`
+--
+
+INSERT INTO `switches` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_vlan`, `Mask`, `Ip`) VALUES
+(1, 'switch1', '1234', 'ahlan bekom ', '12345', '123456', '10', 'helloWorld', '128.159423.485498456'),
+(2, 'switch2', '1234', 'ya ely e7na gyna 3ndykom', '12345687', '789456413', '12', '148542185', '11.3322.485');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -126,7 +134,7 @@ ALTER TABLE `routers`
 -- AUTO_INCREMENT for table `switches`
 --
 ALTER TABLE `switches`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

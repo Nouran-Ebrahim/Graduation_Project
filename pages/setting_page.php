@@ -142,33 +142,10 @@ if (isset($_SESSION["user"]) == false) {
                                     <div class="View d-flex justify-content-center mb-3">
                                         <input class="btn-primary btn-lg button  viewButton" id="view-rt" type="button" name="View" value="View">
                                     </div>
-
+                                    <input type="hidden" name="r_id" value="1" id="hiddr">
                                 </form>
                             </div>
-
                         </div>
-                        <form method="POST" id="hid_subr">
-                            <input type="hidden" name="r_id" value="1" id="hiddr">
-                        </form>
-                        <?php
-                        $servername = "localhost";
-                        $dbname = "autonet";
-                        $username = "root";
-                        $pasword = "";
-                        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                            $r_id=$_POST['r_id'];
-                            echo $r_id;
-                            try {
-                                $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $pasword);
-                                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                                $alldata = $conn->query("SELECT * FROM routers WHERE $r_id ")->fetch(PDO::FETCH_BOTH); 
-                                print_r($alldata);
-                                
-                            } catch (PDOException $e) {
-                                echo "connection error" . $e->getMessage();
-                            }
-                        }
-                        ?>
                         <!--Switches Pages-->
                         <div class="carousel-item">
                             <p id="switch" class="name mt-2 ms-3">Switch1</p>
@@ -177,37 +154,37 @@ if (isset($_SESSION["user"]) == false) {
                                     <div class="offset-md-1 col-12 col-md-5 S1 dis inactive">
                                         <div class="col-12 dp my-5 abs">
                                             <label class="label col-12"> Hostname:</label>
-                                            <input type="text" name="Hostname" placeholder="Hostname" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="Hostname" placeholder="Hostname" class="txts txtSwitch col-12 sw-hostname" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Enable:</label>
-                                            <input type="text" name="Enable" placeholder="Enable" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="Enable" placeholder="Enable" class="txts txtSwitch col-12 sw-en" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12"> Welcoming massage:</label>
-                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="WelcomingMassage" placeholder="Welcoming massage" class="txts txtSwitch col-12 sw-welcom" required>
                                         </div>
                                         <div class="col-12 dp my-5 ">
                                             <label class="label col-12"> Console Password:</label>
-                                            <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts txtSwitch col-12 sw-cons" required>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-5 S2 dis">
                                         <div class="col-12 dp my-5 abs">
                                             <label class="label col-12"> Telnet Password:</label>
-                                            <input type="text" name="TalentPassword" placeholder="Talent Password" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="TalentPassword" placeholder="Talent Password" class="txts txtSwitch col-12 sw-tel" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">Interface Vlan:</label>
-                                            <input type="text" name="Interface-vlan" placeholder="Interface" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="Interface-vlan" placeholder="Interface" class="txts txtSwitch col-12 sw-vlan" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">Mask:</label>
-                                            <input type="text" name="mask" placeholder="Mask" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="mask" placeholder="Mask" class="txts txtSwitch col-12 sw-mask" required>
                                         </div>
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">IP:</label>
-                                            <input type="text" name="IP" placeholder="IP" class="txts txtSwitch col-12" required>
+                                            <input type="text" name="IP" placeholder="IP" class="txts txtSwitch col-12 sw-ip" required>
                                         </div>
                                     </div>
                                 </div>
@@ -282,12 +259,14 @@ if (isset($_SESSION["user"]) == false) {
     </div>
 
     <script src="../js/jquery.js"></script>
-    <script src="../js/setting_page.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
     <?php
     require "../pages/connection.php";
     ?>
+    <script src="../js/setting_page.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    
 </body>
 
 </html>

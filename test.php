@@ -23,8 +23,9 @@
 
 
     <input id="sub" type="button" value="Save&Run"/>
-    <div>
-    </div>
+    <?php
+    echo '<div>' . htmlspecialchars($data) . '</div>' . "\n";
+    ?>
 
     <script>
         const vieButton = document.getElementById('Vie');
