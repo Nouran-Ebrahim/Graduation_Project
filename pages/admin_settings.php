@@ -64,10 +64,24 @@ $pasword = "";
                   WHERE id = 1";
                   $conn->exec($update);
                   echo "<script>alert('Password changed successfully')</script>";
-                  header("REFRESH:0.5;URL=home.php");
-                } else {
-                  echo "<script>alert('Old Password is not right or Admin Name')</script>";
+                  header("REFRESH:0.2;URL=home.php");
+                } 
+                elseif((in_array($_POST['Adminname'], $adminName)) || (in_array($_POST["pass"], $adminPassword))){
+                  if((in_array($_POST['Adminname'], $adminName))){
+                     echo '<script>alert("Your Password  is not correct")</script>';
+                     header("REFRESH:0.5;URL=admin_settings.php");
+                     exit();
+                  } 
+                  else{
+                     echo '<script>alert("Your Admin Name is not correct")</script>';
+                     header("REFRESH:0.5;URL=admin_settings.php");
+                     exit();
+                  }
+         }
+                else {
+                  echo "<script>alert('Old Password and Admin Name are not right')</script>";
                   header("REFRESH:0.5;URL=admin_settings.php");
+                  exit();
                 }
               } else {
                 echo "no session";

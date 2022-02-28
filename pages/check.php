@@ -14,9 +14,22 @@ try {
             header("location:home.php");
             exit();
         }
+        elseif((in_array($_SESSION['user'], $adminName)) || (in_array($_SESSION['pass'], $adminPassword))){
+                 if((in_array($_SESSION['user'], $adminName))){
+                    echo '<script>alert("Your Password  is not correct")</script>';
+                    header("REFRESH:0.5;URL=login.php");
+                    exit();
+                 } 
+                 else{
+                    echo '<script>alert("Your Admin Name is not correct")</script>';
+                    header("REFRESH:0.5;URL=login.php");  
+                    exit();
+                 }
+        }
         else{
-            echo '<script>alert("your pass and admin name is not correct")</script>';
+            echo '<script>alert("Your Password and Admin Name is not correct")</script>';
            header("REFRESH:0.5;URL=login.php");
+           exit();
         }
     } else {
         echo "no session" ;
