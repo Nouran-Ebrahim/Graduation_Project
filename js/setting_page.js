@@ -69,7 +69,7 @@ $(".R").click(function (e) {
     ip.value = allData[thiss - 1].Ip;
 
 
-    $("#router").text("Router ID : " + deviceName);
+    $("#router").text(deviceName+" Building" );
 
     $(".nameDevice").text(deviceName + " information");
 
@@ -80,7 +80,7 @@ $(".R").click(function (e) {
     $('#run_button').attr('name', 'router');
   }
   else {
-    $("#switch").text("Switch ID : " + deviceName);
+    $("#switch").text(deviceName+" Floor" );
 
     $(".nameDevice").text(deviceName + " information");
 
