@@ -5,6 +5,7 @@ import telnetlib
 Hostname=  "hostname" 
 Enable=  "enablee" 
 Welcomingmessage=  "welcomingmessage"
+Console="conslee"
 TelnetPassword =  "password"
 Interfaceloopback="numofloopback"
 Mask="mask"
@@ -17,6 +18,12 @@ tn.write(TelnetPassword.encode('ascii') + b"\n")
 
 tn.write(b"enable\n")
 tn.write(Enable.encode('ascii') + b"\n")
+tn.write(b"conf t\n")
+tn.write(b"Line console 0\n")
+tn.write(b"Password \t")
+tn.write(Console.encode('ascii') + b"\n")
+tn.write(b"Login\n")
+tn.write(b"exit \n")
 tn.write(b"conf t\n")
 tn.write(b"hostname\t")
 tn.write(Hostname.encode('ascii') + b"\n")
