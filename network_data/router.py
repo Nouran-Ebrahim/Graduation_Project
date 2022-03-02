@@ -2,14 +2,14 @@
 
 import telnetlib
 
-Hostname=  "hostname" 
-Enable=  "enablee" 
-Welcomingmessage=  "welcomingmessage"
-Console="conslee"
-TelnetPassword =  "password"
-Interfaceloopback="numofloopback"
-Mask="mask"
-Ip = "interfaceloop"
+Hostname=  "host_name" 
+Enable=  "enable_e" 
+Welcomingmessage=  "welcoming_message"
+Console="consle_e"
+TelnetPassword =  "pass_word"
+Interfaceloopback="numof_loopback"
+Mask="ma_sk"
+Ip = "i_p"
 tn = telnetlib.Telnet(Ip)
 tn.read_until(b"Password : ")
 tn.write(TelnetPassword.encode('ascii') + b"\n")

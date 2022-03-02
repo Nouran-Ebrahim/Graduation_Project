@@ -20,7 +20,7 @@ session_start();
                       $mask=trim($_POST['mask']);
                       $ip=trim($_POST['IP']);
                       $id=trim($_POST['r_id']);
-                      
+
                         $update = " UPDATE routers
                         SET `Hostname` = '$host'
                         ,`Enable_pass` = ' $en'
@@ -33,14 +33,11 @@ session_start();
 
                         WHERE `id` ='$id'";
                         $conn->exec($update);
-                        $myfile = file_get_contents('../network_data/router.py');;
-
-                        $counter = 0;
-
-                        $myfile = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
-                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile,$counter);
-                         $name="router".$id.".py";
-                        file_put_contents($name, $myfile); 
+                        $myfile2 = file_get_contents('../network_data/router.py');
+                        $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
+                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
+                         $name="../network_data/uptade_routers_scripts/router".$id.".py";
+                        file_put_contents($name, $myfile2); 
                         echo "<script>alert('Data changed successfully')</script>";
                         header("REFRESH:0.2;URL=setting_page.php");
                       }
