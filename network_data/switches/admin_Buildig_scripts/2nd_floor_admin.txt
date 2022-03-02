@@ -1,0 +1,16 @@
+hostname: 2nd_floor
+
+enable: cisco
+
+interface Vlan: 1
+
+ip: 33.1.1.2 
+
+mask: 255.255.255.0
+
+welcoming message: hello to 2nd_floor
+
+ console password: cisco
+ 
+ Telnet password: cisco
+

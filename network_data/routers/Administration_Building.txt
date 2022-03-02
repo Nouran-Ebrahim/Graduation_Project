@@ -1,0 +1,15 @@
+hostname: Administration_Building
+
+enable: cisco
+
+interface Loopback: 1
+
+ip: 31.1.1.1 
+
+mask: 255.255.255.0
+
+welcoming message: hello to Administration_Building
+
+console password: cisco
+
+Telnet password: cisco

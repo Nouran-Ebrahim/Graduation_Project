@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2022 at 10:22 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.31
+-- Generation Time: Mar 02, 2022 at 03:22 PM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,8 +63,11 @@ CREATE TABLE `routers` (
 --
 
 INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_loopback`, `Mask`, `Ip`) VALUES
-(1, 'router1', '1.25.22', 'good mooring', '2.258.11', '125.588', '12.558', '1.25814', '1.258.2558'),
-(2, 'router2', '1.255882.5', 'hiii', '101448.2558', '1.255.2255', '1.22552', '1222582', '115522');
+(1, 'Electrical_Building', 'cisco', 'hello to electrical building', 'cisco', 'cisco', '1', '255.255.255.0', '11.1.1.1'),
+(2, 'Mechanical_Building\r\n', 'cisco', 'hello to Mechanical_Building', 'cisco', 'cisco', '1', '255.255.255.0', '21.1.1.1'),
+(3, 'Preparatory_Building', 'cisco', 'hello to preparatory_Building', 'cisco', 'cisco', '1', '255.255.255.0', '41.1.1.1\r\n'),
+(4, 'Administration_Building', 'cisco', 'hello to Administration_Building', 'cisco', 'cisco', '1', '255.255.255.0', '31.1.1.1'),
+(5, 'Main_Router', 'cisco', 'hello to main router', 'cisco', 'cisco', '1', '255.255.255.0', '50.1.1.1');
 
 -- --------------------------------------------------------
 
@@ -89,8 +92,18 @@ CREATE TABLE `switches` (
 --
 
 INSERT INTO `switches` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_vlan`, `Mask`, `Ip`) VALUES
-(1, 'switch1', '1234', 'ahlan bekom ', '12345', '123456', '10', 'helloWorld', '128.159423.485498456'),
-(2, 'switch2', '1234', 'ya ely e7na gyna 3ndykom', '12345687', '789456413', '12', '148542185', '11.3322.485');
+(1, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '12.1.1.2'),
+(2, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '13.1.1.2'),
+(3, '3rd_floor', 'cisco', 'hello to 3rd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '14.1.1.2'),
+(4, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '22.1.1.2'),
+(5, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '23.1.1.2'),
+(6, '3rd_floor', 'cisco', 'hello to 3rd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '24.1.1.2'),
+(7, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '42.1.1.2'),
+(8, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '43.1.1.2'),
+(9, '3rd_floor', 'cisco', 'hello to 3rd_floor\r\n', 'cisco', 'cisco', '1', '255.255.255.0', '44.1.1.2'),
+(10, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '32.1.1.2'),
+(11, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '33.1.1.2'),
+(12, '3rd_floor', 'cisco', 'hello to 3rd floor', 'cisco', 'cisco', '1', '255.255.255.0', '34.1.1.2');
 
 --
 -- Indexes for dumped tables
@@ -128,13 +141,13 @@ ALTER TABLE `admin_info`
 -- AUTO_INCREMENT for table `routers`
 --
 ALTER TABLE `routers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `switches`
 --
 ALTER TABLE `switches`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

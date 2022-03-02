@@ -1,0 +1,16 @@
+hostname: 3rd_floor
+
+enable: cisco
+
+interface Vlan: 1
+
+ip: 34.1.1.2
+
+mask: 255.255.255.0
+
+welcoming message: hello to 3rd floor
+
+ console password: cisco
+ 
+ Telnet password: cisco
+
