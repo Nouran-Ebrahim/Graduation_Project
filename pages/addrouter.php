@@ -11,16 +11,16 @@ session_start();
              
                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (isset($_SESSION["user"])) {
-                      $en=$_POST['Enable'];
-                      $host=$_POST['Hostname'];
-                      $welmess=$_POST['WelcomingMassage'];
-                      $con=$_POST['ConsolePassword'];
-                      $tel=$_POST['TalentPassword'];
-                      $loop= $_POST['Interface'];
-                      $mask=$_POST['mask'];
-                      $ip=$_POST['IP'];
-                      $id=$_POST['r_id'];
-
+                      $en=trim($_POST['Enable']);
+                      $host=trim($_POST['Hostname']);
+                      $welmess=trim($_POST['WelcomingMassage']);
+                      $con=trim($_POST['ConsolePassword']);
+                      $tel=trim($_POST['TalentPassword']);
+                      $loop= trim($_POST['Interface']);
+                      $mask=trim($_POST['mask']);
+                      $ip=trim($_POST['IP']);
+                      $id=trim($_POST['r_id']);
+                      
                         $update = " UPDATE routers
                         SET `Hostname` = '$host'
                         ,`Enable_pass` = ' $en'
@@ -37,8 +37,8 @@ session_start();
 
                         $counter = 0;
 
-                        $myfile = str_replace(['host_name','enable_e','welcoming_message','consle_e','pass_word','numof_loopback', 'ma_sk'
-                        , 'i_p'],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile,$counter);
+                        $myfile = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
+                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile,$counter);
                          $name="router".$id.".py";
                         file_put_contents($name, $myfile); 
                         echo "<script>alert('Data changed successfully')</script>";

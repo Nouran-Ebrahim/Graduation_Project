@@ -1,14 +1,14 @@
 #1st part
 
 import telnetlib
-Hostname= "host_name" 
-Enable= "enable_e"
-Welcomingmessage= "welcoming_message"
-Console="consle_e"
-TelnetPassword =   "pass_word"
-Interfacevlan="numof_loopback"
-Mask="ma_sk"
-Ip = "i_p"
+Hostname= "1st_floor" 
+Enable= "cisco"
+Welcomingmessage= "hello to 3rd_floor"
+Console="cisco"
+TelnetPassword =   "cisco"
+Interfacevlan="1"
+Mask="255.255.255.0"
+Ip = "24.1.1.2"
 tn = telnetlib.Telnet(Ip)
 tn.read_until(b"Password : ")
 tn.write(TelnetPassword.encode('ascii') + b"\n")

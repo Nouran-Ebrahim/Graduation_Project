@@ -11,15 +11,15 @@ session_start();
              
                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (isset($_SESSION["user"])) {
-                      $en=$_POST['Enable'];
-                      $host=$_POST['Hostname'];
-                      $welmess=$_POST['WelcomingMassage'];
-                      $con=$_POST['ConsolePassword'];
-                      $tel=$_POST['TalentPassword'];
-                      $loop= $_POST['Interface-vlan'];
-                      $mask=$_POST['mask'];
-                      $ip=$_POST['IP'];
-                      $id=$_POST['sw_id'];
+                      $en=trim($_POST['Enable']);
+                      $host=trim($_POST['Hostname']);
+                      $welmess=trim($_POST['WelcomingMassage']);
+                      $con=trim($_POST['ConsolePassword']);
+                      $tel=trim($_POST['TalentPassword']);
+                      $loop=trim($_POST['Interface-vlan']);
+                      $mask=trim($_POST['mask']);
+                      $ip=trim($_POST['IP']);
+                      $id=trim($_POST['sw_id']);
 
                         $update = " UPDATE switches
                         SET `Hostname` = '$host'
@@ -33,6 +33,14 @@ session_start();
 
                         WHERE `id` ='$id'";
                         $conn->exec($update);
+                        $myfile = file_get_contents('../network_data/switch.py');;
+
+                        $counter = 0;
+
+                        $myfile = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
+                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile,$counter);
+                         $name="switch".$id.".py";
+                        file_put_contents($name, $myfile);
                         echo "<script>alert('Data changed successfully')</script>";
                         header("REFRESH:0.2;URL=setting_page.php");
                       }
