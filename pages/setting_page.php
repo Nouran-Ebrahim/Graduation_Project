@@ -191,7 +191,7 @@ if (isset($_SESSION["user"]) == false) {
                                 <div class="View d-flex justify-content-center mb-3">
                                     <input class="btn-primary btn-lg button viewButton" id="view-sw" type="button" name="View" value="View">
                                 </div>
-                                <input type="hidden" name="id" value="1" id="hiddsw">
+                                <input type="hidden" name="sw_id" value="1" id="hiddsw">
                             </form>
                         </div>
 

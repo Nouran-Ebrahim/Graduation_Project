@@ -1,4 +1,5 @@
 
+// set initial values for electrical bilding
 const hostName = document.getElementsByClassName('r-hostname')[0];
 const enablePass = document.getElementsByClassName('r-enable')[0];
 const message = document.getElementsByClassName('r-massage')[0];
@@ -17,7 +18,7 @@ loopInter.value = allData[0].Interface_loopback;
 mask.value = allData[0].Mask;
 ip.value = allData[0].Ip;
 
-
+// set values for esch router of bielgings on click 
 function getData(){
   const hostName = document.getElementsByClassName('r-hostname')[0];
     const enablePass = document.getElementsByClassName('r-enable')[0];
@@ -38,18 +39,20 @@ function getData(){
     ip.value = allData[thiss - 1].Ip;
 }
 
-
+// active statues for side bar 
+// and set diffrents between router and switch 
 $(".R").click(function (e) {
   $(".R").removeClass("active");
   $(this).addClass("active");
   const deviceName = $(this).text();
+  // routers settings
   if ($(this).attr('name') === "router") {
 
     const thiss = $(this).attr('id')[1];
 
     $('#hiddr').val(thiss);
 
-
+// show router data from data base
     const hostName = document.getElementsByClassName('r-hostname')[0];
     const enablePass = document.getElementsByClassName('r-enable')[0];
     const message = document.getElementsByClassName('r-massage')[0];
@@ -68,7 +71,7 @@ $(".R").click(function (e) {
     mask.value = allData[thiss - 1].Mask;
     ip.value = allData[thiss - 1].Ip;
 
-
+// to set titles 
     $("#router").text(deviceName+" Building" );
 
     $(".nameDevice").text(deviceName + " information");
@@ -89,7 +92,7 @@ $(".R").click(function (e) {
     let thiss = $(this).attr('id');
     thiss = thiss.slice(1, thiss.length);
 
-    $('#hiddsw').val();
+    $('#hiddsw').val(thiss);
 
     const hostName = document.getElementsByClassName('sw-hostname')[0];
     const enablePass = document.getElementsByClassName('sw-en')[0];
