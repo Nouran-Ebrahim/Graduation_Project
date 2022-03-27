@@ -40,6 +40,12 @@ session_start();
                          $name="../network_data/update_switches_scripts/switch".$id.".py";
                         file_put_contents($name, $myfile);
                         echo "<script>alert('Data changed successfully')</script>";
+                        echo "<script>alert('Data changed successfully')</script>";
+                        // run python script
+                        $pythonName="python ".$name;
+                        $command = escapeshellcmd($pythonName);
+                        $output = shell_exec($command);
+                        echo "<script>alert('Run GNS successfully')</script>";
                         header("REFRESH:0.2;URL=setting_page.php");
                       }
                       else {
