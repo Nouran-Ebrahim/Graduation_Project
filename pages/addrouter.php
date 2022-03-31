@@ -26,14 +26,13 @@ session_start();
                         $oldenable=$olddata['Enable_pass'];
                         $oldtel=$olddata['Telnet_pass'];
                         $oldip=$olddata['Ip'];
-                        print_r($olddata);
-                        echo $oldenable;
+                        
 
-                        // $myfile2 = file_get_contents('../network_data/router.py');
-                        // $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
-                        // , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
-                        //  $name="../network_data/uptade_routers_scripts/router".$id.".py";
-                        // file_put_contents($name, $myfile2); 
+                        $myfile2 = file_get_contents('../network_data/router.py');
+                        $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
+                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
+                         $name="../network_data/uptade_routers_scripts/router".$id.".py";
+                        file_put_contents($name, $myfile2); 
                         // // run python script
                         // // $pythonName="python ".$name;
                         // // $command = escapeshellcmd($pythonName);
