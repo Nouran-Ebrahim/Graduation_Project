@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 31 مارس 2022 الساعة 23:04
+-- Generation Time: 31 مارس 2022 الساعة 23:27
 -- إصدار الخادم: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -63,7 +63,7 @@ CREATE TABLE `routers` (
 --
 
 INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_loopback`, `Mask`, `Ip`) VALUES
-(1, 'Electrical_Building', ' cisco', ' Welcome to Egypt', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 10.10.10.2 '),
+(1, 'Electrical_Building', ' cisco', ' Welcome to Electrical Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 10.10.10.2 '),
 (2, 'Mechanical_Building', ' cisco', ' hello to Mechanical_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 20.10.10.2 '),
 (3, 'Preparatory_Building', ' cisco', ' hello to preparatory_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 40.10.10.2 '),
 (4, 'Administration_Building', ' cisco', ' hello to Administration_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 30.10.10.2 '),

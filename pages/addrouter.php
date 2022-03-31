@@ -23,9 +23,9 @@ session_start();
 
                       // $sel="SELECT  `Enable_pass`, `Telnet_pass`, `Ip` FROM `routers` WHERE $id";
                       $olddata= $conn->query("SELECT  Enable_pass, Telnet_pass, Ip FROM `routers` WHERE $id")->fetch();
-                        $oldenable=$olddata['Enable_pass'];
-                        $oldtel=$olddata['Telnet_pass'];
-                        $oldip=$olddata['Ip'];
+                        $oldenable=trim($olddata['Enable_pass']);
+                        $oldtel=trim($olddata['Telnet_pass']);
+                        $oldip=trim($olddata['Ip']);
                         
 
                         $myfile2 = file_get_contents('../network_data/router.py');
@@ -40,6 +40,8 @@ session_start();
                         $pythonName="python ".$name;
                         $command = escapeshellcmd($pythonName);
                         $output = shell_exec($command);
+
+                        
 
                         // update data
                         $update = " UPDATE routers
