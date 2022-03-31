@@ -22,7 +22,7 @@ session_start();
                       $id=trim($_POST['r_id']);
 
                       // select old data 
-                      $olddata= $conn->query("SELECT  Enable_pass, Telnet_pass, Ip FROM `routers` WHERE $id")->fetch();
+                      $olddata= $conn->query("SELECT  Enable_pass, Telnet_pass, Ip FROM `routers` WHERE id = $id")->fetch();
                         $oldenable=trim($olddata['Enable_pass']);
                         $oldtel=trim($olddata['Telnet_pass']);
                         $oldip=trim($olddata['Ip']);
