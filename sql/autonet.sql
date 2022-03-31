@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 31 مارس 2022 الساعة 23:27
--- إصدار الخادم: 10.4.22-MariaDB
--- PHP Version: 7.4.27
+-- Generation Time: Mar 31, 2022 at 11:59 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `admin_info`
+-- Table structure for table `admin_info`
 --
 
 CREATE TABLE `admin_info` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- إرجاع أو استيراد بيانات الجدول `admin_info`
+-- Dumping data for table `admin_info`
 --
 
 INSERT INTO `admin_info` (`id`, `Admin_Name`, `Admin_Password`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin_info` (`id`, `Admin_Name`, `Admin_Password`) VALUES
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `routers`
+-- Table structure for table `routers`
 --
 
 CREATE TABLE `routers` (
@@ -59,7 +59,7 @@ CREATE TABLE `routers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- إرجاع أو استيراد بيانات الجدول `routers`
+-- Dumping data for table `routers`
 --
 
 INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_loopback`, `Mask`, `Ip`) VALUES
@@ -72,7 +72,7 @@ INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_
 -- --------------------------------------------------------
 
 --
--- بنية الجدول `switches`
+-- Table structure for table `switches`
 --
 
 CREATE TABLE `switches` (
@@ -88,12 +88,12 @@ CREATE TABLE `switches` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- إرجاع أو استيراد بيانات الجدول `switches`
+-- Dumping data for table `switches`
 --
 
 INSERT INTO `switches` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_vlan`, `Mask`, `Ip`) VALUES
-(1, '1st_floor', 'cisco', ' hello to 3rd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 24.1.1.2 '),
-(2, '2nd_floor', ' cisco', ' hello to 2nd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 13.1.1.2 '),
+(1, '1st_floor', 'cisco', ' hello to 3rd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 12.1.1.2'),
+(2, '2nd_floor', ' cisco', ' hello to 2nd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 13.1.1.2'),
 (3, '3rd_floor', 'cisco', 'hello to 3rd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '14.1.1.2'),
 (4, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '22.1.1.2'),
 (5, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0 ', ' 23.1.1.2 '),

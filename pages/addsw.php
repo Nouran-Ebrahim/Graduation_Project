@@ -31,21 +31,26 @@ session_start();
                         $r_id=4;
                       }
                       // select old data
-                      $r_data= $conn->query("SELECT Ip FROM `routers` WHERE $r_id")->fetch();
-                      $r_ip=$r_data['Ip'];
+                      $r_data= $conn->query("SELECT Enable_pass, Telnet_pass, Ip FROM `routers` WHERE $r_id")->fetch();
+                      $r_enable=trim($r_data['Enable_pass']);
+                        $r_tel=trim($r_data['Telnet_pass']);
+                        $r_ip=trim($r_data['Ip']);
 
                       $olddata= $conn->query("SELECT `Enable_pass`, `Telnet_pass`, `Ip` FROM `switches` WHERE $id")->fetch();
-                      $oldenable=$olddata['Enable_pass'];
-                      $oldtel=$olddata['Telnet_pass'];
-                      $oldip=$olddata['Ip'];
+                      $oldenable=trim($olddata['Enable_pass']);
+                        $oldtel=trim($olddata['Telnet_pass']);
+                        $oldip=trim($olddata['Ip']);
                       
                       
                         $myfile = file_get_contents('../network_data/switch.py');
-                        $myfile = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_vlan", "ma_sk"
-                        , "i_p"
-                          "router_ip","sw_ip"],
+                        $myfile = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_vlan", "ma_sk", "i_p"
+                         
+                        "router_ip","r_tel","en_router",
+                        "sw_ip","sw_tel","sw_en"],
                         [$host,$en,$welmess,$con,$tel,$loop,$mask,$ip
-                        $r_ip,$oldip],$myfile);
+                        $r_ip,$r_tel,$r_enable,
+                        $oldip,$oldtel,$oldenable]
+                        ,$myfile);
                          $name="../network_data/update_switches_scripts/switch".$id.".py";
                         file_put_contents($name, $myfile);
 

@@ -5,23 +5,23 @@ Interfacevlan="numof_vlan"
 Mask="ma_sk"
 ip = "router_ip" #DataBase Router
 
-Ip= "i_p" # New Ip Vlan 
+Ip= "i_p" # New Ip Vlan (switch)
 
-telnetpw="cisco"
+telnetpw="r_tel"  # telnet router 
+switch_telnetpw="sw_tel" # old telnet switch 
+TelnetPassword="pass_word" # new telnet switch 
 
-Console="cisco"
+Console="consle_e"
 
 Hostname="host_name"
 
-TelnetPassword="cisco"
+enable_router="en_router" #  enable router
+enable_switch="sw_en"  # old enable switch
+enablepassword = "enable_e" # new enable switch
 
-enable_router="cisco"
+switch_ip="sw_ip" # the Current Ip Vlan (old ip switch)
 
-enable_switch="cisco" 
 
-switch_ip="sw_ip" # the Current Ip Vlan
-
-switch_telnetpw="cisco"
 
 tn = telnetlib.Telnet(ip)
 time.sleep(2)
@@ -45,6 +45,8 @@ tn.write(switch_telnetpw.encode('ascii') + b"\n") #database
 tn.write(b"enable"+b"\n")
 tn.write(enable_switch.encode('ascii') + b"\n") #database
 tn.write(b"conf t"+b"\n")
+tn.write(b"enable secret ")
+tn.write(enablepassword.encode('ascii') + b"\n")
 tn.write(b"Line console 0"+b"\n")
 tn.write(b"Password ")
 tn.write(Console.encode('ascii') + b"\n")
