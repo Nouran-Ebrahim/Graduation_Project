@@ -1,25 +1,25 @@
 import telnetlib
 import time
-Welcomingmessage="hello to 3rd-floor"
-Interfacevlan="1"
-Mask="255.255.255.0"
-ip = "10.10.10.2" #DataBase Router
+Welcomingmessage="welcoming_message"
+Interfacevlan="numof_vlan"
+Mask="ma_sk"
+ip = "router_ip" #DataBase Router
 
-Ip= "14.1.1.2" # New Ip Vlan 
+Ip= "i_p" # New Ip Vlan 
 
 telnetpw="cisco"
 
 Console="cisco"
 
-Hostname="3rd-floor"
+Hostname="host_name"
 
 TelnetPassword="cisco"
 
 enable_router="cisco"
 
-enable_switch="cisco"
+enable_switch="cisco" 
 
-switch_ip="14.1.1.2" # the Current Ip Vlan
+switch_ip="sw_ip" # the Current Ip Vlan
 
 switch_telnetpw="cisco"
 

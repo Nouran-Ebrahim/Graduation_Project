@@ -21,7 +21,7 @@ session_start();
                       $ip=trim($_POST['IP']);
                       $id=trim($_POST['r_id']);
 
-                      // $sel="SELECT  `Enable_pass`, `Telnet_pass`, `Ip` FROM `routers` WHERE $id";
+                      // select old data 
                       $olddata= $conn->query("SELECT  Enable_pass, Telnet_pass, Ip FROM `routers` WHERE $id")->fetch();
                         $oldenable=$olddata['Enable_pass'];
                         $oldtel=$olddata['Telnet_pass'];
