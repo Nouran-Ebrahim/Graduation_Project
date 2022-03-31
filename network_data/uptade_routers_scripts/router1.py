@@ -4,7 +4,7 @@ import telnetlib
 
 Hostname=  "Electrical_Building" 
 Enable=  "cisco" 
-Welcomingmessage=  "hello to electrical building"
+Welcomingmessage=  "hello to Electrical_Building"
 Console="cisco"
 TelnetPassword =  "cisco"
 Interfaceloopback="1"
