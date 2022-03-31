@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2022 at 10:40 PM
--- Server version: 10.4.16-MariaDB
--- PHP Version: 7.4.12
+-- Generation Time: 31 مارس 2022 الساعة 23:04
+-- إصدار الخادم: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_info`
+-- بنية الجدول `admin_info`
 --
 
 CREATE TABLE `admin_info` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `admin_info`
+-- إرجاع أو استيراد بيانات الجدول `admin_info`
 --
 
 INSERT INTO `admin_info` (`id`, `Admin_Name`, `Admin_Password`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin_info` (`id`, `Admin_Name`, `Admin_Password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `routers`
+-- بنية الجدول `routers`
 --
 
 CREATE TABLE `routers` (
@@ -59,20 +59,20 @@ CREATE TABLE `routers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `routers`
+-- إرجاع أو استيراد بيانات الجدول `routers`
 --
 
 INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_loopback`, `Mask`, `Ip`) VALUES
-(1, 'Electrical_Building', ' cisco', ' hello to electrical building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 11.1.1.1 '),
-(2, 'Mechanical_Building', ' cisco', ' hello to Mechanical_Building', 'cisco', ' cisco', '1', '255.255.255.0    ', ' 21.1.1.1    '),
-(3, 'Preparatory_Building', ' cisco', ' hello to preparatory_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 41.1.1.1 '),
-(4, 'Administration_Building', ' cisco', ' hello to Administration_Building', 'cisco', ' cisco', '1', '255.255.255.0   ', ' 31.1.1.1   '),
-(5, 'Main_Router', ' cisco', ' hello to main router', 'cisco', ' cisco', '1', '255.255.255.0   ', ' 50.1.1.1   ');
+(1, 'Electrical_Building', ' cisco', ' Welcome to Egypt', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 10.10.10.2 '),
+(2, 'Mechanical_Building', ' cisco', ' hello to Mechanical_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 20.10.10.2 '),
+(3, 'Preparatory_Building', ' cisco', ' hello to preparatory_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 40.10.10.2 '),
+(4, 'Administration_Building', ' cisco', ' hello to Administration_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 30.10.10.2 '),
+(5, 'Main_Router', ' cisco', ' hello to main router', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 50.10.10.2 ');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `switches`
+-- بنية الجدول `switches`
 --
 
 CREATE TABLE `switches` (
@@ -88,7 +88,7 @@ CREATE TABLE `switches` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `switches`
+-- إرجاع أو استيراد بيانات الجدول `switches`
 --
 
 INSERT INTO `switches` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_vlan`, `Mask`, `Ip`) VALUES
