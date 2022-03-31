@@ -21,29 +21,38 @@ session_start();
                       $ip=trim($_POST['IP']);
                       $id=trim($_POST['r_id']);
 
-                        $update = " UPDATE routers
-                        SET `Hostname` = '$host'
-                        ,`Enable_pass` = ' $en'
-                        ,`Welcom_mess` = ' $welmess'
-                        ,`Console_pass` = '$con'
-                        ,`Telnet_pass` = ' $tel'
-                        ,`Interface_loopback` = '$loop'
-                        ,`Mask`= '$mask '
-                        ,`Ip` = ' $ip '
+                      // $sel="SELECT  `Enable_pass`, `Telnet_pass`, `Ip` FROM `routers` WHERE $id";
+                      $olddata= $conn->query("SELECT  Enable_pass, Telnet_pass, Ip FROM `routers` WHERE $id")->fetch();
+                        $oldenable=$olddata['Enable_pass'];
+                        $oldtel=$olddata['Telnet_pass'];
+                        $oldip=$olddata['Ip'];
+                        print_r($olddata);
+                        echo $oldenable;
 
-                        WHERE `id` ='$id'";
-                        $conn->exec($update);
-                        $myfile2 = file_get_contents('../network_data/router.py');
-                        $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
-                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
-                         $name="../network_data/uptade_routers_scripts/router".$id.".py";
-                        file_put_contents($name, $myfile2); 
-                        // run python script
-                        $pythonName="python ".$name;
-                        $command = escapeshellcmd($pythonName);
-                        $output = shell_exec($command);
-                        echo "<script>alert('Data changed and Run successfully')</script>";
-                        header("REFRESH:0.2;URL=setting_page.php");
+                        // $myfile2 = file_get_contents('../network_data/router.py');
+                        // $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
+                        // , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
+                        //  $name="../network_data/uptade_routers_scripts/router".$id.".py";
+                        // file_put_contents($name, $myfile2); 
+                        // // run python script
+                        // // $pythonName="python ".$name;
+                        // // $command = escapeshellcmd($pythonName);
+                        // // $output = shell_exec($command);
+
+                        // // update data
+                        // $update = " UPDATE routers
+                        // SET `Hostname` = '$host'
+                        // ,`Enable_pass` = ' $en'
+                        // ,`Welcom_mess` = ' $welmess'
+                        // ,`Console_pass` = '$con'
+                        // ,`Telnet_pass` = ' $tel'
+                        // ,`Interface_loopback` = '$loop'
+                        // ,`Mask`= '$mask '
+                        // ,`Ip` = ' $ip '
+                        // WHERE `id` ='$id'";
+                        //    $conn->exec($update);
+                        // echo "<script>alert('Data changed and Run successfully')</script>";
+                        // header("REFRESH:0.2;URL=setting_page.php");
                       }
                       else {
                         echo "no session";
