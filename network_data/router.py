@@ -1,22 +1,22 @@
 import telnetlib
 import time
-Welcomingmessage="hello to Electrical_Building"
-Interfaceloopback="1"
-Mask="255.255.255.0"
-Ip = "20.10.10.2" # New Ip
+Welcomingmessage="welcoming_message"
+Interfaceloopback="numof_loopback"
+Mask="ma_sk"
+Ip = "i_p" # New Ip
  
-ip = "10.10.10.2" # Old Ip
+ip = "ip_old" # Old Ip
 
-telnetpw="cisco"  # Old Telnet Password
+telnetpw="tel_old"  # Old Telnet Password
 
-TelnetPassword="cisco" # New Telnet Password
+TelnetPassword="pass_word" # New Telnet Password
 
-Console="cisco"
-Hostname="Electrical_Building"
+Console="consle_e"
+Hostname="host_name"
 
-enablepass="cisco" # Old Telnet Password
+enablepass="en_old" # Old Telnet Password
 
-enablepassword="cisco" # New Telnet Password
+enablepassword="enable_e" # New Telnet Password
 
 tn = telnetlib.Telnet(ip)
 time.sleep(2)

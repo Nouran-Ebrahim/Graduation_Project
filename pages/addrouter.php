@@ -30,28 +30,31 @@ session_start();
 
                         $myfile2 = file_get_contents('../network_data/router.py');
                         $myfile2 = str_replace(['host_name',"enable_e","welcoming_message","consle_e","pass_word","numof_loopback", "ma_sk"
-                        , "i_p"],[$host,$en,$welmess,$con,$tel,$loop,$mask,$ip],$myfile2);
+                        , "i_p",
+                        "en_old","tel_old","ip_old"],
+                        [$host,$en,$welmess,$con,$tel,$loop,$mask,$ip,
+                        $oldenable,$oldtel,$oldip],$myfile2);
                          $name="../network_data/uptade_routers_scripts/router".$id.".py";
                         file_put_contents($name, $myfile2); 
-                        // // run python script
-                        // // $pythonName="python ".$name;
-                        // // $command = escapeshellcmd($pythonName);
-                        // // $output = shell_exec($command);
+                        run python script
+                        $pythonName="python ".$name;
+                        $command = escapeshellcmd($pythonName);
+                        $output = shell_exec($command);
 
-                        // // update data
-                        // $update = " UPDATE routers
-                        // SET `Hostname` = '$host'
-                        // ,`Enable_pass` = ' $en'
-                        // ,`Welcom_mess` = ' $welmess'
-                        // ,`Console_pass` = '$con'
-                        // ,`Telnet_pass` = ' $tel'
-                        // ,`Interface_loopback` = '$loop'
-                        // ,`Mask`= '$mask '
-                        // ,`Ip` = ' $ip '
-                        // WHERE `id` ='$id'";
-                        //    $conn->exec($update);
-                        // echo "<script>alert('Data changed and Run successfully')</script>";
-                        // header("REFRESH:0.2;URL=setting_page.php");
+                        // update data
+                        $update = " UPDATE routers
+                        SET `Hostname` = '$host'
+                        ,`Enable_pass` = ' $en'
+                        ,`Welcom_mess` = ' $welmess'
+                        ,`Console_pass` = '$con'
+                        ,`Telnet_pass` = ' $tel'
+                        ,`Interface_loopback` = '$loop'
+                        ,`Mask`= '$mask '
+                        ,`Ip` = ' $ip '
+                        WHERE `id` ='$id'";
+                           $conn->exec($update);
+                        echo "<script>alert('Data changed and Run successfully')</script>";
+                        header("REFRESH:0.2;URL=setting_page.php");
                       }
                       else {
                         echo "no session";
