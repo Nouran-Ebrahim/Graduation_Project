@@ -36,7 +36,7 @@ session_start();
                         $oldenable,$oldtel,$oldip],$myfile2);
                          $name="../network_data/uptade_routers_scripts/router".$id.".py";
                         file_put_contents($name, $myfile2); 
-                        run python script
+                        //run python script
                         $pythonName="python ".$name;
                         $command = escapeshellcmd($pythonName);
                         $output = shell_exec($command);

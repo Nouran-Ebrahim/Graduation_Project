@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2022 at 10:25 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.31
+-- Generation Time: Mar 31, 2022 at 10:40 PM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -65,7 +65,7 @@ CREATE TABLE `routers` (
 INSERT INTO `routers` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_loopback`, `Mask`, `Ip`) VALUES
 (1, 'Electrical_Building', ' cisco', ' hello to electrical building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 11.1.1.1 '),
 (2, 'Mechanical_Building', ' cisco', ' hello to Mechanical_Building', 'cisco', ' cisco', '1', '255.255.255.0    ', ' 21.1.1.1    '),
-(3, 'Preparatory_Building', ' cisco', ' hello to preparatory_Building', 'cisco', ' cisco', '1', '255.255.255.0   ', ' 41.1.1.1   '),
+(3, 'Preparatory_Building', ' cisco', ' hello to preparatory_Building', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 41.1.1.1 '),
 (4, 'Administration_Building', ' cisco', ' hello to Administration_Building', 'cisco', ' cisco', '1', '255.255.255.0   ', ' 31.1.1.1   '),
 (5, 'Main_Router', ' cisco', ' hello to main router', 'cisco', ' cisco', '1', '255.255.255.0   ', ' 50.1.1.1   ');
 
@@ -93,7 +93,7 @@ CREATE TABLE `switches` (
 
 INSERT INTO `switches` (`id`, `Hostname`, `Enable_pass`, `Welcom_mess`, `Console_pass`, `Telnet_pass`, `Interface_vlan`, `Mask`, `Ip`) VALUES
 (1, '1st_floor', 'cisco', ' hello to 3rd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 24.1.1.2 '),
-(2, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '13.1.1.2'),
+(2, '2nd_floor', ' cisco', ' hello to 2nd_floor', 'cisco', ' cisco', '1', '255.255.255.0 ', ' 13.1.1.2 '),
 (3, '3rd_floor', 'cisco', 'hello to 3rd_floor', 'cisco', 'cisco', '1', '255.255.255.0', '14.1.1.2'),
 (4, '1st_floor', 'cisco', 'hello to 1st_floor', 'cisco', 'cisco', '1', '255.255.255.0', '22.1.1.2'),
 (5, '2nd_floor', 'cisco', 'hello to 2nd_floor', 'cisco', 'cisco', '1', '255.255.255.0 ', ' 23.1.1.2 '),
