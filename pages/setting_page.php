@@ -114,24 +114,17 @@ if (isset($_SESSION["user"]) == false) {
                                                 <label class="label col-12"> Welcoming massage:</label>
                                                 <input type="text" name="WelcomingMassage" placeholder="Welcoming massage" class="txts txtRouter col-12 r-massage" required>
                                             </div>
-                                            <div class="col-12 dp my-5">
-                                                <label class="label col-12"> Console Password:</label>
-                                                <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts txtRouter col-12 r-console" required>
-                                            </div>
+                                            
                                         </div>
 
                                         <div class="col-12 col-md-5 S2 dis">
                                             <div class="col-12 dp my-5 abs">
+                                                <label class="label col-12"> Console Password:</label>
+                                                <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts txtRouter col-12 r-console" required>
+                                            </div>
+                                            <div class="col-12 dp my-5">
                                                 <label class="label col-12"> Telnet Password:</label>
                                                 <input type="text" name="TalentPassword" placeholder="Telnet Password" class="txts txtRouter col-12 r-telnet" required>
-                                            </div>
-                                            <div class="col-12 dp my-5">
-                                                <label class="label ">Interface Loopback:</label>
-                                                <input type="text" name="Interface" placeholder="Interface" class="txts txtRouter col-12 r-loopback" required>
-                                            </div>
-                                            <div class="col-12 dp my-5">
-                                                <label class="label col-12">Mask:</label>
-                                                <input type="text" name="mask" placeholder="Mask" class="txts txtRouter col-12 r-mask" required>
                                             </div>
                                             <div class="col-12 dp my-5">
                                                 <label class="label col-12">IP:</label>
@@ -143,6 +136,16 @@ if (isset($_SESSION["user"]) == false) {
                                         <input class="btn-primary btn-lg button  viewButton" id="view-rt" type="button" name="View" value="View">
                                     </div>
                                     <input type="hidden" name="r_id" value="1" id="hiddr">
+                                    
+                                    <!-- fixed informations-->
+                                    <div class="col-12 dp my-5" style="display: none;">
+                                        <label class="label ">Interface Loopback:</label>
+                                        <input type="text" name="Interface" placeholder="Interface" class="txts txtRouter col-12 r-loopback" required>
+                                    </div>
+                                    <div class="col-12 dp my-5" style="display: none;">
+                                        <label class="label col-12">Mask:</label>
+                                        <input type="text" name="mask" placeholder="Mask" class="txts txtRouter col-12 r-mask" required>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -164,24 +167,18 @@ if (isset($_SESSION["user"]) == false) {
                                             <label class="label col-12"> Welcoming massage:</label>
                                             <input type="text" name="WelcomingMassage" placeholder="Welcoming massage" class="txts txtSwitch col-12 sw-welcom" required>
                                         </div>
-                                        <div class="col-12 dp my-5 ">
+                                        
+                                    </div>
+                                    <div class="col-12 col-md-5 S2 dis">
+                                        <div class="col-12 dp my-5 abs">
                                             <label class="label col-12"> Console Password:</label>
                                             <input type="text" name="ConsolePassword" placeholder="Console Password" class="txts txtSwitch col-12 sw-cons" required>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5 S2 dis">
                                         <div class="col-12 dp my-5 abs">
                                             <label class="label col-12"> Telnet Password:</label>
                                             <input type="text" name="TalentPassword" placeholder="Talent Password" class="txts txtSwitch col-12 sw-tel" required>
                                         </div>
-                                        <div class="col-12 dp my-5">
-                                            <label class="label col-12">Interface Vlan:</label>
-                                            <input type="text" name="Interface-vlan" placeholder="Interface" class="txts txtSwitch col-12 sw-vlan" required>
-                                        </div>
-                                        <div class="col-12 dp my-5">
-                                            <label class="label col-12">Mask:</label>
-                                            <input type="text" name="mask" placeholder="Mask" class="txts txtSwitch col-12 sw-mask" required>
-                                        </div>
+                                        
                                         <div class="col-12 dp my-5">
                                             <label class="label col-12">IP:</label>
                                             <input type="text" name="IP" placeholder="IP" class="txts txtSwitch col-12 sw-ip" required>
@@ -192,6 +189,16 @@ if (isset($_SESSION["user"]) == false) {
                                     <input class="btn-primary btn-lg button viewButton" id="view-sw" type="button" name="View" value="View">
                                 </div>
                                 <input type="hidden" name="sw_id" value="1" id="hiddsw">
+
+                                <!-- fixed informations-->
+                                <div class="col-12 dp my-5" style="display:none;">
+                                    <label class="label col-12">Interface Vlan:</label>
+                                    <input type="text" name="Interface-vlan" placeholder="Interface" class="txts txtSwitch col-12 sw-vlan" required>
+                                </div>
+                                <div class="col-12 dp my-5" style="display:none;">
+                                    <label class="label col-12">Mask:</label>
+                                    <input type="text" name="mask" placeholder="Mask" class="txts txtSwitch col-12 sw-mask" required>
+                                </div>
                             </form>
                         </div>
 

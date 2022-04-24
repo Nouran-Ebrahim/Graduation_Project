@@ -269,10 +269,24 @@ margin-left: 30px;
 .homeBody{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 80%;
-    background-color: red;
+    background-color: white;
+}
+
+.navigate{
+    padding-top:5px;
+    padding-bottom:5px;
+    width:fit-content;
+    writing-mode: vertical-rl;
+    flex-wrap:none;
+    justify-content:start;
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.nav-item{
+    
 }
 
 /***** footer *********/
