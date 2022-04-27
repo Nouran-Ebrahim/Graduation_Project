@@ -100,16 +100,19 @@ if (isset($_SESSION["user"]) == false) {
                         <div class="card">
                             <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
                             <div class="persondata">
-                               <p>Nouran El-Mohamady</p>
-                               <p>nouran.ssp@gmail.com</p>
-                               <p>Fullstack developer</p>
-                               <a href="https://bit.ly/engnouran_linkedin">ContactMe</a>
+                                <p>Nouran El-Mohamady</p>
+                                <p>nouran.ssp@gmail.com</p>
+                                <p>Fullstack developer</p>
+                                <a href="https://bit.ly/engnouran_linkedin">ContactMe</a>
                             </div>
                         </div>
                         <div class="card">
                             <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
                             <div class="persondata">
-
+                                <p>Mahmoud Sameh</p>
+                                <p>mahmoudsameh734@gmail.com</p>
+                                <p>Fullstack developer</p>
+                                <a href="https://www.linkedin.com/in/mahmoudsamehmohammed/">ContactMe</a>
                             </div>
                         </div>
                         <div class="card">
@@ -154,30 +157,30 @@ if (isset($_SESSION["user"]) == false) {
 
                             </div>
                         </div>
-  
+
+
+
+                    </div>
+                </section>
 
 
             </div>
-            </section>
-
-
+            <a class="bi bi-arrow-up-circle" href="#h"></a>
         </div>
-        <a class="bi bi-arrow-up-circle" href="#h"></a>
-    </div>
-    <div class="footer">
-        <div class="image">
-            <img class="webName-footer" src="../images/website name.png">
-        </div>
-        <div class="names">
-            <div>
-                Created By
+        <div class="footer">
+            <div class="image">
+                <img class="webName-footer" src="../images/website name.png">
             </div>
-            <p class="team">
-                Alaa Osama Mohammed<br>Nouran Ebrahim Elmohamedy<br>Mahmoud Sameh Mohammed<br>Mohammed Tareq Tolba
-            </p>
+            <div class="names">
+                <div>
+                    Created By
+                </div>
+                <p class="team">
+                    Alaa Osama Mohammed<br>Nouran Ebrahim Elmohamedy<br>Mahmoud Sameh Mohammed<br>Mohammed Tareq Tolba
+                </p>
 
+            </div>
         </div>
-    </div>
     </div>
 
     <script>

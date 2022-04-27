@@ -318,19 +318,18 @@ overflow: hidden; */
 
 }
 .persondata{
-
     position: absolute;
-    display: none;
+    visibility: hidden;
     width: 100%;
     height: 100%;
-    flex-direction: column;
-    background-color: #2541B2;
-}
-.persondata:hover{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+}
+.card:hover .persondata{
+visibility: visible;
+background-color: rgba(235, 229, 229, 0.5);
 }
 .nav-item{
     display: flex;
