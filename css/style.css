@@ -296,25 +296,23 @@ margin-left: 30px;
 .cards{
     display: flex;
     flex-wrap: wrap;
-    background-color: #333;
+    /*background-color: #333;*/
     justify-content: center;
     column-gap: 5%;
     
 }
-/* .profile{
-    width: 100%;
-    background-color: green;
-} */
+
 .profile{
     display: block;
-    background-color: #858585;
+    /*background-color: #858585;*/
     width: 25vw;
 }
 .card{
-    background-color: #E5D549;
-    margin-bottom: 10%;
-    /* border-radius: 50%;
-overflow: hidden; */
+    /*background-color: #E5D549;*/
+    margin-bottom: 4%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #e5d549;
 
 }
 .persondata{
