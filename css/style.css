@@ -117,7 +117,10 @@ margin-left: 30px;
 
 /******** Home Page *******/
 /*************************/
-
+#home{
+    background-image: none;
+    background-color: white;
+}
 .homePage{
     display: flex;
     flex-direction: column;
@@ -277,6 +280,8 @@ margin-left: 30px;
     z-index: 1000;
     width:4%;
     background-color: #e5d549;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 0px;
     padding-top:5px;
     padding-bottom:5px;
@@ -288,8 +293,45 @@ margin-left: 30px;
     position: fixed;
 }
 
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    justify-content: center;
+    column-gap: 5%;
+    
+}
+/* .profile{
+    width: 100%;
+    background-color: green;
+} */
+.profile{
+    display: block;
+    background-color: #858585;
+    width: 25vw;
+}
+.card{
+    background-color: #E5D549;
+    margin-bottom: 10%;
+    /* border-radius: 50%;
+overflow: hidden; */
 
+}
+.persondata{
 
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #2541B2;
+}
+.persondata:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .nav-item{
     display: flex;
     align-items: center;

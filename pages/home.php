@@ -53,7 +53,7 @@ if (isset($_SESSION["user"]) == false) {
                             <a href="#memb">Team Members</a>
                         </li>
                         <li><a href="logout.php"> Logout </a></li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -74,8 +74,20 @@ if (isset($_SESSION["user"]) == false) {
             </ul>
             <div class="secs">
                 <section id="desc" class="discription">
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                    <h2>About:</h2>
+                    <p>The network devices can be controlled by using telnet or a console cable but in this project used techniqe of the automation.
+
+                        The automation is very exciting and very new in the network world,where the automation is just tools in order to succeed at your job and to do a lot better and remotely .
+
+                        Autonet web site is an automated tool To be able to control network devices remotely.
+                    </p>
+                    <h3>Features of AUTONET:</h3>
+                    <ul>
+                        <li>configuration for any device in the network .</li>
+                        <li>suitable for lab or mobie phone.</li>
+                        <li>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</li>
+                    </ul>
+
                 </section>
 
                 <section id="guid" class="guid-lines">
@@ -83,40 +95,89 @@ if (isset($_SESSION["user"]) == false) {
                 </section>
 
                 <section class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-                <section class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-                <section class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-                <section class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-                <section class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-                <section id="memb" class="members">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing easdasdasdasdasdasdasdasdasdlit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                </section>
-            </div>
-            <a class="bi bi-arrow-up-circle" href="#h"></a>
-        </div>
-        <div class="footer">
-            <div class="image">
-                <img class="webName-footer" src="../images/website name.png">
-            </div>
-            <div class="names">
-                <div>
-                    Created By
-                </div>
-                <p class="team">
-                    Alaa Osama Mohammed<br>Nouran Ebrahim Elmohamedy<br>Mahmoud Sameh Mohammed<br>Mohammed Tareq Tolba
-                </p>
+                    <h2>Team members</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <div class="persondata">
+                               <p>Nouran El-Mohamady</p>
+                               <p>nouran.ssp@gmail.com</p>
+                               <p>Fullstack developer</p>
+                               <a href="https://bit.ly/engnouran_linkedin">ContactMe</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <div class="persondata">
+
+                            </div>
+                        </div>
+  
+
 
             </div>
+            </section>
+
+
         </div>
+        <a class="bi bi-arrow-up-circle" href="#h"></a>
+    </div>
+    <div class="footer">
+        <div class="image">
+            <img class="webName-footer" src="../images/website name.png">
+        </div>
+        <div class="names">
+            <div>
+                Created By
+            </div>
+            <p class="team">
+                Alaa Osama Mohammed<br>Nouran Ebrahim Elmohamedy<br>Mahmoud Sameh Mohammed<br>Mohammed Tareq Tolba
+            </p>
+
+        </div>
+    </div>
     </div>
 
     <script>
