@@ -116,9 +116,39 @@ if (isset($_SESSION["user"]) == false) {
                             </div>
                         </div>
                         <div class="card">
-                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                        <img class="profile" src="../images/alaaresized-image-Promo.jpeg">
                             <div class="persondata">
-
+                                <p>Alaa Osama</p>
+                                <p>alaaosama2121998@gmail.com</p>
+                                <p>Fullstack developer</p>
+                                <a href="https://www.linkedin.com/mwlite/in/alaa-osama">ContactMe</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/mahmedresized-image-Promo.jpeg">
+                            <div class="persondata">
+                                <p>Mohamed Tarek</p>
+                                <p>mohamedalsebaey5@gmail.com</p>
+                                <p>Frontend developer</p>
+                                <a href="https://www.linkedin.com/in/mohamed-tarek-16807b1a6">ContactMe</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                        <img class="profile" src="../images/emanresized-image-Promo.jpeg">
+                            <div class="persondata">
+                                <p>Eman Ahmed</p>
+                                <p>ea420426@gmail.com</p>
+                                <p>NOC engineer</p>
+                                <a href="https://www.linkedin.com/in/eman-ahmed-882a561b1/">ContactMe</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="profile" src="../images/shimaaaresized-image-Promo.jpeg">
+                            <div class="persondata">
+                                <p>Alshimaa Mostafa</p>
+                                <p>shimaaamrawy@gmail.com</p>
+                                <p>NOC engineer</p>
+                                <a href="mailto:shimaaamrawy@gmail.com">ContactMe</a>
                             </div>
                         </div>
                         <div class="card">
@@ -127,38 +157,25 @@ if (isset($_SESSION["user"]) == false) {
 
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
-                            <div class="persondata">
-
-                            </div>
-                        </div>
+                        
                         <div class="card">
                             <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
                             <div class="persondata">
-
+                                <p>Eman Ahmed</p>
+                                <p>ea420426@gmail.com</p>
+                                <p>Leader & NOC engineer</p>
+                                <a href="https://www.linkedin.com/in/eman-ahmed-882a561b1/">ContactMe</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
+                            <img class="profile" src="../images/abanob.jpeg">
                             <div class="persondata">
-
+                                <p>Abanoub Victor</p>
+                                <p>Apanoubpob@gmail.com</p>
+                                <p>NOC engineer</p>
+                                <a href="https://www.linkedin.com/in/abanoub-victor">ContactMe</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
-                            <div class="persondata">
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
-                            <div class="persondata">
-
-                            </div>
-                        </div>
-
-
 
                     </div>
                 </section>
