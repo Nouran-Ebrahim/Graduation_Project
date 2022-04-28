@@ -116,7 +116,7 @@ if (isset($_SESSION["user"]) == false) {
                             </div>
                         </div>
                         <div class="card">
-                        <img class="profile" src="../images/alaaresized-image-Promo.jpeg">
+                            <img class="profile" src="../images/alaaresized-image-Promo.jpeg">
                             <div class="persondata">
                                 <p>Alaa Osama</p>
                                 <p>alaaosama2121998@gmail.com</p>
@@ -134,7 +134,7 @@ if (isset($_SESSION["user"]) == false) {
                             </div>
                         </div>
                         <div class="card">
-                        <img class="profile" src="../images/emanresized-image-Promo.jpeg">
+                            <img class="profile" src="../images/emanresized-image-Promo.jpeg">
                             <div class="persondata">
                                 <p>Eman Ahmed</p>
                                 <p>ea420426@gmail.com</p>
@@ -152,12 +152,15 @@ if (isset($_SESSION["user"]) == false) {
                             </div>
                         </div>
                         <div class="card">
-                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <img class="profile" src="../images/Dina.jpeg">
                             <div class="persondata">
-
+                                <p>Dina Hassan</p>
+                                <p>dinazidan40@gmail.com</p>
+                                <p>NOC engineer</p>
+                                <a href="https://www.linkedin.com/in/dina-hassan-6a18291b8">ContactMe</a>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
                             <div class="persondata">
@@ -168,7 +171,7 @@ if (isset($_SESSION["user"]) == false) {
                             </div>
                         </div>
                         <div class="card">
-                            <img class="profile" src="../images/abanob.jpeg">
+                            <img class="profile" src="../images/Bob.jpeg">
                             <div class="persondata">
                                 <p>Abanoub Victor</p>
                                 <p>Apanoubpob@gmail.com</p>
