@@ -117,6 +117,11 @@ margin-left: 30px;
 
 /******** Home Page *******/
 /*************************/
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
 #home{
     background-image: none;
     background-color: white;
@@ -200,8 +205,8 @@ margin-left: 30px;
     .userName{
         margin-right: 10%;
     }
-  .navBar{
-      display: block  !important;
+    .navBar{
+        display: block  !important;
   }  
 .header .links{
     position: relative;
@@ -263,6 +268,13 @@ margin-left: 30px;
  
  }
  /***************** Home Body ******************/
+ 
+ .Labels{
+    font-size: 3em;
+    color: #003d76;
+    font-family: 'Abril Fatface', cursive;
+ }
+ 
  .abc{
     width: 50%;
     height: 500px;
@@ -293,6 +305,25 @@ margin-left: 30px;
     position: fixed;
 }
 
+.nav-item{
+    margin-top: 1em;
+}
+
+.vd-cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.vdeo{
+    width: 80%;
+}
+
+
+.memb{
+    margin-bottom: 1em;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -305,7 +336,7 @@ margin-left: 30px;
 .profile{
     display: block;
     /*background-color: #858585;*/
-    width: 20vw;
+    width: 15vw;
 }
 .card{
     /*background-color: #E5D549;*/

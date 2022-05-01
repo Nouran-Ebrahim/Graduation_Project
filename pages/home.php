@@ -19,6 +19,9 @@ if (isset($_SESSION["user"]) == false) {
     <link rel='stylesheet' type='text/css' href='../css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' href='../css/style.css'>
     <link rel='stylesheet' type='text/css' href='../bootstrap-icons-1.7.2/bootstrap-icons.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Turret+Road&display=swap" rel="stylesheet">
 </head>
 
 <body id="home">
@@ -43,7 +46,7 @@ if (isset($_SESSION["user"]) == false) {
                     <ul id="showing">
                         <li><a href="setting_page.php"> Start Configration </a></li>
                         <li><a href="admin_settings.php"> Admin Setting </a></li>
-                        <li class="link">
+                        <li class="link ">
                             <a aria-current="page" href="#desc">About Project</a>
                         </li>
                         <li class="link">
@@ -68,34 +71,48 @@ if (isset($_SESSION["user"]) == false) {
                 <li class="nav-item link">
                     <a class="nav-link" href="#guid">Guidlines</a>
                 </li>
-                <li class="nav-item link">
+                <li class="nav-item link memb">
                     <a class="nav-link" href="#memb">Team Members</a>
                 </li>
             </ul>
             <div class="secs">
                 <section id="desc" class="discription">
-                    <h2>About:</h2>
+                    <p class="Labels">About:</p>
+                    <div class="vd-cont">
+                        <video class="vdeo" controls>
+                            <source src="../images/about.m4v" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
                     <p>The network devices can be controlled by using telnet or a console cable but in this project used techniqe of the automation.
 
                         The automation is very exciting and very new in the network world,where the automation is just tools in order to succeed at your job and to do a lot better and remotely .
 
-                        Autonet web site is an automated tool To be able to control network devices remotely.
+                        Autonet web site is an automated tool To be able to control network devices remotely.
                     </p>
-                    <h3>Features of AUTONET:</h3>
-                    <ul>
-                        <li>configuration for any device in the network .</li>
-                        <li>suitable for lab or mobie phone.</li>
-                        <li>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</li>
-                    </ul>
+                    <h4>Features of AUTONET:</h3>
+                        <ul>
+                            <li>
+                                <p>configuration for any device in the network .</p>
+                            </li>
+                            <li>
+                                <p>suitable for lab or mobie phone.</p>
+                            </li>
+                            <li>
+                                <p>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</p>
+                            </li>
+                        </ul>
 
                 </section>
 
                 <section id="guid" class="guid-lines">
+                    <p class="Labels">Guildlines</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
                 </section>
 
                 <section id="memb" class="members">
-                    <h2>Team members</h2>
+                    <p class="Labels">Team members</p>
                     <div class="cards">
                         <div class="card">
                             <img class="profile" src="../images/nouranresized-image-Promo.jpeg">
@@ -162,12 +179,12 @@ if (isset($_SESSION["user"]) == false) {
                         </div>
 
                         <div class="card">
-                            <img class="profile" src="../images/mahmoudresized-image-Promo.jpeg">
+                            <img class="profile" src="../images/Aya.jpeg">
                             <div class="persondata">
-                                <p>Eman Ahmed</p>
-                                <p>ea420426@gmail.com</p>
-                                <p>Leader & NOC engineer</p>
-                                <a href="https://www.linkedin.com/in/eman-ahmed-882a561b1/">ContactMe</a>
+                                <p>Aya Adel</p>
+                                <p>aya90318@gmail.com</p>
+                                <p>NOC engineer</p>
+                                <a href="mailto:aya90318@gmail.com">ContactMe</a>
                             </div>
                         </div>
                         <div class="card">
