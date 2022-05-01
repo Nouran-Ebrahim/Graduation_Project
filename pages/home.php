@@ -77,20 +77,23 @@ if (isset($_SESSION["user"]) == false) {
             </ul>
             <div class="secs">
                 <section id="desc" class="discription">
-                    <p class="Labels">About:</p>
                     <div class="vd-cont">
                         <video class="vdeo" controls>
                             <source src="../images/about.m4v" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-
+                    <p class="Labels">About:</p>
+                    <div class="about-sec">
+                       
+                        <div class="about-txt">
                     <p>The network devices can be controlled by using telnet or a console cable but in this project used techniqe of the automation.
 
                         The automation is very exciting and very new in the network world,where the automation is just tools in order to succeed at your job and to do a lot better and remotely .
 
                         Autonet web site is an automated tool To be able to control network devices remotely.
                     </p>
+
                     <h4>Features of AUTONET:</h3>
                         <ul>
                             <li>
@@ -103,12 +106,28 @@ if (isset($_SESSION["user"]) == false) {
                                 <p>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</p>
                             </li>
                         </ul>
-
+                        </div>
+                        <div class="about-img">
+                            <img src="../images/connection.jpeg">
+                        </div>
+                        </div>
                 </section>
+
 
                 <section id="guid" class="guid-lines">
                     <p class="Labels">Guildlines</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                    <ol>
+                    <li><p>Click on <span>Start Configration</span> .</p></li>
+                   <li> <p> Choose the Building or Floor that you need to edit.</p></li>
+                   <li><p>Enter the data to be update.</p></li>
+                   <li><p>Click on <span>View </span> to check the data.</p>
+                   <img src="../images/11.jpeg">
+                </li>
+                   <li><p>Click on <span>Run&Save</span> to update the network.</p>
+                   <img src="../images/22.jpeg">
+                </li>
+                
+</ol>
                 </section>
 
                 <section id="memb" class="members">

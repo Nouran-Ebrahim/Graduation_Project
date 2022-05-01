@@ -119,8 +119,29 @@ margin-left: 30px;
 /*************************/
 p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+}
+.about-sec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-img{
+    height: 70%;
+    margin-right: 5%;
+
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 15px #e5d549;
+    /* border: 1px solid black; */
+}
+.about-txt{
+    width: 60%;
 }
 #home{
     background-image: none;
@@ -270,9 +291,10 @@ p{
  /***************** Home Body ******************/
  
  .Labels{
-    font-size: 3em;
+    font-size: 2.5em;
     color: #003d76;
     font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
  }
  
  .abc{
@@ -317,47 +339,70 @@ p{
 
 .vdeo{
     width: 80%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 15px hsl(54, 75%, 59%);
+  
 }
 
 
 .memb{
     margin-bottom: 1em;
 }
-
+ol li img{
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 15px #e5d549;
+    margin-bottom: 1%;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
-    /*background-color: #333;*/
-    justify-content: center;
-    column-gap: 5%;
+    /* background-color: #333; */
+    justify-content: space-around;
+     column-gap: 6%;
     
 }
 
 .profile{
     display: block;
-    /*background-color: #858585;*/
-    width: 15vw;
+    /* background-color: #858585; */
+    width: 12vw;
+    border-radius: 50%;
+    border: 1px solid #e5d549;
 }
 .card{
-    /*background-color: #E5D549;*/
+    /* background-color: #E5D549; */
+    display: flex;
+    width: 300px;
+    padding: 0.5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 4%;
-    border-radius: 50%;
     overflow: hidden;
-    border: 1px solid #e5d549;
+    border: none;
+    column-gap: 7%;
+  
 
 }
 .persondata{
-    position: absolute;
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
+
 }
-.card:hover .persondata{
-visibility: visible;
+.persondata p{
+    font-size: 15px;
+}
+.persondata a{
+    color:#e5d549 ;
+}
+.card:hover {
 background-color: rgba(235, 229, 229, 0.5);
 }
 .nav-item{
