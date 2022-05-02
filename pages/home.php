@@ -83,55 +83,63 @@ if (isset($_SESSION["user"]) == false) {
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <p class="Labels">About:</p>
+                    <p class="Labels">About Project:</p>
                     <div class="about-sec">
-                       
+
                         <div class="about-txt">
-                    <p>The network devices can be controlled by using telnet or a console cable but in this project used techniqe of the automation.
+                            <p>The network devices can be controlled by using telnet or a console cable but in this project used techniqe of the automation.
 
-                        The automation is very exciting and very new in the network world,where the automation is just tools in order to succeed at your job and to do a lot better and remotely .
+                                The automation is very exciting and very new in the network world,where the automation is just tools in order to succeed at your job and to do a lot better and remotely .
 
-                        Autonet web site is an automated tool To be able to control network devices remotely.
-                    </p>
+                                Autonet web site is an automated tool To be able to control network devices remotely.
+                            </p>
 
-                    <h4>Features of AUTONET:</h3>
-                        <ul>
-                            <li>
-                                <p>configuration for any device in the network .</p>
-                            </li>
-                            <li>
-                                <p>suitable for lab or mobie phone.</p>
-                            </li>
-                            <li>
-                                <p>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</p>
-                            </li>
-                        </ul>
+                            <h4>Features of AUTONET:</h3>
+                                <ul>
+                                    <li>
+                                        <p>configuration for any device in the network .</p>
+                                    </li>
+                                    <li>
+                                        <p>suitable for lab or mobie phone.</p>
+                                    </li>
+                                    <li>
+                                        <p>change shutdown mode for any interfaces in switching or router, the speed of them , password of the device ,and We can do a lot of tasks.</p>
+                                    </li>
+                                </ul>
                         </div>
                         <div class="about-img">
                             <img src="../images/connection.jpeg">
                         </div>
-                        </div>
+                    </div>
                 </section>
 
 
                 <section id="guid" class="guid-lines">
-                    <p class="Labels">Guildlines</p>
+                    <p class="Labels">Guildlines:</p>
                     <ol>
-                    <li><p>Click on <span>Start Configration</span> .</p></li>
-                   <li> <p> Choose the Building or Floor that you need to edit.</p></li>
-                   <li><p>Enter the data to be update.</p></li>
-                   <li><p>Click on <span>View </span> to check the data.</p>
-                   <img src="../images/11.jpeg">
-                </li>
-                   <li><p>Click on <span>Run&Save</span> to update the network.</p>
-                   <img src="../images/22.jpeg">
-                </li>
-                
-</ol>
+                        <li>
+                            <p>Click on <span>Start Configration</span> .</p>
+                        </li>
+                        <li>
+                            <p> Choose the Building or Floor that you need to edit.</p>
+                        </li>
+                        <li>
+                            <p>Enter the data to be update.</p>
+                        </li>
+                        <li>
+                            <p>Click on <span>View </span> to check the data.</p>
+                            <img src="../images/11.jpeg">
+                        </li>
+                        <li>
+                            <p>Click on <span>Run&Save</span> to update the network.</p>
+                            <img src="../images/22.jpeg">
+                        </li>
+
+                    </ol>
                 </section>
 
                 <section id="memb" class="members">
-                    <p class="Labels">Team members</p>
+                    <p class="Labels">Team Members:</p>
                     <div class="cards">
                         <div class="card">
                             <img class="profile" src="../images/nouranresized-image-Promo.jpeg">

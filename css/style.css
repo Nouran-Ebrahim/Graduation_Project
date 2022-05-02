@@ -131,7 +131,7 @@ p{
 }
 .about-img{
     height: 70%;
-    margin-right: 5%;
+    margin-right: 3%;
 
 }
 .about-img img{
@@ -142,6 +142,9 @@ p{
 }
 .about-txt{
     width: 60%;
+    width: fit-content;
+    text-align: justify;
+    margin-right: 2%;
 }
 #home{
     background-image: none;
@@ -295,6 +298,8 @@ p{
     color: #003d76;
     font-family: 'Abril Fatface', cursive;
     font-weight: lighter;
+    padding-top: 2%;
+    padding-bottom: 1%;
  }
  
  .abc{
@@ -304,7 +309,6 @@ p{
     background-color: yellow;
 }
 .homeBody{
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -315,7 +319,7 @@ p{
     width:4%;
     background-color: #e5d549;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 2% !important;
     margin-left: 0px;
     padding-top:5px;
     padding-bottom:5px;
@@ -445,8 +449,78 @@ background-color: rgba(235, 229, 229, 0.5);
     .secs{
         margin: 2%;
     }
-}
+    ol li img{
+        width: 90%;
+        margin-left: 0%;
+    }
+    .about-sec{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 5%;        
+    }
+    .about-img{
+        margin-right: 0%;
+        align-self: center;
+    }
+    ol{
+        margin-left: 5%;        
+    }
+    .about-txt {
+        width: fit-content;
+        text-align: justify;
+        padding-right: 2%;
 
+    }   
+    .Labels{
+        font-size: 25pt;
+        margin-left: 1%;
+        padding-top: 5%;
+    } 
+    p{
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 31px
+    }
+    .persondata p{
+        line-height: normal;
+
+    }
+    .card{
+        width: 200px;
+    }
+    .profile{
+        width: 17vw;
+    }
+}
+@media (max-width:660px){
+    ol li img{
+        width: 95%;
+    }
+}
+@media (max-width:500px){
+    .Labels{
+        font-size: 22pt;
+    }
+    .about-img img {
+        height: 57vh;
+    }
+    .vdeo {
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+    .Labels{
+        font-size: 20pt;
+    }
+    p{
+        font-size: 17pt;
+        font-weight: lighter;
+    }
+    .bi-arrow-up-circle{
+        font-size: 6vw;
+    }
+
+}
 @media (min-width: 1400px) {
     .navigate{
         width: 3%;
