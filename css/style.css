@@ -483,10 +483,10 @@ background-color: rgba(235, 229, 229, 0.5);
     }
     .persondata p{
         line-height: normal;
-
     }
     .card{
-        width: 200px;
+        width: 300px;
+        padding-top: 2%;
     }
     .profile{
         width: 17vw;
