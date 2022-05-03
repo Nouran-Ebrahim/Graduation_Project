@@ -24,7 +24,7 @@ const interSection = new IntersectionObserver(function(entries) {
         if (entry.isIntersecting) {
             link[Array.prototype.indexOf.call(secs, entry.target)].style.color = "white";
         } else {
-            link[Array.prototype.indexOf.call(secs, entry.target)].classList.style.color = "black";
+            link[Array.prototype.indexOf.call(secs, entry.target)].style.color = "black";
 
         }
     })
