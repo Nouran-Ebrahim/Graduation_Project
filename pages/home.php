@@ -66,13 +66,13 @@ if (isset($_SESSION["user"]) == false) {
         <div class="homeBody">
             <ul class="navigate nav">
                 <li class="nav-item link">
-                    <a class="nav-link active" aria-current="page" href="#desc">About Project</a>
+                    <a class="nav-link active" id="about_sec" aria-current="page" href="#desc">About Project</a>
                 </li>
                 <li class="nav-item link">
-                    <a class="nav-link" href="#guid">Guidlines</a>
+                    <a class="nav-link" id="guid_sec" href="#guid">Guidlines</a>
                 </li>
                 <li class="nav-item link memb">
-                    <a class="nav-link" href="#memb">Team Members</a>
+                    <a class="nav-link"id="memb_sec" href="#memb">Team Members</a>
                 </li>
             </ul>
             <div class="secs">
@@ -265,47 +265,8 @@ if (isset($_SESSION["user"]) == false) {
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>
 
-
-<!--
-            <div id="carouselExampleCaptions" class="carousel slide abc" data-bs-ride="carousel" >
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/slider1-.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/slide4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/slide4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
