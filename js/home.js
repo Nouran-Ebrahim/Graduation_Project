@@ -29,8 +29,8 @@ const interSection = new IntersectionObserver(function(entries) {
         }
     })
 }, {
-    threshold: 0.8,
-    rootMargin: '0px'
+    threshold: 0.7,
+    rootMargin: '5%'
 })
 window.addEventListener('scroll', function() {
     for (const section of secs) {
