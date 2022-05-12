@@ -257,6 +257,9 @@ if (isset($_SESSION["user"]) == false) {
                         </div>
                     </div>
                     <div>
+                        <div id = "load" class="spinner-border" style="display:none" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                         <button type="button" class="info_button" name="router" id="run_button">Run&Save</button>
                     </div>
                 </div>
@@ -269,10 +272,9 @@ if (isset($_SESSION["user"]) == false) {
     <?php
     require "../pages/connection.php";
     ?>
-    <script src="../js/setting_page.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    
+    <script src="../js/setting_page.js"></script>
     
 </body>
 

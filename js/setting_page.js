@@ -197,8 +197,8 @@ $(window).resize(canvToNav)
 // select the router page 
 
 const runButton = document.getElementById('run_button');
-
 runButton.addEventListener('click', function (e) {
+  $("#load").css("display","block");
   if (e.target.name === "router") {
     const frm = document.getElementById('r_frm');
     frm.submit();
