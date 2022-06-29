@@ -15,9 +15,10 @@ TelnetPassword="pass_word" # New Telnet Password user
 Console="consle_e"  #user
 Hostname="host_name" #user
 
-enablepass="en_old" # Old Telnet Password database
+enablepass="en_old" # Old enable Password database
 
-enablepassword="enable_e" # New Telnet Password user
+enablepassword="enable_e" # New enable Password user
+enablesecret = enablepassword
 
 tn = telnetlib.Telnet(ip)
 time.sleep(2)
@@ -41,6 +42,8 @@ tn.write(enablepass.encode('ascii') + b"\n")
 tn.write(b"conf t"+b"\n")
 tn.write(b"enable password ")
 tn.write(enablepassword.encode('ascii') + b"\n")
+tn.write(b"enable secret ")
+tn.write(enablesecret.encode('ascii') + b"\n")
 #change console password
 
 tn.write(b"Line console 0"+b"\n")

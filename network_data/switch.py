@@ -18,7 +18,7 @@ Hostname="host_name" #user
 enable_router="en_router" #  old enable router database
 enable_switch="sw_en"  # old enable switch database
 enablepassword = "enable_e" # new enable switch #user
-
+enablesecret = enablepassword
 
 
 
@@ -49,6 +49,8 @@ tn.write(enable_switch.encode('ascii') + b"\n") #database
 tn.write(b"conf t"+b"\n")
 tn.write(b"enable password ")
 tn.write(enablepassword.encode('ascii') + b"\n")
+tn.write(b"enable secret ")
+tn.write(enablesecret.encode('ascii') + b"\n")
 #change console password
 
 tn.write(b"Line console 0"+b"\n")
