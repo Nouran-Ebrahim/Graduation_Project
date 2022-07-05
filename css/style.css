@@ -996,6 +996,7 @@ ol li img {
 }
 
 
+
 /*=========================== Design the Scroll Bar =========================*/
 
 .accordion-collapse::-webkit-scrollbar {
@@ -1060,6 +1061,12 @@ ol li img {
     .S2 {
         width: 46%;
     }
+    
+    #accordionExample{
+        overflow: hidden;
+            height: 257px;
+    }    
+
 }
 
 @media (min-width: 992px) {
