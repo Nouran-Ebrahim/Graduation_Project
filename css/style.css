@@ -579,11 +579,6 @@ ol li img {
     }
 }
 
-@media (min-width: 1400px) {
-    .navigate {
-        width: 3%;
-    }
-}
 
 
 /***** footer *********/
