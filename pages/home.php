@@ -79,7 +79,7 @@ if (isset($_SESSION["user"]) == false) {
                 <section id="desc" class="discription">
                     <div class="vd-cont">
                         <video class="vdeo" controls>
-                            <source src="../images/about.m4v" type="video/mp4">
+                            <source src="../images/about.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
