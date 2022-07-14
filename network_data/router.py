@@ -27,12 +27,13 @@ response = tn.read_until(b"Password:", 5)
 if b"Password" in response:
 	print("found")
 	tn.write(telnetpw.encode('ascii') + b"\n")
-	output = tn.read_until(b":", 5)
-	print(output)
+	#output = tn.read_until(b":", 5)
+	#print(output)
 	
 	
 else:
 	print("not found")
+	exit(1)
  
 	
 tn.write(b"enable"+b"\n")

@@ -36,11 +36,13 @@ if b"Password" in response:
 	
 	
 else:
-	print("not found") 
+	print("not found")
+	exit(1)
 tn.write(b"enable"+b"\n")
 tn.write(enable_router.encode('ascii') + b"\n")
 tn.write(b"telnet ")
 tn.write(switch_ip.encode('ascii') + b"\n")  #database
+time.sleep(2)
 tn.write(switch_telnetpw.encode('ascii') + b"\n") #database
 tn.write(b"enable"+b"\n")
 tn.write(enable_switch.encode('ascii') + b"\n") #database
